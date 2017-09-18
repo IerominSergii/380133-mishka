@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergii Yeromin](https://up.htmlacademy.ru/adaptive/12/user/380133).
-* Наставник: [Владислав Балабанович] (https://htmlacademy.ru/profile/id523777).
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/id523777).
 
 ---
 
