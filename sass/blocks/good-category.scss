@@ -1,7 +1,14 @@
-.good-category__interior {
-  background-color: #63d1bb;
-}
+.good-category {
+  font-size: 19px;
+  vertical-align: 24px;
+  font-weight: bold;
+  color: $decor-font-color;
 
-.good-category__toys {
-  background-color: #56c3b2;
+  &__item--interior {
+    background-color: $first-decor-color;
+  }
+
+  &__item--toys {
+    background-color: $second-decor-color;
+  }
 }

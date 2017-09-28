@@ -1,1 +1,14 @@
-.contacts {}
+.contacts {
+  &__title {
+    font-size: 18px;
+    vertical-align: 30px;
+    font-weight: bold;
+    color: $first-font-color;
+  }
+
+  &__list {
+    font-size: 15px;
+    vertical-align: 30px;
+    color: $second-font-color;
+  }
+}

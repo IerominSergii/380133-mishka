@@ -1,1 +1,11 @@
-.company-features {}
+.company-features {
+  font-size: 17px;
+  vertical-align: 20px;
+  color: $first-font-color;
+  font-weight: bold;
+
+  &__title {
+    font-size: 25px;
+    vertical-align: 30px;
+  }
+}

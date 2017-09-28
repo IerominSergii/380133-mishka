@@ -1,1 +1,5 @@
-.page-footer {}
+.page-footer {
+  &__feedback {
+    color: $first-font-color;
+  }
+}

@@ -1,1 +1,32 @@
-.basket-form {}
+.basket-popup {
+  color: $second-font-color;
+
+  &__title {
+    font-size: 25px;
+    vertical-align: 30px;
+    font-weight: bold;
+    color: $first-font-color;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 15px;
+    vertical-align: 30px;
+  }
+
+  &__point {
+    font-size: 17px;
+    vertical-align: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__add-button {
+    background-color: $first-decor-color;
+    font-size: 17px;
+    vertical-align: 16px;
+    font-weight: bold;
+    color: $decor-font-color;
+    text-transform: uppercase;
+  }
+}

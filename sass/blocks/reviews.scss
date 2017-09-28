@@ -1,1 +1,28 @@
-.reviews {}
+.reviews {
+  &__title {
+    font-size: 25px;
+    vertical-align: 30px;
+    font-weight: bold;
+    color: $first-font-color;
+  }
+
+  &__text {
+    font-size: 15px;
+    vertical-align: 30px;
+    color: $second-font-color;
+  }
+
+  &__author-name {
+    font-size: 17px;
+    vertical-align: 24px;
+    font-weight: bold;
+    color: $first-font-color;
+  }
+
+  &__author-link {
+    font-size: 17px;
+    vertical-align: 30px;
+    font-weight: normal;
+    color: $second-font-color;
+  }
+}

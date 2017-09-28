@@ -1,8 +1,14 @@
-// фоновые цвета
-$background-color: #ffffff;
-$blocks-main-color: #ffffff;
-$blocks-contrast-color: #f1f1f1;
+// основные цвета
+$first-bgd-color: #ffffff;
+$second-bgd-color: #f1f1f1;
 
-// шрифт
-$main-font-color: #000000;
-$secondary-font-color: #444444;
+$first-font-color: #000000;
+$second-font-color: #444444;
+$decor-font-color: #ffffff;
+
+$first-decor-color: #63d1bb;
+$second-decor-color: #56c3b2;
+$third-decor-color: #3bb09d;
+
+// основные шрифты
+$main-font-family:"Open Sans", "Arial", sans-serif;

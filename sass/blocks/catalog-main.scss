@@ -1,1 +1,13 @@
-.catalog-main {}
+.catalog-main {
+  &__header {
+    background-color: $second-bgd-color;
+    color: $first-font-color;
+  }
+
+  &__title {
+    font-size: 27px;
+    vertical-align: 30px;
+    font-weight: bold;
+    color: $first-font-color;
+  }
+}
