@@ -1,8 +1,6 @@
-.form-extra {
-  &__textarea {
-    font-size: 17px;
-    vertical-align: 18px;
-    color: $second-font-color;
-    text-overflow: ellipsis;
-  }
+.form-extra__textarea {
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
 }

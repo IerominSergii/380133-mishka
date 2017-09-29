@@ -2,30 +2,31 @@
   background-color: $first-bgd-color;
   color: $first-font-color;
 
-  &__header {
-    margin: 0;
-    padding: 0;
+  outline: 2px solid orange;
 
-    background-color: $second-bgd-color;
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    color: $first-font-color;
-    outline: 2px solid green;
+  &::after {
+    content: ".page-header";
+    font-size: 8px;
+    background-color: orange;
+    color: red;
   }
+}
 
-  &__header::after {
+.page-main__header {
+  margin: 0;
+  padding: 0;
+
+  background-color: $second-bgd-color;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  color: $first-font-color;
+
+  outline: 2px solid green;
+
+  &::after {
     content: ".page-main__header";
     font-size: 8px;
     background-color: green;
     color: white;
   }
-
-  outline: 2px solid orange;
-}
-
-.page-main::after {
-  content: ".page-header";
-  font-size: 8px;
-  background-color: orange;
-  color: red;
 }

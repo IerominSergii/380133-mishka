@@ -3,12 +3,16 @@
   vertical-align: 24px;
   font-weight: bold;
   color: $decor-font-color;
+}
 
-  &__item--interior {
+.good-category__item {
+  &--interior {
     background-color: $first-decor-color;
   }
+}
 
-  &__item--toys {
+.good-category__item {
+  &--toys {
     background-color: $second-decor-color;
   }
 }

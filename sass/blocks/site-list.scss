@@ -6,7 +6,9 @@
   font-weight: bold;
   color: $first-font-color;
 
-  &__link {
-    color: $first-font-color;
-  }
+  list-style: none;
+}
+
+.site-list__link {
+  color: $first-font-color;
 }

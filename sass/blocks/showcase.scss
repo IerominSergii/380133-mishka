@@ -1,21 +1,21 @@
 .showcase {
-  &__item {
-    outline: 2px solid yellow;
-  }
+  outline: 4px dotted blue;
 
-  &__item::after {
+  &::after {
+    content: ".showcase";
+    font-size: 8px;
+    background-color: blue;
+    color: white;
+  }
+}
+
+.showcase__item {
+  outline: 2px solid yellow;
+
+  &::after {
     content: ".showcase__item";
     font-size: 8px;
     background-color: yellow;
     color: black;
   }
-
-  outline: 4px dotted blue;
-}
-
-.showcase::after {
-  content: ".showcase";
-  font-size: 8px;
-  background-color: blue;
-  color: white;
 }

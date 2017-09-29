@@ -5,30 +5,30 @@
   background-color: $first-bgd-color;
   color: $second-font-color;
 
-  &__title {
-    font-size: 25px;
-    vertical-align: 30px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
-
-  &__description {
-    font-size: 15px;
-    vertical-align: 24px;
-  }
-
-  &__price {
-    font-size: 17px;
-    vertical-align: 24px;
-    font-weight: bold;
-  }
-
   outline: 4px dotted blue;
+
+  &::after {
+    content: ".goods-of-week";
+    font-size: 8px;
+    background-color: blue;
+    color: white;
+  }
 }
 
-.goods-of-week::after {
-  content: ".goods-of-week";
-  font-size: 8px;
-  background-color: blue;
-  color: white;
+.goods-of-week__title {
+  font-size: 25px;
+  vertical-align: 30px;
+  font-weight: bold;
+  color: $first-font-color;
+}
+
+.goods-of-week__description {
+  font-size: 15px;
+  vertical-align: 24px;
+}
+
+.goods-of-week__price {
+  font-size: 17px;
+  vertical-align: 24px;
+  font-weight: bold;
 }

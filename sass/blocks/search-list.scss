@@ -5,7 +5,9 @@
   font-weight: bold;
   color: $first-font-color;
 
-  &__search {
-    color: $first-font-color;
-  }
+  list-style: none;
+}
+
+.search-list__search {
+  color: $first-font-color;
 }

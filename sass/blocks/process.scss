@@ -1,22 +1,20 @@
-.process {
-  &__title-icon {
-    font-size: 0;
-  }
+.process__title-icon {
+  font-size: 0;
+}
 
-  &__title-text {
-    font-size: 17px;
-    vertical-align: 24px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
+.process__title-text {
+  font-size: 17px;
+  vertical-align: 24px;
+  font-weight: bold;
+  color: $first-font-color;
+}
 
-  &__text {
-    font-size: 13px;
-    vertical-align: 24px;
-    color: $second-font-color;
-  }
+.process__text {
+  font-size: 13px;
+  vertical-align: 24px;
+  color: $second-font-color;
+}
 
-  &__do-order {
-    vertical-align: 16px;
-  }
+.process__do-order {
+  vertical-align: 16px;
 }

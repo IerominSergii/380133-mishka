@@ -6,39 +6,39 @@
   background-color: $first-bgd-color;
   color: $first-font-color;
 
-  &__title {
-    font-size: 25px;
-    vertical-align: 30px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
-
-  &__text {
-    font-size: 15px;
-    vertical-align: 30px;
-    color: $second-font-color;
-  }
-
-  &__author-name {
-    font-size: 17px;
-    vertical-align: 24px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
-
-  &__author-link {
-    font-size: 17px;
-    vertical-align: 30px;
-    font-weight: normal;
-    color: $second-font-color;
-  }
-
   outline: 3px dotted green;
+
+  &::after {
+    content: ".reviews";
+    font-size: 8px;
+    background-color: green;
+    color: white;
+  }
 }
 
-.reviews::after {
-  content: ".reviews";
-  font-size: 8px;
-  background-color: green;
-  color: white;
+.reviews__title {
+  font-size: 25px;
+  vertical-align: 30px;
+  font-weight: bold;
+  color: $first-font-color;
+}
+
+.reviews__text {
+  font-size: 15px;
+  vertical-align: 30px;
+  color: $second-font-color;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  vertical-align: 24px;
+  font-weight: bold;
+  color: $first-font-color;
+}
+
+.reviews__author-link {
+  font-size: 17px;
+  vertical-align: 30px;
+  font-weight: normal;
+  color: $second-font-color;
 }

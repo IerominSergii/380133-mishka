@@ -8,17 +8,17 @@
   color: $first-font-color;
   font-weight: bold;
 
-  &__title {
-    font-size: 25px;
-    vertical-align: 30px;
-  }
-
   outline: 4px solid red;
+
+  &::after {
+    content: ".company-features";
+    font-size: 8px;
+    background-color: red;
+    color: white;
+  }
 }
 
-.company-features::after {
-  content: ".company-features";
-  font-size: 8px;
-  background-color: red;
-  color: white;
+.company-features__title {
+  font-size: 25px;
+  vertical-align: 30px;
 }

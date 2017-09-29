@@ -4,12 +4,13 @@
 
   background-color: $first-bgd-color;
   color: $first-font-color;
-  outline: 2px solid red;
-}
 
-.page-header::after {
-  content: ".page-header";
-  font-size: 8px;
-  background-color: red;
-  color: white;
+  outline: 2px solid red;
+
+  &::after {
+    content: ".page-header";
+    font-size: 8px;
+    background-color: red;
+    color: white;
+  }
 }

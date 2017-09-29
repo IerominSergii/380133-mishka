@@ -1,18 +1,18 @@
 .copyright {
   background-color: $second-bgd-color;
   color: $first-font-color;
+}
 
-  &__text {
-    font-size: 19px;
-    vertical-align: 18px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
+.copyright__text {
+  font-size: 19px;
+  vertical-align: 18px;
+  font-weight: bold;
+  color: $first-font-color;
+}
 
-  &__link {
-    font-size: 0;
-    width: 27px;
-    height: 34px;
-    background-color: $first-decor-color;
-  }
+.copyright__link {
+  font-size: 0;
+  width: 27px;
+  height: 34px;
+  background-color: $first-decor-color;
 }

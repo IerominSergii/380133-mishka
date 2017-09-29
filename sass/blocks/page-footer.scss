@@ -6,16 +6,16 @@
   background-color: $first-bgd-color;
   color: $first-font-color;
 
-  &__feedback {
-    color: $first-font-color;
-  }
-
   outline: 2px solid purple;
+
+  &::after {
+    content: ".page-footer";
+    font-size: 8px;
+    background-color: purple;
+    color: white;
+  }
 }
 
-.page-footer::after {
-  content: ".page-footer";
-  font-size: 8px;
-  background-color: purple;
-  color: white;
+.page-footer__feedback {
+  color: $first-font-color;
 }

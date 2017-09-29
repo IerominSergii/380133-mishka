@@ -4,62 +4,62 @@
   background-color: $first-bgd-color;
   color: $first-font-color;
 
-  &__header {
-    margin: 0;
-    padding: 80px 30px;
+  outline: 2px dotted green;
 
-    background-color: $second-bgd-color;
-    color: $first-font-color;
-
-    outline: 2px solid blue;
+  &::after {
+    content: ".form-main";
+    font-size: 8px;
+    background-color: green;
+    color: white;
   }
+}
 
-  &__header::after {
+.form-main__header {
+  margin: 0;
+  padding: 80px 30px;
+
+  background-color: $second-bgd-color;
+  color: $first-font-color;
+
+  outline: 2px solid blue;
+
+  &::after {
     content: ".form-main__header";
     font-size: 8px;
     background-color: blue;
     color: white;
   }
+}
 
-  &__title {
-    font-size: 27px;
-    vertical-align: 30px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
+.form-main__title {
+  font-size: 27px;
+  vertical-align: 30px;
+  font-weight: bold;
+  color: $first-font-color;
+}
 
-  &__text {
-    margin: 0;
-    padding: 25px 30px;
-    font-size: 13px;
-    vertical-align: 24px;
-    font-weight: normal;
-    color: $second-font-color;
-  }
+.form-main__text {
+  margin: 0;
+  padding: 25px 30px;
+  font-size: 13px;
+  vertical-align: 24px;
+  font-weight: normal;
+  color: $second-font-color;
+}
 
-  &__form {
-    margin: 0;
-    padding-top: 27px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 55px;
+.form-main__form {
+  margin: 0;
+  padding-top: 27px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 55px;
 
-    outline: 4px dotted yellow;
-  }
+  outline: 4px dotted yellow;
 
-  &__form::after {
+  &::after {
     content: ".form-main__form";
     font-size: 8px;
     background-color: yellow;
     color: black;
   }
-
-  outline: 2px dotted green;
-}
-
-.form-main::after {
-  content: ".form-main";
-  font-size: 8px;
-  background-color: green;
-  color: white;
 }

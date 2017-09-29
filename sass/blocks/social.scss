@@ -1,28 +1,32 @@
 .social {
   background-color: $second-bgd-color;
   color: $first-font-color;
+}
 
-  &__item {
-    width: 22px;
-    height: 21px;
-  }
+.social__list {
+  list-style: none;
+}
 
-  &__link {
-    font-size: 0;
-    background-color: $first-font-color;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.social__item {
+  width: 22px;
+  height: 21px;
+}
 
-  &__link--instagram {
+.social__link {
+  font-size: 0;
+  background-color: $first-font-color;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--instagram {
     background-image: url("../img/icon-insta.svg");
   }
 
-  &__link--facebook {
+  &--facebook {
     background-image: url("../img/icon-fb.svg");
   }
 
-  &__link--twitter {
+  &--twitter {
     background-image: url("../img/icon-twitter.svg");
   }
 }

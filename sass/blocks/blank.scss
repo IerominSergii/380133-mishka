@@ -1,15 +1,13 @@
-.blank {
-  &__item {
-    border: none;
-  }
+.blank__item {
+  border: none;
+}
 
-  &__footnote {
-    font-size: 14px;
-    vertical-align: 16px;
-    color: $second-font-color;
-  }
+.blank__footnote {
+  font-size: 14px;
+  vertical-align: 16px;
+  color: $second-font-color;
+}
 
-  &__submit-order {
-    vertical-align: 16px;
-  }
+.blank__submit-order {
+  vertical-align: 16px;
 }

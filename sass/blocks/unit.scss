@@ -1,25 +1,23 @@
-.unit {
-  &__title {
-    font-size: 17px;
-    vertical-align: 24px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
+.unit__title {
+  font-size: 17px;
+  vertical-align: 24px;
+  font-weight: bold;
+  color: $first-font-color;
+}
 
-  &__characteristics {
-    font-size: 13px;
-    vertical-align: 30px;
-    color: $second-font-color;
-  }
+.unit__characteristics {
+  font-size: 13px;
+  vertical-align: 30px;
+  color: $second-font-color;
+}
 
-  &__price {
-    font-size: 15px;
-    vertical-align: 24px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
+.unit__price {
+  font-size: 15px;
+  vertical-align: 24px;
+  font-weight: bold;
+  color: $first-font-color;
+}
 
-  &__basket {
-    font-size: 0;
-  }
+.unit__basket {
+  font-size: 0;
 }

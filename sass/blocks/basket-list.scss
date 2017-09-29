@@ -6,7 +6,9 @@
   font-weight: bold;
   color: $first-font-color;
 
-  &__basket {
-    color: $first-font-color;
-  }
+  list-style: none;
+}
+
+.basket-list__basket {
+  color: $first-font-color;
 }
