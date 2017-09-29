@@ -22,4 +22,13 @@
     vertical-align: 24px;
     font-weight: bold;
   }
+
+  outline: 4px dotted blue;
+}
+
+.goods-of-week::after {
+    content: ".goods-of-week";
+    font-size: 8px;
+    background-color: blue;
+    color: white;
 }

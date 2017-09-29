@@ -10,6 +10,15 @@
 
     background-color: $second-bgd-color;
     color: $first-font-color;
+
+    outline: 2px solid blue;
+  }
+
+  &__header::after {
+      content: ".form-main__header";
+      font-size: 8px;
+      background-color: blue;
+      color: white;
   }
 
   &__title {
@@ -34,5 +43,23 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 55px;
+
+    outline: 4px dotted yellow;
   }
+
+  &__form::after {
+      content: ".form-main__form";
+      font-size: 8px;
+      background-color: yellow;
+      color: black;
+  }
+
+  outline: 2px dotted green;
+}
+
+.form-main::after {
+    content: ".form-main";
+    font-size: 8px;
+    background-color: green;
+    color: white;
 }

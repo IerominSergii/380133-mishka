@@ -30,5 +30,23 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 58px;
+
+    outline: 4px dotted yellow;
   }
+
+  &__process::after {
+    content: ".catalog-main__process";
+    font-size: 8px;
+    background-color: yellow;
+    color: black;
+  }
+
+  outline: 2px solid green;
+}
+
+.catalog-main::after {
+  content: ".catalog-main";
+  font-size: 8px;
+  background-color: green;
+  color: white;
 }
