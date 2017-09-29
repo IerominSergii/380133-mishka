@@ -2,16 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Каталог - Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/86x35" width ="86" height="35" alt="Интернет-магазин &laquo;Мишка&raquo;">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -33,9 +34,11 @@
         </div>
       </nav>
     </header>
-    <main class="catalog-main catalog">
-      <h1 class="catalog__title">Каталог товаров</h1>
-      <div class="catalog__showcase showcase">
+    <main class="catalog-main">
+      <header class="catalog-main__header">
+        <h1 class="catalog-main__title">Каталог товаров</h1>
+      </header>
+      <div class="catalog-main__showcase showcase">
         <h2 class="showcase__title visually-hidden">Товары</h2>
         <article class="showcase__item unit">
           <a class="unit__image-link" href="#">
@@ -74,7 +77,7 @@
           </div>
         </article>
       </div>
-      <section class="catalog__process process">
+      <section class="catalog-main__process process">
         <div class="process__title">
           <span class="process__title-icon">Camera-icon</span>
           <h2 class="process__title-text">Процесс производства</h2>
@@ -83,7 +86,7 @@
           <img class="process__video" src="http://placeholder.it/260x150" width="260" height="150" alt="Процесс производства">
         </a>
         <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="process__do-order button" type="button">Сделать заказ</button>
+        <button class="process__do-order btn" type="button">Сделать заказ</button>
       </section>
     </main>
     <footer class="page-footer">
@@ -110,20 +113,21 @@
     </footer>
     <section class="basket-popup">
       <h2 class="basket-popup__title">Добавить в корзину</h2>
-      <form class="basket-popup__form basket-form" action="https://echo.htmlacademy.ru" method="post">
-        <span class="basket-form__text">Выберите размер:</span>
-        <label class="basket-form__point basket-form__point--active">
-          <input class="basket-form__input" type="radio" name="size" value="s" checked>
+      <span class="basket-popup__text">Выберите размер:</span>
+      <form class="basket-popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="basket-popup__point basket-popup__point--active">
+          <input class="basket-popup__input" type="radio" name="size" value="s" checked>
           s
         </label>
-        <label class="basket-form__point">
-          <input class="basket-form__input" type="radio" name="size" value="m">
+        <label class="basket-popup__point">
+          <input class="basket-popup__input" type="radio" name="size" value="m">
           m
         </label>
-        <label class="basket-form__point">
-          <input class="basket-form__input" type="radio" name="size" value="l">
+        <label class="basket-popup__point">
+          <input class="basket-popup__input" type="radio" name="size" value="l">
           l
         </label>
+        <button class="basket-popup__add-button btn" type="button">Добавить</button>
       </form>
     </section>
   </body>

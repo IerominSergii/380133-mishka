@@ -1,0 +1,21 @@
+.page-footer {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+
+  background-color: $first-bgd-color;
+  color: $first-font-color;
+
+  &__feedback {
+    color: $first-font-color;
+  }
+
+  outline: 2px solid purple;
+}
+
+.page-footer::after {
+  content: ".page-footer";
+  font-size: 8px;
+  background-color: purple;
+  color: white;
+}

@@ -1,0 +1,18 @@
+.contacts {
+  &__title {
+    padding: 0 30px;
+
+    font-size: 18px;
+    vertical-align: 30px;
+    font-weight: bold;
+    color: $first-font-color;
+  }
+
+  &__list {
+    padding: 0 30px;
+
+    font-size: 15px;
+    vertical-align: 30px;
+    color: $second-font-color;
+  }
+}

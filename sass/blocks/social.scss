@@ -1,0 +1,28 @@
+.social {
+  background-color: $second-bgd-color;
+  color: $first-font-color;
+
+  &__item {
+    width: 22px;
+    height: 21px;
+  }
+
+  &__link {
+    font-size: 0;
+    background-color: $first-font-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__link--instagram {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &__link--facebook {
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &__link--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+}

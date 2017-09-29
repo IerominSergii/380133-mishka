@@ -1,0 +1,12 @@
+.basket-list {
+  background-color: $first-bgd-color;
+
+  font-size: 17px;
+  vertical-align: 24px;
+  font-weight: bold;
+  color: $first-font-color;
+
+  &__basket {
+    color: $first-font-color;
+  }
+}

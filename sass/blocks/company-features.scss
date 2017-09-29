@@ -1,0 +1,24 @@
+.company-features {
+  margin: 0;
+  padding: 35px 30px;
+
+  background-color: $first-bgd-color;
+  font-size: 17px;
+  vertical-align: 20px;
+  color: $first-font-color;
+  font-weight: bold;
+
+  &__title {
+    font-size: 25px;
+    vertical-align: 30px;
+  }
+
+  outline: 4px solid red;
+}
+
+.company-features::after {
+  content: ".company-features";
+  font-size: 8px;
+  background-color: red;
+  color: white;
+}

@@ -1,0 +1,40 @@
+body {
+  width: 320px;
+  font-family: $main-font-family;
+  font-weight: normal;
+
+  background-color: $first-bgd-color;
+  color: $first-font-color;
+}
+
+// декоративный заголовок
+.decor-title {
+  font-size: 17px;
+  vertical-align: 16px;
+  color: $first-decor-color;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+// кнопка button
+.btn {
+  font-size: 17px;
+  vertical-align: 20px;
+  font-weight: bold;
+  color: $second-font-color;
+  text-transform: uppercase;
+}
+
+// скрытый объект
+.visually-hidden {
+  display: none;
+}
+
+// ссылки a
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
