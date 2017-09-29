@@ -15,10 +15,10 @@
   }
 
   &__header::after {
-      content: ".form-main__header";
-      font-size: 8px;
-      background-color: blue;
-      color: white;
+    content: ".form-main__header";
+    font-size: 8px;
+    background-color: blue;
+    color: white;
   }
 
   &__title {
@@ -48,18 +48,18 @@
   }
 
   &__form::after {
-      content: ".form-main__form";
-      font-size: 8px;
-      background-color: yellow;
-      color: black;
+    content: ".form-main__form";
+    font-size: 8px;
+    background-color: yellow;
+    color: black;
   }
 
   outline: 2px dotted green;
 }
 
 .form-main::after {
-    content: ".form-main";
-    font-size: 8px;
-    background-color: green;
-    color: white;
+  content: ".form-main";
+  font-size: 8px;
+  background-color: green;
+  color: white;
 }
