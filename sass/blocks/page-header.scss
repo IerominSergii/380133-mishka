@@ -1,1 +1,7 @@
-.page-header {}
+.page-header {
+  margin: 0;
+  padding: 22px 30px;
+
+  background-color: $first-bgd-color;
+  color: $first-font-color;
+}

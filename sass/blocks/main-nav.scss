@@ -1,2 +1,11 @@
 .main-nav {
+  &__toggle {
+    width: 20px;
+    height: 14px;
+    background-color: $first-bgd-color;
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    font-size: 0;
+    border: none;
+  }
 }

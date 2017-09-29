@@ -1,4 +1,8 @@
 .goods-of-week {
+  margin: 0;
+  padding: 35px 30px;
+
+  background-color: $first-bgd-color;
   color: $second-font-color;
 
   &__title {

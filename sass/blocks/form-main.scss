@@ -1,5 +1,13 @@
 .form-main {
+  margin: 0;
+
+  background-color: $first-bgd-color;
+  color: $first-font-color;
+
   &__header {
+    margin: 0;
+    padding: 80px 30px;
+
     background-color: $second-bgd-color;
     color: $first-font-color;
   }
@@ -12,9 +20,19 @@
   }
 
   &__text {
+    margin: 0;
+    padding: 25px 30px;
     font-size: 13px;
     vertical-align: 24px;
     font-weight: normal;
     color: $second-font-color;
+  }
+
+  &__form {
+    margin: 0;
+    padding-top: 27px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 55px;
   }
 }

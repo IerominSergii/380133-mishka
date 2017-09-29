@@ -1,13 +1,34 @@
 .catalog-main {
+  margin: 0;
+
+  background-color: $first-bgd-color;
+  color: $first-font-color;
+
   &__header {
     background-color: $second-bgd-color;
     color: $first-font-color;
   }
 
   &__title {
+    margin: 0;
+    padding: 80px 30px;
+
     font-size: 27px;
     vertical-align: 30px;
     font-weight: bold;
     color: $first-font-color;
+  }
+
+  &__showcase {
+    margin: 0;
+    padding: 30px;
+  }
+
+  &__process {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 58px;
   }
 }

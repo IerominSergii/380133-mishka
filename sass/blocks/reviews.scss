@@ -1,4 +1,11 @@
 .reviews {
+  margin: 0;
+  padding: 30px;
+  padding-bottom: 44px;
+
+  background-color: $first-bgd-color;
+  color: $first-font-color;
+
   &__title {
     font-size: 25px;
     vertical-align: 30px;
