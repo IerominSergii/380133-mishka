@@ -13,12 +13,17 @@
 }
 
 .page-main__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 488px;
   margin: 0;
   padding: 0;
 
   background-color: $second-bgd-color;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: top;
   color: $first-font-color;
 
   outline: 2px solid green;
@@ -28,5 +33,17 @@
     font-size: 8px;
     background-color: green;
     color: white;
+  }
+
+  .page-main__main-title {
+    align-self: center;
+    margin: auto 30px;
+    max-width: 400px;
+
+    text-align: center;
+    font-size: 27px;
+    vertical-align: 30px;
+    font-weight: bold;
+    color: $first-font-color;
   }
 }
