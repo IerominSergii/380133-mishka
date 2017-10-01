@@ -10,5 +10,11 @@ $first-decor-color: #63d1bb;
 $second-decor-color: #56c3b2;
 $third-decor-color: #3bb09d;
 
+$tablet-width: 768px;
+$desktop-width: 1250px;
+
 // основные шрифты
 $main-font-family: "Open Sans", "Arial", sans-serif;
+
+// нижний отступ для site-list и user-block
+$site-list-indent: -27px;

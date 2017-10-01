@@ -1,7 +1,8 @@
 body {
-  width: 320px;
+  min-width: 320px;
   font-family: $main-font-family;
   font-weight: normal;
+  font-style: normal;
 
   background-color: $first-bgd-color;
   color: $first-font-color;
@@ -41,4 +42,10 @@ body {
 // ссылки a
 a {
   text-decoration: none;
+}
+
+// изображения
+img {
+  max-width: 100%;
+  height: auto;
 }

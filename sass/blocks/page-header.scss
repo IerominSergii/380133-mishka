@@ -1,16 +1,146 @@
 .page-header {
-  margin: 0;
-  padding: 22px 30px;
+  margin: 0 auto;
 
   background-color: $first-bgd-color;
   color: $first-font-color;
 
-  outline: 2px solid red;
+  outline: 3px solid red;
 
   &::after {
     content: ".page-header";
     font-size: 8px;
     background-color: red;
     color: white;
+  }
+}
+
+.page-header__wrapper {
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  min-width: 320px;
+  height: 78px;
+
+  outline: 4px dotted green;
+
+  &::after {
+    content: ".page-header__logo";
+    position: absolute;
+    font-size: 8px;
+    background-color: green;
+    color: white;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+  margin: auto;
+  padding-top: 22px;
+  width: 86px;
+  height: 35px;
+}
+
+.page-header__nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 20px;
+  height: 78px;
+
+  background-color: $first-bgd-color;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  border: none;
+
+  outline: 2px solid blue;
+
+  &::after {
+    content: ".page-header__nav-toggle";
+    font-size: 8px;
+    background-color: blue;
+    color: white;
+  }
+}
+
+.page-header__site-nav {
+  display: none;// @fix add "display: block" to show this block
+  min-width: 320px;
+}
+
+.page-header__user-nav {
+  display: none;// @fix add "display: block" to show this block
+  min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    background-color: green;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 50px;
+  }
+
+  .page-header__logo {
+    // flex-basis: 320px;
+    flex-grow: 2;
+    flex-shrink: 1;
+    order: -2;
+    background-color: blue;
+  }
+
+  .page-header__logo-image {
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .page-header__nav-toggle {
+    display: none;
+  }
+
+  .page-header__site-nav {
+    display: flex;
+    flex-basis: 600px;
+    min-width: 78px;
+  }
+
+  .page-header__user-nav {
+    display: flex;
+    order: -1;
+    min-width: 265px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    margin: 0 100px;
+  }
+
+  .page-header__logo {
+    display: flex;
+    order: -1;
+  }
+
+  .page-header__logo-image {
+    margin: auto;
+    padding: 0;
+  }
+
+  .page-header__site-nav {
+    flex-basis: 368px;
+    margin-right: auto;
+    order: -2;
+  }
+
+  .page-header__user-nav {
+    // flex-basis: 266px;
+    order: 0;
   }
 }
