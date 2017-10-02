@@ -19,6 +19,10 @@ body {
 
 // кнопка button
 .btn {
+  display: block;
+  margin: auto;
+  min-height: 48px;
+
   font-size: 17px;
   vertical-align: 20px;
   font-weight: bold;
