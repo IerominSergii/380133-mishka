@@ -8,18 +8,12 @@
   color: $first-font-color;
   font-weight: bold;
 
-  outline: 4px solid red;
-
-  &::after {
-    content: ".company-features";
-    font-size: 8px;
-    background-color: red;
-    color: white;
-  }
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 .company-features__title {
-  max-width: 260px;
+  width: 100%;
+
   font-size: 25px;
   vertical-align: 30px;
 }
@@ -28,4 +22,34 @@
   max-width: 260px;
   min-height: 120px;
   margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .company-features {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .company-features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .company-features__column {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .company-features {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
