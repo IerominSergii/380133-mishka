@@ -19,6 +19,13 @@
 }
 
 .company-features__title {
+  max-width: 260px;
   font-size: 25px;
   vertical-align: 30px;
+}
+
+.company-features__item {
+  max-width: 260px;
+  min-height: 120px;
+  margin: 0;
 }
