@@ -1,46 +1,36 @@
 .form-main {
+  width: 100%;
   margin: 0;
+  padding: 0 50px;
 
   background-color: $first-bgd-color;
   color: $first-font-color;
 
-  outline: 2px dotted green;
-
-  &::after {
-    content: ".form-main";
-    font-size: 8px;
-    background-color: green;
-    color: white;
-  }
+  background-color: rgba(30, 0, 100, 0.2);
 }
 
 .form-main__header {
-  margin: 0;
-  padding: 80px 30px;
+  min-height: 177px;
 
   background-color: $second-bgd-color;
   color: $first-font-color;
 
-  outline: 2px solid blue;
-
-  &::after {
-    content: ".form-main__header";
-    font-size: 8px;
-    background-color: blue;
-    color: white;
-  }
+  background-color: yellow;
 }
 
 .form-main__title {
+  margin: 0;
+  text-align: center;
   font-size: 27px;
   vertical-align: 30px;
   font-weight: bold;
   color: $first-font-color;
+  background-color: blue;
 }
 
 .form-main__text {
   margin: 0;
-  padding: 25px 30px;
+
   font-size: 13px;
   vertical-align: 24px;
   font-weight: normal;
@@ -48,18 +38,43 @@
 }
 
 .form-main__form {
-  margin: 0;
-  padding-top: 27px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 55px;
+  max-width: 260px;
+  margin: 0 auto;
 
-  outline: 4px dotted yellow;
+  background-color: rgba(200, 200, 200, 0.5);
+}
 
-  &::after {
-    content: ".form-main__form";
-    font-size: 8px;
-    background-color: yellow;
-    color: black;
+@media (min-width: $tablet-width) {
+  .form-main {
+    max-width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-main__header {
+    min-height: 225px;
+  }
+
+  .form-main__form {
+    max-width: 100%;
+    margin: 0;
+    padding-left: 167px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-main {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-main__header {
+    min-height: 255px;
+  }
+
+  .form-main__text {
+    padding-left: 175px;
+    padding-right: 175px;
   }
 }

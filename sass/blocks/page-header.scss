@@ -120,6 +120,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header__wrapper {
+    flex-wrap: nowrap;
     margin: 0 100px;
   }
 
@@ -134,13 +135,12 @@
   }
 
   .page-header__site-nav {
-    flex-basis: 368px;
+    flex-basis: 268px;
     margin-right: auto;
     order: -2;
   }
 
   .page-header__user-nav {
-    // flex-basis: 266px;
     order: 0;
   }
 }

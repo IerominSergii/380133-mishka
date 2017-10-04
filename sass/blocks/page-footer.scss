@@ -16,6 +16,14 @@
   display: none;
 }
 
+.page-footer__social {
+  box-sizing: border-box;
+}
+
+.page-footer__copyright {
+  box-sizing: border-box;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer__short-footer {
     display: flex;
@@ -35,7 +43,5 @@
 @media (min-width: $desktop-width) {
   .page-footer__short-footer {
     width: 1050px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
 }
