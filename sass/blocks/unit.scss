@@ -5,7 +5,16 @@
   color: $first-font-color;
 }
 
+.unit__image-link {
+  width: 100%;
+}
+
+.unit__image {
+  width: 100%;
+}
+
 .unit__characteristics {
+  margin: 0;
   font-size: 13px;
   vertical-align: 30px;
   color: $second-font-color;
@@ -20,4 +29,33 @@
 
 .unit__basket {
   font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .unit {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .unit__image-link {
+    width: 334px;
+  }
+
+  .unit__info {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .unit {
+    display: block;
+  }
+
+  .unit__image-link {
+    width: 334px;
+  }
+
+  .unit__info {
+    width: 334px;
+  }
 }

@@ -1,28 +1,23 @@
 .catalog-main {
   margin: 0;
+  padding: 0 30px;
 
   background-color: $first-bgd-color;
   color: $first-font-color;
 
-  outline: 2px solid green;
-
-  &::after {
-    content: ".catalog-main";
-    font-size: 8px;
-    background-color: green;
-    color: white;
-  }
+  background-color: green;
 }
 
 .catalog-main__header {
+  min-height: 177px;
   background-color: $second-bgd-color;
   color: $first-font-color;
 }
 
 .catalog-main__title {
   margin: 0;
-  padding: 80px 30px;
 
+  text-align: center;
   font-size: 27px;
   vertical-align: 30px;
   font-weight: bold;
@@ -30,8 +25,8 @@
 }
 
 .catalog-main__showcase {
+  width: 100%;
   margin: 0;
-  padding: 30px;
 }
 
 .catalog-main__process {
@@ -41,12 +36,31 @@
   padding-right: 30px;
   padding-bottom: 58px;
 
-  outline: 4px dotted yellow;
+  background-color: yellow;
+}
 
-  &__process::after {
-    content: ".catalog-main__process";
-    font-size: 8px;
-    background-color: yellow;
-    color: black;
+@media (min-width: $tablet-width) {
+  .catalog-main {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .catalog-main__header {
+    min-height: 225px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-main {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .catalog-main__header {
+    min-height: 255px;
   }
 }
