@@ -3,8 +3,6 @@
 
   background-color: $first-bgd-color;
   color: $first-font-color;
-
-  background-color: pink;
 }
 
 .page-header__wrapper {
@@ -100,7 +98,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1050px;
-    padding: 0
+    padding: 0;
   }
 
   .page-header__wrapper {
