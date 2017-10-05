@@ -147,5 +147,24 @@
         </div>
       </div>
     </footer>
+    <section class="basket-popup">
+      <h2 class="basket-popup__title">Добавить в корзину</h2>
+      <span class="basket-popup__text">Выберите размер:</span>
+      <form class="basket-popup__form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="basket-popup__point basket-popup__point--active">
+          <input class="basket-popup__input" type="radio" name="size" value="s" checked>
+          s
+        </label>
+        <label class="basket-popup__point">
+          <input class="basket-popup__input" type="radio" name="size" value="m">
+          m
+        </label>
+        <label class="basket-popup__point">
+          <input class="basket-popup__input" type="radio" name="size" value="l">
+          l
+        </label>
+        <button class="basket-popup__add btn" type="button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>

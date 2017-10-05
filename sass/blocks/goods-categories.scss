@@ -32,14 +32,11 @@
 .goods-categories__link {
   width: 100%;
   height: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .goods-categories__list {
     display: flex;
-    margin: 0 50px;
   }
 
   .goods-categories__item {

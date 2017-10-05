@@ -4,17 +4,11 @@
   background-color: $first-bgd-color;
   color: $first-font-color;
 
-  outline: 3px solid red;
-
-  &::after {
-    content: ".page-header";
-    font-size: 8px;
-    background-color: red;
-    color: white;
-  }
+  background-color: pink;
 }
 
 .page-header__wrapper {
+  width: 100%;
   position: relative;
 }
 
@@ -22,16 +16,6 @@
   display: block;
   min-width: 320px;
   height: 78px;
-
-  outline: 4px dotted green;
-
-  &::after {
-    content: ".page-header__logo";
-    position: absolute;
-    font-size: 8px;
-    background-color: green;
-    color: white;
-  }
 }
 
 .page-header__logo-image {
@@ -48,6 +32,8 @@
   right: 0;
   min-width: 20px;
   height: 78px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   background-color: $first-bgd-color;
   background-image: url("../img/icon-menu-open.svg");
@@ -55,15 +41,6 @@
   background-position: center;
   font-size: 0;
   border: none;
-
-  outline: 2px solid blue;
-
-  &::after {
-    content: ".page-header__nav-toggle";
-    font-size: 8px;
-    background-color: blue;
-    color: white;
-  }
 }
 
 .page-header__site-nav {
@@ -78,6 +55,9 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
     background-color: green;
   }
 
@@ -85,15 +65,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 50px;
   }
 
   .page-header__logo {
-    // flex-basis: 320px;
-    flex-grow: 2;
+    width: 320px;
+    flex-grow: 1;
     flex-shrink: 1;
     order: -2;
-    background-color: blue;
+    background-color: orange;
   }
 
   .page-header__logo-image {
@@ -107,7 +86,7 @@
 
   .page-header__site-nav {
     display: flex;
-    flex-basis: 600px;
+    flex-basis: 400px;
     min-width: 78px;
   }
 
@@ -119,12 +98,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    width: 1050px;
+    padding: 0
+  }
+
   .page-header__wrapper {
     flex-wrap: nowrap;
-    margin: 0 100px;
   }
 
   .page-header__logo {
+    width: 350px;
     display: flex;
     order: -1;
   }

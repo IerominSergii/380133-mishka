@@ -51,6 +51,7 @@
 
 @media (min-width: $tablet-width) {
   .user-block {
+    flex-shrink: 3;
     position: relative;
   }
 

@@ -1,23 +1,18 @@
 .basket-popup {
-  margin: 0;
-  padding-top: 35px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 46px;
+  width: 260px;
+  min-height: 336px;
+  margin: 0 auto;
+  padding: 0 30px;
 
   color: $second-font-color;
 
-  outline: 2px solid orange;
-
-  &::after {
-    content: ".basket-popup";
-    font-size: 8px;
-    background-color: orange;
-    color: black;
-  }
+  background-color: orange;
 }
 
 .basket-popup__title {
+  margin: 0;
+
+  text-align: center;
   font-size: 25px;
   vertical-align: 30px;
   font-weight: bold;
@@ -26,8 +21,18 @@
 }
 
 .basket-popup__text {
+  display: block;
+
+  text-align: center;
   font-size: 15px;
   vertical-align: 30px;
+}
+
+.basket-popup__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .basket-popup__point {
@@ -37,11 +42,28 @@
   text-transform: uppercase;
 }
 
-.basket-popup__add-button {
+.basket-popup__add {
+  width: 260px;
+  margin: 0;
+  padding: 0;
+
   background-color: $first-decor-color;
   font-size: 17px;
   vertical-align: 16px;
   font-weight: bold;
   color: $decor-font-color;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .basket-popup {
+    box-sizing: border-box;
+    width: 566px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .basket-popup__add {
+    width: 350px;
+  }
 }
