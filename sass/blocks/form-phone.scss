@@ -1,3 +1,55 @@
-.form-phone {
-  font-family: $main-font-family;
+.form-phone__wrapper {
+  display: block;
+  padding-bottom: 34px;
+}
+
+.form-phone__title {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 23px;
+}
+
+.form-phone__item {
+  width: 100%;
+  display: block;
+  padding-bottom: 20px;
+
+  border-bottom: 2px solid #000000;
+}
+
+.form-phone__input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form-phone__wrapper {
+    box-sizing: border-box;
+    display: flex;
+
+    background-color: purple;
+  }
+
+  .form-phone__title {
+    flex-shrink: 0;
+    width: 167px;
+
+    text-align: center;
+  }
+
+  .form-phone__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-phone__title {
+    width: 175px;
+  }
+
+  .form-phone__content {
+    padding-right: 175px;
+  }
 }

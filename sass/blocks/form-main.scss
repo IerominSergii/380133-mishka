@@ -1,13 +1,15 @@
 .form-main {
   width: 100%;
   margin: 0;
-  padding: 0 50px;
+  margin-bottom: 55px;
+  padding: 0;
 
   background-color: $first-bgd-color;
   color: $first-font-color;
 }
 
 .form-main__header {
+  display: flex;
   min-height: 177px;
 
   background-color: $second-bgd-color;
@@ -15,7 +17,8 @@
 }
 
 .form-main__title {
-  margin: 0;
+  margin: auto;
+
   text-align: center;
   font-size: 27px;
   vertical-align: 30px;
@@ -25,7 +28,10 @@
 }
 
 .form-main__text {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 20px;
 
   font-size: 13px;
   vertical-align: 24px;
@@ -45,16 +51,27 @@
     max-width: 668px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
   }
 
   .form-main__header {
     min-height: 225px;
   }
 
+  .form-main__title {
+    font-size: 43px;
+    vertical-align: 50px;
+  }
+
+  .form-main__text {
+    width: 668px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .form-main__form {
     max-width: 100%;
     margin: 0;
-    padding-left: 167px;
   }
 }
 
@@ -69,7 +86,16 @@
     min-height: 255px;
   }
 
+  .form-main__title {
+    font-size: 53px;
+    vertical-align: 57px;
+  }
+
   .form-main__text {
+    box-sizing: border-box;
+    width: 1050px;
+    padding-top: 127px;
+    padding-bottom: 80px;
     padding-left: 175px;
     padding-right: 175px;
   }

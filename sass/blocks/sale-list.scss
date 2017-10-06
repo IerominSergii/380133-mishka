@@ -1,0 +1,17 @@
+.sale-list {
+  margin: 0;
+  padding: 0;
+}
+
+.sale-list__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.sale-list__new-goods,
+.sale-list__sale {
+  font-size: 17px;
+  vertical-align: 24px;
+  font-weight: bold;
+  color: $first-font-color;
+}
