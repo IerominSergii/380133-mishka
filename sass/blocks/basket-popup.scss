@@ -1,16 +1,21 @@
 .basket-popup {
-  width: 260px;
-  min-height: 336px;
+  width: 258px;
+  min-height: 255px;
   margin: 0 auto;
   padding: 0 30px;
+  padding-top: 35px;
+  padding-bottom: 46px;
 
   color: $second-font-color;
-
-  background-color: orange;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  background-color: $first-bgd-color;
 }
 
 .basket-popup__title {
-  margin: 0;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 
   text-align: center;
   font-size: 25px;
@@ -22,6 +27,7 @@
 
 .basket-popup__text {
   display: block;
+  margin-bottom: 30px;
 
   text-align: center;
   font-size: 15px;
@@ -36,15 +42,31 @@
 }
 
 .basket-popup__point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  min-height: 48px;
+
   font-size: 17px;
   vertical-align: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  border: 2px solid #ececec;
+}
+
+.basket-popup__point--active {
+  border-color: $first-decor-color;
+}
+
+.basket-popup__input {
+  display: none;
 }
 
 .basket-popup__add {
   width: 260px;
   margin: 0;
+  margin-top: 31px;
   padding: 0;
 
   background-color: $first-decor-color;

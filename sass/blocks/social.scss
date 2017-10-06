@@ -1,17 +1,31 @@
 .social {
   background-color: $second-bgd-color;
+  font-size: 0;
   color: $first-font-color;
 }
 
 .social__list {
+  box-sizing: border-box;
+  min-height: 80px;
   margin: 0;
   padding: 0;
+  padding-top: 25px;
   list-style: none;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__item {
+  display: inline-block;
   width: 22px;
   height: 21px;
+  margin-right: 40px;
+
+  background-color: black;
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__link {

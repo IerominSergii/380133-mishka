@@ -21,13 +21,14 @@
 }
 
 .page-footer__copyright {
-  box-sizing: border-box;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__short-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 668px;
     margin-left: auto;
     margin-right: auto;
@@ -37,6 +38,15 @@
 
   .page-footer__logo {
     display: block;
+    width: 30%;
+  }
+
+  .page-footer__social {
+    width: 30%;
+  }
+
+  .page-footer__copyright {
+    width: 30%;
   }
 }
 
