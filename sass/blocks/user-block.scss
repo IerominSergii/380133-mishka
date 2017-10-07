@@ -1,6 +1,8 @@
 .user-block {
   margin: 0;
   padding: 0;
+
+  background-color: orange;
 }
 
 .user-block__search-link,
@@ -14,7 +16,40 @@
 @media (min-width: $tablet-width) {
   .user-block__search-item,
   .user-block__basket-item {
-    display: inline-block;
     line-height: 90px;
+  }
+
+  .user-block__search-item {
+    box-sizing: border-box;
+    display: flex;
+
+    border-left: 1px solid $fourth-decor-color;
+    border-right: 1px solid $fourth-decor-color;
+
+    background-color: red;
+  }
+
+  .user-block__search-link {
+    font-size: 0;
+    width: 84px;
+
+    background-color: yellow;
+  }
+
+  .user-block__basket-item {
+    display: flex;
+    justify-content: flex-end;
+    height: 89px;
+    background-color: red;
+  }
+
+  .user-block__basket-link {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-block {
+    display: flex;
   }
 }
