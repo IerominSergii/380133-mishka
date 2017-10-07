@@ -1,31 +1,49 @@
 .page-main {
   background-color: $first-bgd-color;
   color: $first-font-color;
-
-  &__header {
-    margin: 0;
-    padding: 0;
-
-    background-color: $second-bgd-color;
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    color: $first-font-color;
-    outline: 2px solid green;
-  }
-
-  &__header::after {
-    content: ".page-main__header";
-    font-size: 8px;
-    background-color: green;
-    color: white;
-  }
-
-  outline: 2px solid orange;
 }
 
-.page-main::after {
-  content: ".page-header";
-  font-size: 8px;
-  background-color: orange;
-  color: red;
+.page-main__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 488px;
+  margin: 0;
+  padding: 0;
+
+  background-color: $second-bgd-color;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  color: $first-font-color;
+}
+
+.page-main__main-title {
+  align-self: center;
+  margin: auto 30px;
+  max-width: 400px;
+
+  text-align: center;
+  font-size: 27px;
+  vertical-align: 30px;
+  font-weight: bold;
+  color: $first-font-color;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__header {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    width: 1050px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

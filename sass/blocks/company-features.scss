@@ -1,5 +1,6 @@
 .company-features {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 35px 30px;
 
   background-color: $first-bgd-color;
@@ -7,18 +8,118 @@
   vertical-align: 20px;
   color: $first-font-color;
   font-weight: bold;
-
-  &__title {
-    font-size: 25px;
-    vertical-align: 30px;
-  }
-
-  outline: 4px solid red;
 }
 
-.company-features::after {
-  content: ".company-features";
-  font-size: 8px;
-  background-color: red;
-  color: white;
+.company-features__title {
+  width: 100%;
+
+  font-size: 25px;
+  vertical-align: 30px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.company-features__item {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 260px;
+  min-height: 90px;
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  padding-top: 60px;
+
+  background-color: pink;
+}
+
+.company-features__item::after {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 33px;
+  height: 38px;
+
+  background-color: yellow;
+  z-index: 10;
+}
+
+@media (min-width: $tablet-width) {
+  .company-features {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .company-features__title {
+    font-size: 43px;
+    vertical-align: 50px;
+  }
+
+  .company-features__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: yellow;
+  }
+
+  .company-features__item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    flex-grow: 1;
+    padding-right: 30px;
+
+    font-size: 20px;
+    vertical-align: 22px;
+  }
+
+  .company-features__item--eco {
+    order: -6;
+  }
+
+  .company-features__item--price {
+    order: -4;
+  }
+
+  .company-features__item--likes {
+    order: -2;
+  }
+
+  .company-features__item--craft {
+    order: -5;
+  }
+
+  .company-features__item--local-manufacturer {
+    order: -3;
+  }
+
+  .company-features__item--gift-wrapper {
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .company-features {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .company-features__title {
+    width: 700px;
+
+    font-size: 53px;
+    vertical-align: 57px;
+  }
+
+  .company-features__list {
+    width: 700px;
+  }
 }

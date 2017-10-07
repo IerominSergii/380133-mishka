@@ -5,40 +5,85 @@
 
   background-color: $first-bgd-color;
   color: $first-font-color;
-
-  &__title {
-    font-size: 25px;
-    vertical-align: 30px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
-
-  &__text {
-    font-size: 15px;
-    vertical-align: 30px;
-    color: $second-font-color;
-  }
-
-  &__author-name {
-    font-size: 17px;
-    vertical-align: 24px;
-    font-weight: bold;
-    color: $first-font-color;
-  }
-
-  &__author-link {
-    font-size: 17px;
-    vertical-align: 30px;
-    font-weight: normal;
-    color: $second-font-color;
-  }
-
-  outline: 3px dotted green;
 }
 
-.reviews::after {
-  content: ".reviews";
-  font-size: 8px;
-  background-color: green;
-  color: white;
+.reviews__title {
+  margin: 0;
+  font-size: 25px;
+  vertical-align: 30px;
+  font-weight: bold;
+  color: $first-font-color;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__text {
+  margin: 0;
+  font-size: 15px;
+  vertical-align: 30px;
+  color: $second-font-color;
+}
+
+.reviews__author-name {
+  display: block;
+  font-size: 17px;
+  vertical-align: 24px;
+  font-weight: bold;
+  color: $first-font-color;
+}
+
+.reviews__author-link {
+  display: block;
+  font-size: 17px;
+  vertical-align: 30px;
+  font-weight: normal;
+  color: $second-font-color;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    display: flex;
+    justify-content: space-between;
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .reviews__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 501px;
+
+    background-color: grey;
+  }
+
+  .reviews__text {
+    margin-right: -167px;
+    z-index: 10;
+  }
+
+  .reviews__control {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    width: 167px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    width: 1050px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .reviews__content {
+    width: 700px;
+    padding-left: 175px;
+  }
 }

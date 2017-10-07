@@ -1,47 +1,91 @@
 .basket-popup {
-  margin: 0;
+  width: 258px;
+  min-height: 255px;
+  margin: 0 auto;
+  padding: 0 30px;
   padding-top: 35px;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-bottom: 46px;
 
   color: $second-font-color;
-
-  &__title {
-    font-size: 25px;
-    vertical-align: 30px;
-    font-weight: bold;
-    color: $first-font-color;
-    text-transform: uppercase;
-  }
-
-  &__text {
-    font-size: 15px;
-    vertical-align: 30px;
-  }
-
-  &__point {
-    font-size: 17px;
-    vertical-align: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  &__add-button {
-    background-color: $first-decor-color;
-    font-size: 17px;
-    vertical-align: 16px;
-    font-weight: bold;
-    color: $decor-font-color;
-    text-transform: uppercase;
-  }
-
-  outline: 2px solid orange;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  background-color: $first-bgd-color;
 }
 
-.basket-popup::after {
-  content: ".basket-popup";
-  font-size: 8px;
-  background-color: orange;
-  color: black;
+.basket-popup__title {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  text-align: center;
+  font-size: 25px;
+  vertical-align: 30px;
+  font-weight: bold;
+  color: $first-font-color;
+  text-transform: uppercase;
+}
+
+.basket-popup__text {
+  display: block;
+  margin-bottom: 30px;
+
+  text-align: center;
+  font-size: 15px;
+  vertical-align: 30px;
+}
+
+.basket-popup__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.basket-popup__point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 78px;
+  min-height: 48px;
+
+  font-size: 17px;
+  vertical-align: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #ececec;
+}
+
+.basket-popup__point--active {
+  border-color: $first-decor-color;
+}
+
+.basket-popup__input {
+  display: none;
+}
+
+.basket-popup__add {
+  width: 260px;
+  margin: 0;
+  margin-top: 31px;
+  padding: 0;
+
+  background-color: $first-decor-color;
+  font-size: 17px;
+  vertical-align: 16px;
+  font-weight: bold;
+  color: $decor-font-color;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .basket-popup {
+    box-sizing: border-box;
+    width: 566px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .basket-popup__add {
+    width: 350px;
+  }
 }

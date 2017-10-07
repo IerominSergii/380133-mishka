@@ -1,21 +1,15 @@
 .showcase {
-  &__item {
-    outline: 2px solid yellow;
-  }
+  width: 100%;
 
-  &__item::after {
-    content: ".showcase__item";
-    font-size: 8px;
-    background-color: yellow;
-    color: black;
-  }
-
-  outline: 4px dotted blue;
+  background-color: pink;
 }
 
-.showcase::after {
-  content: ".showcase";
-  font-size: 8px;
-  background-color: blue;
-  color: white;
+.showcase__item {
+  width: 100%;
+}
+
+@media (min-width: $desktop-width) {
+  .showcase {
+    display: flex;
+  }
 }

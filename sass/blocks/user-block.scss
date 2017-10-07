@@ -1,14 +1,10 @@
-.site-list {
-  min-width: 400px;
+.user-block {
   margin: 0;
   padding: 0;
 }
 
-.sale-list__item:last-child {
-  margin-right: 0;
-}
-
-.site-list__link {
+.user-block__search-link,
+.user-block__basket-link {
   font-size: 17px;
   vertical-align: 24px;
   font-weight: bold;
@@ -16,14 +12,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__item {
+  .user-block__search-item,
+  .user-block__basket-item {
     display: inline-block;
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list__item {
     line-height: 90px;
   }
 }

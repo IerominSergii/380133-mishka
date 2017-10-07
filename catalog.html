@@ -2,18 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Каталог - Мишка</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width ="86" height="35" alt="Интернет-магазин &laquo;Мишка&raquo;">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper visually-hidden">
-          <ul class="main-nav__list site-list">
+      <div class="page-header__wrapper">
+        <nav class="page-header__nav">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Интернет-магазин «Мишка»">
+          </a>
+          <div class="page-header__toggle">Меню</div>
+          <ul class="page-header__first-menu site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
@@ -21,18 +23,25 @@
               <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="main-nav__list search-list">
-            <li class="search-list__item">
-              <a class="search-list__search" href="#">Поиск по сайту</a>
+          <ul class="page-header__second-menu user-block">
+            <li class="user-block__search-item">
+              <a class="user-block__search-link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-block__basket-item">
+              <a class="user-block__basket-link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-          <ul class="main-nav__list basket-list">
-            <li class="basket-list__item">
-              <a class="basket-list__basket" href="#">Корзина: пока пуста</a>
+          <ul class="page-header__third-menu sale-list">
+            <li class="sale-list__item">
+              <a class="sale-list__new-goods" href="#">Новые поступления</a>
+            </li>
+            <li class="sale-list__item">
+              <a class="sale-list__sale" href="#">Распродажа</a>
             </li>
           </ul>
-        </div>
-      </nav>
+          <p class="page-header__text">Бесплатная доставка по России</p>
+        </nav>
+      </div>
     </header>
     <main class="catalog-main">
       <header class="catalog-main__header">
@@ -83,31 +92,42 @@
           <h2 class="process__title-text">Процесс производства</h2>
         </div>
         <a class="process__video-link">
-          <img class="process__video" src="http://placeholder.it/260x150" width="260" height="150" alt="Процесс производства">
+          <img class="process__video" src="http://placehold.it/260x150" alt="Процесс производства">
         </a>
-        <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="process__do-order btn" type="button">Сделать заказ</button>
+        <div class="process__info">
+          <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="process__do-order btn" type="button">Сделать заказ</button>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <h3 class="social__title visually-hidden">Социальные сети</h3>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="page-footer__short-footer">
+          <a class="page-footer__logo" href="index.html">
+            <img class="page-footer__logo-image" src="http://placehold.it/102x34" width ="102" height="34" alt="Интернет-магазин «Мишка»">
+          </a>
+          <div class="page-footer__social social">
+            <h3 class="social__title visually-hidden">Социальные сети</h3>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <div class="copyright__wrapper">
+              <b class="copyright__text">Разработано</b>
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <img class="copyright__image" src="http://placehold.it/27x34" alt="HTML Academy">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -127,7 +147,7 @@
           <input class="basket-popup__input" type="radio" name="size" value="l">
           l
         </label>
-        <button class="basket-popup__add-button btn" type="button">Добавить</button>
+        <button class="basket-popup__add btn" type="button">Добавить</button>
       </form>
     </section>
   </body>

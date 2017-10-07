@@ -1,15 +1,125 @@
 .page-header {
-  margin: 0;
-  padding: 22px 30px;
+  width: 100%;
+  height: 78px;
 
-  background-color: $first-bgd-color;
-  color: $first-font-color;
-  outline: 2px solid red;
+  background-color: rgba(90, 0, 90, 0.5);
 }
 
-.page-header::after {
-  content: ".page-header";
-  font-size: 8px;
-  background-color: red;
-  color: white;
+.page-header__wrapper {
+  position: relative;
+}
+
+.page-header__first-menu,
+.page-header__second-menu,
+.page-header__third-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-header__first-menu,
+.page-header__second-menu,
+.page-header__third-menu,
+.page-header__text {
+  display: none;
+}
+
+.page-header__show-menu {
+  display: block;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.page-header__logo {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__first-menu,
+  .page-header__second-menu,
+  .page-header__text {
+    display: block;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-header__logo {
+    width: 113px;
+    height: 88px;
+  }
+
+  .page-header__first-menu {
+    width: 49%;
+    order: 2;
+  }
+
+  .page-header__second-menu {
+    display: inline-block;
+    width: 52%;
+    text-align: right;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  .page-header__text {
+    order: 3;
+    margin: 0;
+    font-size: 15px;
+    vertical-align: 24px;
+    color: $second-font-color;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    width: 1100px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo {
+    order: 1;
+  }
+
+  .page-header__first-menu {
+    order: 0;
+    margin: 0;
+    font-size: 17px;
+    display: inline-block;
+    width: 40%;
+  }
+
+  .page-header__second-menu {
+    order: 3;
+    display: inline-block;
+    width: 40%;
+  }
+
+  .page-header__third-menu {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+    order: 3;
+  }
+
+  .page-header__text {
+    order: 3;
+  }
 }

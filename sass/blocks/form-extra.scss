@@ -1,8 +1,57 @@
-.form-extra {
-  &__textarea {
-    font-size: 17px;
-    vertical-align: 18px;
-    color: $second-font-color;
-    text-overflow: ellipsis;
+.form-extra__wrapper {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.form-extra__title {
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 23px;
+}
+
+.form-extra__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 124px;
+  display: block;
+  padding: 20px 18px;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+
+  border: 2px solid #000000;
+
+  background-color: green;
+}
+
+@media (min-width: $tablet-width) {
+  .form-extra__wrapper {
+    box-sizing: border-box;
+    display: flex;
+
+    background-color: purple;
+  }
+
+  .form-extra__title {
+    flex-shrink: 0;
+    width: 167px;
+
+    text-align: center;
+  }
+
+  .form-extra__content {
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-extra__title {
+    width: 175px;
+  }
+
+  .form-extra__content {
+    padding-right: 175px;
   }
 }
