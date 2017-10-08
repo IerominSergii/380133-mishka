@@ -15,12 +15,16 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: auto 350px;
   color: $first-font-color;
 }
 
 .page-main__main-title {
   align-self: center;
-  margin: auto 30px;
+  margin-top: 67px;
+  margin-bottom: auto;
+  margin-left: 25px;
+  margin-right: 25px;
   max-width: 400px;
 
   text-align: center;
@@ -37,13 +41,13 @@
     margin-right: auto;
     padding-left: 50px;
     padding-right: 50px;
+
+    background-size: auto 460px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__header {
     width: 1050px;
-    padding-left: 100px;
-    padding-right: 100px;
   }
 }

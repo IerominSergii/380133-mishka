@@ -1,13 +1,8 @@
 .page-header {
-  // box-sizing: border-box;
-  // width: 100%;
   height: 80px;
-  // margin: 0 auto;
 
   border-top: 1px solid $fourth-decor-color;
   border-bottom: 1px solid $fourth-decor-color;
-
-  background-color: rgba(90, 0, 90, 0.5);
 }
 
 .page-header__wrapper {
@@ -43,8 +38,6 @@
   padding-bottom: 28px;
 
   font-size: 0;
-
-  background-color: green;
 }
 
 .page-header__logo {
@@ -59,13 +52,9 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    // width: 668px;
     height: 89px;
-    // margin: 0 auto;
 
     border-top: none;
-
-    background-color: rgba(90, 0, 90, 0.5);
   }
 
   .page-header__wrapper {
@@ -131,6 +120,8 @@
   .page-header__wrapper {
     width: 1050px;
     margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .page-header__logo {
