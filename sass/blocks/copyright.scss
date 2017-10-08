@@ -14,6 +14,8 @@
 }
 
 .copyright__text {
+  margin-bottom: 6px;
+
   font-size: 19px;
   vertical-align: 18px;
   font-weight: bold;
@@ -28,11 +30,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
+
   .copyright__wrapper {
     margin: 0;
   }
 
-  .copyright {
-    justify-content: flex-end;
+  .copyright__text {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__wrapper {
+    margin-bottom: 10px;
   }
 }

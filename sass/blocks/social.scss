@@ -9,7 +9,7 @@
   min-height: 80px;
   margin: 0;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 30px;
   list-style: none;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
@@ -19,7 +19,7 @@
   display: inline-block;
   width: 22px;
   height: 21px;
-  margin-right: 40px;
+  margin-right: 38px;
 
   background-color: black;
 }
@@ -44,5 +44,17 @@
 
   &--twitter {
     background-image: url("../img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding-top: 25px;
   }
 }
