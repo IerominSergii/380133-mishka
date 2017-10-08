@@ -13,8 +13,6 @@
 .goods-of-week__title {
   padding: 0;
   margin: 0;
-  // margin-top: 26px;
-  // margin-bottom: 5px;
 
   font-size: 25px;
   vertical-align: 30px;
@@ -43,14 +41,8 @@
   line-height: 2.7;
 }
 
-.goods-of-week__photo-wrapper {
-  width: 100%;
-}
-
-.goods-of-week__picture {
-  width: 100%;
-}
-
+.goods-of-week__photo-wrapper,
+.goods-of-week__picture,
 .goods-of-week__image {
   width: 100%;
 }
@@ -119,8 +111,6 @@
   .goods-of-week__details {
     box-sizing: border-box;
     width: 292px;
-    // width: 50%;
-    // padding-right: 43px;
   }
 
   .goods-of-week__description {
