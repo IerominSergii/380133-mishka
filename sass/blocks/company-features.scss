@@ -3,6 +3,7 @@
   margin: 0 auto;
   margin-top: 34px;
   padding: 35px 30px;
+  padding-bottom: 32px;
 
   background-color: $first-bgd-color;
   font-size: 17px;
@@ -110,11 +111,12 @@
 
 @media (min-width: $desktop-width) {
   .company-features {
+    box-sizing: border-box;
     width: 1050px;
     margin-top: 115px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 225px;
+    padding-left: 175px;
     padding-right: 50px;
   }
 

@@ -1,15 +1,21 @@
 .reviews {
   margin: 0;
   padding: 30px;
+  padding-top: 0;
   padding-bottom: 44px;
 
   background-color: $first-bgd-color;
   color: $first-font-color;
 }
 
+.reviews__content {
+  margin-bottom: 35px;
+}
+
 .reviews__title {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
+  margin-left: -4px;
 
   font-size: 25px;
   vertical-align: 30px;
@@ -19,12 +25,11 @@
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 31px;
 }
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 63px;
+  margin-bottom: 29px;
 
   font-size: 15px;
   vertical-align: 30px;
@@ -39,6 +44,7 @@
   vertical-align: 24px;
   font-weight: bold;
   color: $first-font-color;
+  font-style: normal;
 }
 
 .reviews__author-link {
@@ -76,6 +82,7 @@
 .reviews__write {
   box-sizing: border-box;
   width: 100%;
+  height: 52px;
   margin: 0;
   padding: 0;
 
@@ -90,7 +97,7 @@
     width: 668px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 80px;
+    padding-top: 76px;
     padding-bottom: 55px;
     padding-left: 50px;
     padding-right: 50px;
@@ -100,19 +107,32 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 501px;
-
-    background-color: grey;
+    width: 493px;
+    margin-bottom: 0;
   }
 
   .reviews__title {
+    margin-bottom: 50px;
+
     font-size: 43px;
     vertical-align: 50px;
   }
 
   .reviews__text {
+    margin-bottom: 60px;
     margin-right: -167px;
+
+    font-size: 17px;
+    line-height: 1.8;
     z-index: 10;
+  }
+
+  .reviews__author-name {
+    font-size: 18px;
+  }
+
+  .reviews__toggles {
+    margin-bottom: 0;
   }
 
   .reviews__toggle {
@@ -132,7 +152,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     width: 1050px;
-    padding-top: 90px;
+    padding-top: 85px;
     padding-bottom: 104px;
     padding-left: 50px;
     padding-right: 50px;
@@ -144,11 +164,19 @@
   }
 
   .reviews__title {
+    margin-top: -10px;
+    margin-left: -4px;
+
     font-size: 53px;
     vertical-align: 57px;
   }
 
   .reviews__text {
     margin-bottom: 45px;
+    line-height: 1.7;
+  }
+
+  .reviews__author-name {
+    font-size: 17px;
   }
 }
