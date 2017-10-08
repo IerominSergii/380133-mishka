@@ -37,12 +37,21 @@
 @media (min-width: $tablet-width) {
   .page-main__header {
     width: 668px;
+    min-height: 745px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 50px;
     padding-right: 50px;
 
-    background-size: auto 460px;
+    background-size: auto 760px;
+  }
+
+  .page-main__main-title {
+    max-width: none;
+    margin-top: 152px;
+
+    font-size: 43px;
+    vertical-align: 50px;
   }
 }
 

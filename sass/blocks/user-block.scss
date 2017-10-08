@@ -39,6 +39,17 @@
 
 @media (min-width: $desktop-width) {
   .user-block {
+    flex-grow: 0;
     display: flex;
+    justify-content: space-between;
+    width: 350px;
+  }
+
+  .user-block__search-item {
+    flex-grow: 0;
+  }
+
+  .user-block__basket-item {
+    flex-grow: 1;
   }
 }

@@ -53,7 +53,6 @@
 @media (min-width: $tablet-width) {
   .page-header {
     height: 89px;
-
     border-top: none;
   }
 
@@ -126,13 +125,20 @@
 
   .page-header__logo {
     order: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 89px;
+    margin: 0;
+    padding: 0;
   }
 
   .page-header__first-menu {
     order: 0;
     margin: 0;
-    display: inline-block;
-    width: 40%;
+    width: auto;
   }
 
   .page-header__second-menu {

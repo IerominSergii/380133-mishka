@@ -8,8 +8,7 @@
   margin-right: 30px;
 }
 
-.sale-list__new-goods,
-.sale-list__sale {
+.sale-list__link {
   font-size: 17px;
   vertical-align: 24px;
   font-weight: bold;
@@ -23,10 +22,13 @@
 
   .sale-list__item {
     display: flex;
+    margin-right: 60px;
   }
 
   .sale-list__link {
     height: 36px;
     padding-top: 21px;
+
+    font-size: 15px;
   }
 }

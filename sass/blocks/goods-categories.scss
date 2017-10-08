@@ -1,7 +1,3 @@
-.goods-categories {
-  font-family: $main-font-family;
-}
-
 .goods-categories__list {
   display: block;
   font-size: 19px;
@@ -16,9 +12,9 @@
 
 .goods-categories__item {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  min-height: 103px;
+
 
   &--interior {
     background-color: $first-decor-color;
@@ -30,10 +26,11 @@
 }
 
 .goods-categories__link {
+  box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  min-height: 103px;
   padding-left: 30px;
-  padding-bottom: 9px;
+  padding-top: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,5 +40,21 @@
 
   .goods-categories__item {
     flex-grow: 1;
+    width: 50%;
+  }
+
+  .goods-categories__link {
+    min-height: 119px;
+    padding-top: 28px;
+    padding-left: 35px;
+
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__main-title {
+    font-size: 53px;
+    vertical-align: 57px;
   }
 }

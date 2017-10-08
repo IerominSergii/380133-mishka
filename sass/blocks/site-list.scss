@@ -34,13 +34,26 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    // align-items: center;
+  }
+
+  .site-list__item {
+    margin-right: 0;
+    padding-right: 34px;
+    border-right: 1px solid $fourth-decor-color;
+  }
+
+  .site-list li:last-child {
+    padding-right: 0;
+    margin-left: 35px;
+    border-right: none;
   }
 
   .site-list__link {
-    height: auto;
-    padding-top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 34px;
+
     font-size: 17px;
   }
 }
