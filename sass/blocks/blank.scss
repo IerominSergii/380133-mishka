@@ -22,6 +22,7 @@
 
   vertical-align: 16px;
   border: 2px solid #000000;
+  background-color: $first-bgd-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,12 +51,14 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .blank__bottom {
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }

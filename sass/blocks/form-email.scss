@@ -24,6 +24,9 @@
 
 @media (min-width: $tablet-width) {
   .form-email {
+    padding-left: 50px;
+    padding-right: 50px;
+
     background-color: $second-bgd-color;
   }
 
@@ -48,6 +51,7 @@
 @media (min-width: $desktop-width) {
   .form-email__title {
     width: 175px;
+    padding-top: 2px;
     padding-left: 4px;
 
     text-align: center;

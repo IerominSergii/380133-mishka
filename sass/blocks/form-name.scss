@@ -62,13 +62,17 @@
 
 @media (min-width: $tablet-width) {
   .form-name {
+    padding-top: 64px;
+    padding-left: 50px;
+    padding-right: 50px;
+
     font-size: 19px;
   }
 
   .form-name__wrapper {
     box-sizing: border-box;
     display: flex;
-    padding-bottom: 78px;
+    padding-bottom: 15px;
   }
 
   .form-name__title {

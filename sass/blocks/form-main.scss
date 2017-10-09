@@ -47,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .form-main {
-    max-width: 668px;
+    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -55,6 +55,8 @@
 
   .form-main__header {
     min-height: 225px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .form-main__title {
@@ -67,7 +69,7 @@
   .form-main__text {
     width: 668px;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 0;
 
     font-size: 17px;
     vertical-align: 30px;
@@ -81,7 +83,7 @@
 
 @media (min-width: $desktop-width) {
   .form-main {
-    max-width: 1050px;
+    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -97,10 +99,9 @@
 
   .form-main__text {
     box-sizing: border-box;
-    width: 1050px;
+    width: 100%;
     padding-top: 119px;
-    padding-bottom: 69px;
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }

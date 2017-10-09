@@ -24,6 +24,10 @@
 
 @media (min-width: $tablet-width) {
   .form-phone {
+    padding-top: 64px;
+    padding-left: 50px;
+    padding-right: 50px;
+
     background-color: $second-bgd-color;
   }
 
@@ -46,6 +50,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-phone {
+    padding-top: 63px;
+  }
+
   .form-phone__title {
     width: 175px;
     padding-right: 18px;

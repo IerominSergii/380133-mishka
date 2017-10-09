@@ -28,9 +28,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-type {
+    padding-top: 70px;
+    padding-bottom: 67px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .form-type__wrapper {
     display: flex;
-    margin-bottom: 58px;
+    padding-bottom: 0;
   }
 
   .form-type__title {
@@ -45,9 +52,17 @@
     margin-bottom: 54px;
     padding-left: 80px;
   }
+
+  .form-type__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .form-type {
+    padding-bottom: 65px;
+  }
+
   .form-type__title {
     width: 175px;
     padding-right: 10px;

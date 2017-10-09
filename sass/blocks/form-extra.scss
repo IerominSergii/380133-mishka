@@ -25,6 +25,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-extra {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   .form-extra__wrapper {
     box-sizing: border-box;
     display: flex;
