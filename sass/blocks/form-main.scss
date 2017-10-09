@@ -10,7 +10,7 @@
 
 .form-main__header {
   display: flex;
-  min-height: 177px;
+  min-height: 176px;
 
   background-color: $second-bgd-color;
   color: $first-font-color;
@@ -18,32 +18,31 @@
 
 .form-main__title {
   margin: auto;
+  margin-top: 69px;
 
   text-align: center;
   font-size: 27px;
   vertical-align: 30px;
   font-weight: bold;
   color: $first-font-color;
-  background-color: blue;
 }
 
 .form-main__text {
   width: 260px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding-top: 22px;
   padding-bottom: 20px;
 
   font-size: 13px;
   vertical-align: 24px;
   font-weight: normal;
+  line-height: 1.9;
   color: $second-font-color;
 }
 
 .form-main__form {
   max-width: 260px;
   margin: 0 auto;
-
-  background-color: rgba(200, 200, 200, 0.5);
 }
 
 @media (min-width: $tablet-width) {
@@ -59,14 +58,19 @@
   }
 
   .form-main__title {
+    margin-top: 93px;
+
     font-size: 43px;
     vertical-align: 50px;
   }
 
   .form-main__text {
     width: 668px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    font-size: 17px;
+    vertical-align: 30px;
   }
 
   .form-main__form {
@@ -94,8 +98,8 @@
   .form-main__text {
     box-sizing: border-box;
     width: 1050px;
-    padding-top: 127px;
-    padding-bottom: 80px;
+    padding-top: 119px;
+    padding-bottom: 69px;
     padding-left: 175px;
     padding-right: 175px;
   }

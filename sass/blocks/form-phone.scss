@@ -1,18 +1,18 @@
 .form-phone__wrapper {
   display: block;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
 }
 
 .form-phone__title {
   width: 100%;
   padding-top: 0;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
 }
 
 .form-phone__item {
   width: 100%;
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 
   border-bottom: 2px solid #000000;
 }
@@ -23,18 +23,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-phone {
+    background-color: $second-bgd-color;
+  }
+
   .form-phone__wrapper {
     box-sizing: border-box;
     display: flex;
-
-    background-color: purple;
+    padding-bottom: 37px;
   }
 
   .form-phone__title {
     flex-shrink: 0;
     width: 167px;
-
-    text-align: center;
   }
 
   .form-phone__content {
@@ -47,6 +48,9 @@
 @media (min-width: $desktop-width) {
   .form-phone__title {
     width: 175px;
+    padding-right: 18px;
+
+    text-align: center;
   }
 
   .form-phone__content {

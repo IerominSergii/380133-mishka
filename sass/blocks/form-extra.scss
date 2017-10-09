@@ -1,6 +1,6 @@
 .form-extra__wrapper {
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 
 .form-extra__title {
@@ -12,43 +12,52 @@
 .form-extra__textarea {
   box-sizing: border-box;
   width: 100%;
-  min-height: 124px;
+  min-height: 143px;
   display: block;
-  padding: 20px 18px;
+  padding: 15px;
 
   font-size: 17px;
   vertical-align: 18px;
   color: $second-font-color;
   text-overflow: ellipsis;
 
-  border: 2px solid #000000;
-
-  background-color: green;
+  border: 2px solid $first-font-color;
 }
 
 @media (min-width: $tablet-width) {
   .form-extra__wrapper {
     box-sizing: border-box;
     display: flex;
-
-    background-color: purple;
+    padding-top: 49px;
+    padding-bottom: 52px;
   }
 
   .form-extra__title {
     flex-shrink: 0;
     width: 167px;
-
-    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0;
   }
 
   .form-extra__content {
     flex-grow: 1;
   }
+
+  .form-extra__textarea {
+    padding-top: 13px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .form-extra__wrapper {
+    padding-bottom: 47px;
+  }
+
   .form-extra__title {
     width: 175px;
+    padding-right: 11px;
+
+    text-align: center;
   }
 
   .form-extra__content {

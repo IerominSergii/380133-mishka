@@ -1,18 +1,18 @@
 .form-email__wrapper {
   display: block;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
 }
 
 .form-email__title {
   width: 100%;
   padding-top: 0;
-  padding-bottom: 23px;
+  padding-bottom: 20px;
 }
 
 .form-email__item {
   width: 100%;
   display: block;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 
   border-bottom: 2px solid #000000;
 }
@@ -23,18 +23,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-email {
+    background-color: $second-bgd-color;
+  }
+
   .form-email__wrapper {
     box-sizing: border-box;
     display: flex;
-
-    background-color: purple;
+    padding-bottom: 49px;
   }
 
   .form-email__title {
     flex-shrink: 0;
     width: 167px;
-
-    text-align: center;
   }
 
   .form-email__content {
@@ -47,6 +48,9 @@
 @media (min-width: $desktop-width) {
   .form-email__title {
     width: 175px;
+    padding-left: 4px;
+
+    text-align: center;
   }
 
   .form-email__content {

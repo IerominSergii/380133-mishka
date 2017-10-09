@@ -1,4 +1,5 @@
 .page-header {
+  box-sizing: border-box;
   height: 80px;
 
   border-top: 1px solid $fourth-decor-color;
@@ -133,6 +134,10 @@
     height: 89px;
     margin: 0;
     padding: 0;
+  }
+
+  .page-header__logo-image {
+    margin-right: 20px;
   }
 
   .page-header__first-menu {

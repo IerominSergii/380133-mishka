@@ -9,8 +9,7 @@
 
 .form-type__wrapper {
   display: block;
-  padding-top: 47px;
-  padding-bottom: 34px;
+  padding-bottom: 20px;
 }
 
 .form-type__title {
@@ -20,7 +19,7 @@
 
 .form-type__item {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
   padding-left: 63px;
 }
 
@@ -31,22 +30,28 @@
 @media (min-width: $tablet-width) {
   .form-type__wrapper {
     display: flex;
+    margin-bottom: 58px;
   }
 
   .form-type__title {
     width: 167px;
   }
 
-  .form-type__item {
-    padding-left: 80px;
+  .form-type__content {
+    font-size: 19px;
+  }
 
-    background-color: pink;
+  .form-type__item {
+    margin-bottom: 54px;
+    padding-left: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-type__title {
     width: 175px;
+    padding-right: 10px;
+
     text-align: center;
   }
 }
