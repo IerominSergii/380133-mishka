@@ -1,19 +1,23 @@
 .catalog-main {
   margin: 0;
-  padding: 0 30px;
+  padding: 0;
+  padding-bottom: 58px;
 
   background-color: $first-bgd-color;
   color: $first-font-color;
 }
 
 .catalog-main__header {
-  min-height: 177px;
+  display: flex;
+  min-height: 176px;
+  padding: 0 30px;
   background-color: $second-bgd-color;
   color: $first-font-color;
 }
 
 .catalog-main__title {
-  margin: 0;
+  margin: auto;
+  padding-bottom: 10px;
 
   text-align: center;
   font-size: 27px;
@@ -23,27 +27,40 @@
 }
 
 .catalog-main__showcase {
-  width: 100%;
   margin: 0;
+  padding: 30px;
+  padding-bottom: 0;
 }
 
 .catalog-main__process {
   margin: 0;
-
-  background-color: yellow;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-main {
+    margin: 0 auto;
+    padding-bottom: 63px;
+  }
+
+  .catalog-main__header {
     width: 668px;
-    margin-left: auto;
-    margin-right: auto;
+    min-height: 225px;
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  .catalog-main__header {
-    min-height: 225px;
+  .catalog-main__title {
+    padding-top: 13px;
+    padding-bottom: 0;
+
+    font-size: 43px;
+    vertical-align: 50px;
+  }
+
+  .catalog-main__showcase {
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
