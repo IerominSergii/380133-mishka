@@ -34,6 +34,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .goods-categories {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .goods-categories__list {
     display: flex;
   }
@@ -53,8 +59,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__main-title {
-    font-size: 53px;
-    vertical-align: 57px;
+  .goods-categories {
+    width: 1050px;
   }
 }

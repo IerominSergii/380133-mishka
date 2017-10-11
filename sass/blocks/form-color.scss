@@ -1,13 +1,10 @@
 .form-color {
+  padding-bottom: 40px;
+
   font-size: 17px;
   vertical-align: 18px;
   font-weight: bold;
   color: $first-font-color;
-}
-
-.form-color__wrapper {
-  display: block;
-  padding-bottom: 40px;
 }
 
 .form-color__title {
@@ -42,7 +39,6 @@
     padding-left: 50px;
     padding-right: 50px;
 
-
     background-color: $second-bgd-color;
   }
 
@@ -51,13 +47,6 @@
     display: flex;
     min-height: 228px;
     padding-bottom: 0;
-
-    font-size: 19px;
-  }
-
-  .form-color__title {
-    flex-shrink: 0;
-    width: 167px;
   }
 
   .form-color__content {
@@ -94,8 +83,11 @@
     padding-bottom: 0;
   }
 
+  .form-color__layout {
+    padding-top: 33px;
+  }
+
   .form-color__title {
-    width: 175px;
     padding-top: 33px;
     padding-right: 10px;
 
@@ -107,6 +99,7 @@
     align-items: flex-end;
     align-content: space-between;
     padding-right: 88px;
+    padding-left: 80px;
   }
 
   .form-color__item {

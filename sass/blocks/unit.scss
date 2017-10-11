@@ -95,4 +95,15 @@
   .unit {
     display: block;
   }
+
+  .unit__image-link {
+    width: 316px;
+    height: 462px;
+  }
+
+  .unit__info {
+    box-sizing: border-box;
+    width: 316px;
+    padding-left: 25px;
+  }
 }

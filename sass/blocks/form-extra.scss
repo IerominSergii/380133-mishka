@@ -1,6 +1,9 @@
-.form-extra__wrapper {
-  display: block;
-  padding-bottom: 16px;
+.form-extra {
+  padding-bottom: 15px;
+}
+
+.form-extra__layout {
+  padding-bottom: 22px;
 }
 
 .form-extra__title {
@@ -26,6 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .form-extra {
+    padding-bottom: 0;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -35,6 +39,10 @@
     display: flex;
     padding-top: 49px;
     padding-bottom: 52px;
+  }
+
+  .form-extra__layout {
+    padding-top: 17px;
   }
 
   .form-extra__title {
@@ -50,12 +58,14 @@
 
   .form-extra__textarea {
     padding-top: 13px;
+
+    font-size: 19px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-extra__wrapper {
-    padding-bottom: 47px;
+    padding-bottom: 49px;
   }
 
   .form-extra__title {

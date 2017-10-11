@@ -1,10 +1,8 @@
-.form-email__wrapper {
-  display: block;
-  padding-bottom: 30px;
+.form-email__layout {
+  padding-bottom: 20px;
 }
 
 .form-email__title {
-  width: 100%;
   padding-top: 0;
   padding-bottom: 20px;
 }
@@ -13,13 +11,15 @@
   width: 100%;
   display: block;
   padding-bottom: 12px;
-
-  border-bottom: 2px solid #000000;
 }
 
 .form-email__input {
   box-sizing: border-box;
   width: 100%;
+  padding-bottom: 15px;
+
+  border: none;
+  border-bottom: 2px solid #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -33,12 +33,7 @@
   .form-email__wrapper {
     box-sizing: border-box;
     display: flex;
-    padding-bottom: 49px;
-  }
-
-  .form-email__title {
-    flex-shrink: 0;
-    width: 167px;
+    padding-bottom: 18px;
   }
 
   .form-email__content {
@@ -49,15 +44,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-email__title {
-    width: 175px;
-    padding-top: 2px;
-    padding-left: 4px;
-
-    text-align: center;
-  }
-
   .form-email__content {
     padding-right: 175px;
+  }
+
+  .form-email__layout {
+    padding-left: 15px;
   }
 }

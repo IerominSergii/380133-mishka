@@ -29,18 +29,18 @@
     margin-top: 0;
   }
 
+  .page-footer__wrapper {
+    background-color: $second-bgd-color;
+  }
+
   .page-footer__short-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 668px;
     min-height: 143px;
+    width: 668px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-
-    background-color: $second-bgd-color;
   }
 
   .page-footer__logo {

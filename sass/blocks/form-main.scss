@@ -9,11 +9,13 @@
 }
 
 .form-main__header {
-  display: flex;
-  min-height: 176px;
-
   background-color: $second-bgd-color;
   color: $first-font-color;
+}
+
+.form-main__header-wrapper {
+    display: flex;
+    min-height: 176px;
 }
 
 .form-main__title {
@@ -40,23 +42,16 @@
   color: $second-font-color;
 }
 
-.form-main__form {
-  max-width: 260px;
-  margin: 0 auto;
-}
-
 @media (min-width: $tablet-width) {
   .form-main {
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 50px;
   }
 
-  .form-main__header {
+  .form-main__header-wrapper {
+    width: 768px;
     min-height: 225px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form-main__title {
@@ -74,20 +69,9 @@
     font-size: 17px;
     vertical-align: 30px;
   }
-
-  .form-main__form {
-    max-width: 100%;
-    margin: 0;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .form-main {
-    max-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .form-main__header {
     min-height: 255px;
   }
