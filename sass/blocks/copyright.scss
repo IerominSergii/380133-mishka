@@ -1,8 +1,6 @@
 .copyright {
   display: flex;
   justify-content: center;
-  background-color: $second-bgd-color;
-  color: $first-font-color;
 }
 
 .copyright__wrapper {
@@ -26,7 +24,11 @@
   font-size: 0;
   width: 27px;
   height: 34px;
-  background-color: $first-decor-color;
+}
+
+.copyright__image {
+  width: 27px;
+  height: 34px;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,11 +42,5 @@
 
   .copyright__text {
     margin-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .copyright__wrapper {
-    margin-bottom: 7px;
   }
 }

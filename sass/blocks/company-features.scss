@@ -32,19 +32,68 @@
   margin-bottom: 25px;
   padding: 0;
   padding-top: 60px;
-
-  background-color: pink;
 }
 
 .company-features__item::after {
+  content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company-features__item--eco::after {
+  top: 7px;
+  left: 7px;
   width: 33px;
   height: 38px;
 
-  background-color: yellow;
-  z-index: 10;
+  background-image: url("../img/icon-feature-flower.svg");
+}
+
+.company-features__item--price::after {
+  top: 8px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.company-features__item--likes::after {
+  top: 14px;
+  left: 7px;
+  width: 34px;
+  height: 27px;
+
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.company-features__item--craft::after {
+  top: 10px;
+  left: 3px;
+  width: 35px;
+  height: 34px;
+
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.company-features__item--local-manufacturer::after {
+  top: 11px;
+  left: -6px;
+  width: 55px;
+  height: 23px;
+
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.company-features__item--gift-wrapper::after {
+  top: 9px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {

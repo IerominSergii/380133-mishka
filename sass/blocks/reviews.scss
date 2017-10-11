@@ -1,5 +1,6 @@
 .reviews {
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 30px;
   padding-top: 0;
   padding-bottom: 44px;
@@ -75,8 +76,18 @@
   border: 1px solid #ececec;
 }
 
+.reviews__prev {
+  background-image: url("../img/icon-left-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .reviews__next {
   border-left: none;
+
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .reviews__write {
@@ -137,8 +148,6 @@
 
   .reviews__toggle {
     border: none;
-
-    background-color: pink;
   }
 
   .reviews__control {

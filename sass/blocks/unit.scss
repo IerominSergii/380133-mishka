@@ -17,7 +17,6 @@
 
 .unit__about {
   padding-bottom: 27px;
-  border-bottom: 1px solid $fifth-decor-color;
 }
 
 .unit__title {
@@ -50,6 +49,7 @@
   vertical-align: 24px;
   font-weight: bold;
   color: $first-font-color;
+  border-top: 1px solid $fifth-decor-color;
 }
 
 .unit__basket {
@@ -94,6 +94,7 @@
 @media (min-width: $desktop-width) {
   .unit {
     display: block;
+    margin-bottom: 56px;
   }
 
   .unit__image-link {
@@ -103,7 +104,20 @@
 
   .unit__info {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     width: 316px;
+    height: auto;
+    min-height: 198px;
     padding-left: 25px;
+  }
+
+  .unit__about {
+    padding-bottom: 22px;
+  }
+
+  .unit__price {
+    margin-top: auto;
+    padding-top: 23px;
   }
 }

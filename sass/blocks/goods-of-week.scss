@@ -1,4 +1,6 @@
 .goods-of-week {
+  width: 260px;
+  margin: 0 auto;
   padding: 0 30px;
 
   background-color: $first-bgd-color;
@@ -23,6 +25,12 @@
 .goods-of-week__category {
   width: 150px;
   margin-top: 6px;
+
+  font-size: 17px;
+  vertical-align: 17px;
+  color: $first-decor-color;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .goods-of-week__description {

@@ -12,7 +12,11 @@
       <div class="page-header__wrapper">
         <nav class="page-header__nav">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Интернет-магазин «Мишка»">
+            <picture>
+              <source srcset="http://placehold.it/149x72" media="(min-width: 1150px)">
+              <source srcset="http://placehold.it/113x46" media="(min-width: 768px)">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
+            </picture>
           </a>
           <div class="page-header__toggle">Меню</div>
           <ul class="page-header__first-menu site-list">
@@ -51,10 +55,10 @@
             <h2 class="visually-hidden goods-categories__title">Категории товаров</h2>
             <ul class="goods-categories__list">
               <li class="goods-categories__item goods-categories__item--interior">
-                <a class="goods-categories__link">Предметы<br>интерьера</a>
+                <a class="goods-categories__link goods-categories__link--interior">Предметы<br>интерьера</a>
               </li>
               <li class="goods-categories__item goods-categories__item--toys">
-                <a class="goods-categories__link">Детские<br>игрушки</a>
+                <a class="goods-categories__link goods-categories__link--toys">Детские<br>игрушки</a>
               </li>
             </ul>
           </section>
@@ -63,7 +67,7 @@
       <section class="goods-of-week">
         <div class="goods-of-week__title-wrapper">
           <h2 class="goods-of-week__title">Вязаные корзинки</h2>
-          <div class="goods-of-week__category decor-title">Товар недели</div>
+          <div class="goods-of-week__category">Товар недели</div>
         </div>
         <div class="goods-of-week__wrapper">
           <div class="goods-of-week__details">
@@ -87,7 +91,6 @@
             <picture class="goods-of-week__picture">
               <source srcset="http://placehold.it/525x636" media="(min-width: 1150px)">
               <source srcset="http://placehold.it/333x404" media="(min-width: 768px)">
-
               <img class="goods-of-week__image" src="http://placehold.it/260x315" alt="Вязаные корзинки">
             </picture>
           </div>
@@ -171,7 +174,7 @@
               <div class="copyright__wrapper">
                 <b class="copyright__text">Разработано</b>
                 <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                  <img class="copyright__image" src="http://placehold.it/27x34" alt="HTML Academy">
+                  <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
                 </a>
               </div>
             </div>
