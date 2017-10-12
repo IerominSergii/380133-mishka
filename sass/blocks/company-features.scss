@@ -1,7 +1,9 @@
 .company-features {
   width: 260px;
   margin: 0 auto;
+  margin-top: 34px;
   padding: 35px 30px;
+  padding-bottom: 32px;
 
   background-color: $first-bgd-color;
   font-size: 17px;
@@ -17,7 +19,7 @@
   vertical-align: 30px;
   padding: 0;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 28px;
 }
 
 .company-features__item {
@@ -27,27 +29,77 @@
   width: 260px;
   min-height: 90px;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
   padding: 0;
   padding-top: 60px;
-
-  background-color: pink;
 }
 
 .company-features__item::after {
+  content: "";
   position: absolute;
-  top: 10px;
-  left: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.company-features__item--eco::after {
+  top: 7px;
+  left: 7px;
   width: 33px;
   height: 38px;
 
-  background-color: yellow;
-  z-index: 10;
+  background-image: url("../img/icon-feature-flower.svg");
+}
+
+.company-features__item--price::after {
+  top: 8px;
+  left: 0;
+  width: 47px;
+  height: 27px;
+
+  background-image: url("../img/icon-feature-money.svg");
+}
+
+.company-features__item--likes::after {
+  top: 14px;
+  left: 7px;
+  width: 34px;
+  height: 27px;
+
+  background-image: url("../img/icon-feature-heart.svg");
+}
+
+.company-features__item--craft::after {
+  top: 10px;
+  left: 3px;
+  width: 35px;
+  height: 34px;
+
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.company-features__item--local-manufacturer::after {
+  top: 11px;
+  left: -6px;
+  width: 55px;
+  height: 23px;
+
+  background-image: url("../img/icon-feature-rocket.svg");
+}
+
+.company-features__item--gift-wrapper::after {
+  top: 9px;
+  left: 3px;
+  width: 33px;
+  height: 32px;
+
+  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {
   .company-features {
     width: 668px;
+    margin-top: 77px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 50px;
@@ -55,6 +107,9 @@
   }
 
   .company-features__title {
+    margin-bottom: 43px;
+    margin-left: -4px;
+
     font-size: 43px;
     vertical-align: 50px;
   }
@@ -62,8 +117,6 @@
   .company-features__list {
     display: flex;
     flex-wrap: wrap;
-
-    background-color: yellow;
   }
 
   .company-features__item {
@@ -72,6 +125,7 @@
     align-items: flex-end;
     width: 50%;
     flex-grow: 1;
+    margin-bottom: 50px;
     padding-right: 30px;
 
     font-size: 20px;
@@ -105,15 +159,18 @@
 
 @media (min-width: $desktop-width) {
   .company-features {
+    box-sizing: border-box;
     width: 1050px;
+    margin-top: 115px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 175px;
+    padding-right: 50px;
   }
 
   .company-features__title {
     width: 700px;
+    margin-bottom: 40px;
 
     font-size: 53px;
     vertical-align: 57px;

@@ -12,7 +12,11 @@
       <div class="page-header__wrapper">
         <nav class="page-header__nav">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Интернет-магазин «Мишка»">
+            <picture>
+              <source srcset="http://placehold.it/149x72" media="(min-width: 1150px)">
+              <source srcset="http://placehold.it/113x46" media="(min-width: 768px)">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
+            </picture>
           </a>
           <div class="page-header__toggle">Меню</div>
           <ul class="page-header__first-menu site-list">
@@ -33,10 +37,10 @@
           </ul>
           <ul class="page-header__third-menu sale-list">
             <li class="sale-list__item">
-              <a class="sale-list__new-goods" href="#">Новые поступления</a>
+              <a class="sale-list__link sale-list__new-goods" href="#">Новые поступления</a>
             </li>
             <li class="sale-list__item">
-              <a class="sale-list__sale" href="#">Распродажа</a>
+              <a class="sale-list__link sale-list__sale" href="#">Распродажа</a>
             </li>
           </ul>
           <p class="page-header__text">Бесплатная доставка по России</p>
@@ -45,41 +49,55 @@
     </header>
     <main class="catalog-main">
       <header class="catalog-main__header">
-        <h1 class="catalog-main__title">Каталог товаров</h1>
+        <div class="catalog-main__header-wrapper">
+          <h1 class="catalog-main__title">Каталог товаров</h1>
+        </div>
       </header>
-      <div class="catalog-main__showcase showcase">
-        <h2 class="showcase__title visually-hidden">Товары</h2>
-        <article class="showcase__item unit">
+      <div class="catalog-main__showcase">
+        <h2 class="catalog-main__showcase-title visually-hidden">Товары</h2>
+        <article class="unit">
           <a class="unit__image-link" href="#">
-            <img class="unit__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+            <picture class="unit__picture">
+              <source srcset="http://placehold.it/316x462" media="(min-width: 1150px)">
+              <source srcset="http://placehold.it/334x334" media="(min-width: 768px)">
+              <img class="unit__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+            </picture>
           </a>
           <div class="unit__info">
             <div class="unit__about">
-              <a class="unit__title" href="#">Зайчик-попрыгайчик</a>
+              <p class="unit__title"><a class="unit__title-link" href="#">Зайчик-попрыгайчик</a></p>
               <p class="unit__characteristics">Рост 30 см, вес 200 г</p>
             </div>
             <div class="unit__price">1 200 руб.<a class="unit__basket" href="#">basket-icon</a></div>
           </div>
         </article>
-        <article class="showcase__item unit">
+        <article class="unit">
           <a class="unit__image-link" href="#">
-            <img class="unit__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
+            <picture class="unit__picture">
+              <source srcset="http://placehold.it/316x462" media="(min-width: 1150px)">
+              <source srcset="http://placehold.it/334x334" media="(min-width: 768px)">
+              <img class="unit__image" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+            </picture>
           </a>
           <div class="unit__info">
             <div class="unit__about">
-              <a class="unit__title" href="#">Корзинка для белья</a>
+              <p class="unit__title"><a class="unit__title-link" href="#">Корзинка для белья</a></p>
               <p class="unit__characteristics">Диаметр 15 см, высота 10 см</p>
             </div>
             <div class="unit__price">690 руб.<a class="unit__basket" href="#">basket-icon</a></div>
           </div>
         </article>
-        <article class="showcase__item unit">
+        <article class="unit">
           <a class="unit__image-link" href="#">
-            <img class="unit__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+            <picture class="unit__picture">
+              <source srcset="http://placehold.it/316x462" media="(min-width: 1150px)">
+              <source srcset="http://placehold.it/334x334" media="(min-width: 768px)">
+              <img class="unit__image" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+            </picture>
           </a>
           <div class="unit__info">
             <div class="unit__about">
-              <a class="unit__title" href="#">Большая корзинка для игрушек</a>
+              <p class="unit__title"><a class="unit__title-link" href="#">Большая корзинка для&nbsp;игрушек</a></p>
               <p class="unit__characteristics">Диаметр 30 см, высота 30 см</p>
             </div>
             <div class="unit__price">1 500 руб.<a class="unit__basket" href="#">basket-icon</a></div>
@@ -88,11 +106,14 @@
       </div>
       <section class="catalog-main__process process">
         <div class="process__title">
-          <span class="process__title-icon">Camera-icon</span>
           <h2 class="process__title-text">Процесс производства</h2>
         </div>
         <a class="process__video-link">
-          <img class="process__video" src="http://placehold.it/260x150" alt="Процесс производства">
+          <picture class="process__picture">
+            <source srcset="http://placehold.it/682x455" media="(min-width: 1150px)">
+            <source srcset="http://placehold.it/668x455" media="(min-width: 768px)">
+            <img class="process__video" src="img/video-mobile@1x.jpg" alt="Процесс производства">
+          </picture>
         </a>
         <div class="process__info">
           <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -103,29 +124,31 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__short-footer">
-          <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-image" src="http://placehold.it/102x34" width ="102" height="34" alt="Интернет-магазин «Мишка»">
-          </a>
-          <div class="page-footer__social social">
-            <h3 class="social__title visually-hidden">Социальные сети</h3>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <div class="copyright__wrapper">
-              <b class="copyright__text">Разработано</b>
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <img class="copyright__image" src="http://placehold.it/27x34" alt="HTML Academy">
-              </a>
+          <div class="page-footer__short-footer-wrapper">
+            <a class="page-footer__logo" href="index.html">
+              <img class="page-footer__logo-image" src="http://placehold.it/102x34" width ="102" height="34" alt="Интернет-магазин «Мишка»">
+            </a>
+            <div class="page-footer__social social">
+              <h3 class="social__title visually-hidden">Социальные сети</h3>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <div class="copyright__wrapper">
+                <b class="copyright__text">Разработано</b>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+                </a>
+              </div>
             </div>
           </div>
         </div>

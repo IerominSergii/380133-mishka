@@ -1,4 +1,6 @@
 .form-name {
+  padding-bottom: 30px;
+
   font-size: 17px;
   vertical-align: 18px;
   font-weight: bold;
@@ -33,44 +35,45 @@
   text-overflow: ellipsis;
 }
 
-.form-name__wrapper {
-  display: block;
-  padding-bottom: 34px;
-}
-
-.form-name__title {
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 34px;
+.form-name__layout {
+  padding-bottom: 8px;
 }
 
 .form-name__item {
+  box-sizing: border-box;
   width: 100%;
   display: block;
-  margin-bottom: 28px;
+  padding-top: 21px;
 }
 
 .form-name__input {
   width: 100%;
   display: block;
   margin: 0;
-  margin-top: 25px;
-  padding: 0;
+  margin-top: 15px;
+  padding-bottom: 15px;
+
+  border: none;
+  border-bottom: 2px solid $first-font-color;
 }
 
 @media (min-width: $tablet-width) {
-  .form-name__wrapper {
-    box-sizing: border-box;
-    display: flex;
+  .form-name {
+    padding-top: 64px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
 
-    background-color: purple;
+    font-size: 19px;
   }
 
-  .form-name__title {
-    flex-shrink: 0;
-    width: 167px;
+  .form-name__wrapper {
+    box-sizing: border-box;
+    padding-bottom: 0;
+  }
 
-    text-align: center;
+  .form-name__layout {
+    padding-bottom: 0;
   }
 
   .form-name__content {
@@ -81,18 +84,17 @@
 
   .form-name__item {
     display: flex;
+    padding-top: 0;
+    padding-bottom: 38px;
   }
 
   .form-name__input {
     margin: 0;
+    margin-left: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form-name__title {
-    width: 175px;
-  }
-
   .form-name__content {
     padding-right: 175px;
   }

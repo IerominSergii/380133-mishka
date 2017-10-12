@@ -12,7 +12,11 @@
       <div class="page-header__wrapper">
         <nav class="page-header__nav">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="http://placehold.it/86x35" alt="Интернет-магазин «Мишка»">
+            <picture>
+              <source srcset="http://placehold.it/149x72" media="(min-width: 1150px)">
+              <source srcset="http://placehold.it/113x46" media="(min-width: 768px)">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Интернет-магазин «Мишка»">
+            </picture>
           </a>
           <div class="page-header__toggle">Меню</div>
           <ul class="page-header__first-menu site-list">
@@ -33,10 +37,10 @@
           </ul>
           <ul class="page-header__third-menu sale-list">
             <li class="sale-list__item">
-              <a class="sale-list__new-goods" href="#">Новые поступления</a>
+              <a class="sale-list__link sale-list__new-goods" href="#">Новые поступления</a>
             </li>
             <li class="sale-list__item">
-              <a class="sale-list__sale" href="#">Распродажа</a>
+              <a class="sale-list__link sale-list__sale" href="#">Распродажа</a>
             </li>
           </ul>
           <p class="page-header__text">Бесплатная доставка по России</p>
@@ -45,135 +49,161 @@
     </header>
     <main class="form-main">
       <header class="form-main__header">
-        <h1 class="form-main__title">Вязание на заказ</h1>
+        <div class="form-main__header-wrapper">
+          <h1 class="form-main__title">Вязание на заказ</h1>
+        </div>
       </header>
       <p class="form-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="form-main__form blank" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="blank__item form-type">
-          <div class="form-type__wrapper">
-            <legend class="blank__title form-type__title decor-title">Тип</legend>
-            <div class="form-type__content">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset form-type">
+          <div class="form__fieldset-wrapper form-type-wrapper">
+            <div class="form__fieldset-layout type-layout">
+              <h2 class="form__fieldset-title">Тип</h2>
+            </div>
+            <div class="form__fieldset-content form-type__content">
               <label class="form-type__item">
                 <input class="form-type__input" type="radio" name="type" value="accessory-interior" checked>
+                <span class="form-type__pointer"></span>
                 Аксессуар для интерьера
               </label>
               <label class="form-type__item">
                 <input class="form-type__input" type="radio" name="type" value="children-toy">
+                <span class="form-type__pointer"></span>
                 Детская игрушка
               </label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="blank__item form-color">
-          <div class="form-color__wrapper">
-            <legend class="blank__title form-color__title decor-title">Цвет</legend>
-            <div class="form-color__content">
+        <fieldset class="form__fieldset form-color">
+          <div class="form__fieldset-wrapper">
+            <div class="form__fieldset-layout form-color__layout">
+              <h2 class="form__fieldset-title form-color__title">Цвет</h2>
+            </div>
+            <div class="form__fieldset-content form-color__content">
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="white" checked>
+                <span class="form-color__pointer"></span>
                 Белый
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="grey" checked>
+                <span class="form-color__pointer"></span>
                 Серый
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="tiffani">
+                <span class="form-color__pointer"></span>
                 «Тиффани»
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="black">
+                <span class="form-color__pointer"></span>
                 Черный
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="pink">
+                <span class="form-color__pointer"></span>
                 Розовый
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="orange">
+                <span class="form-color__pointer"></span>
                 Оранжевый
               </label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="blank__item form-name">
-          <div class="form-name__wrapper">
-            <legend class="blank__title form-name__title decor-title">ФИО</legend>
+        <fieldset class="form__fieldset form-name">
+          <div class="form__fieldset-wrapper form-name__wrapper">
+            <div class="form__fieldset-layout form-name__layout">
+              <h2 class="form__fieldset-title">ФИО</h2>
+            </div>
             <div class="form-name__content">
               <label class="form-name__item">
                 Имя:
-                <input class="form-name__input" type="text" name="first-name" placeholder="Введите ваше имя*">
+                <input class="form__fieldset-input form-name__input" type="text" name="first-name" placeholder="Введите ваше имя*">
               </label>
               <label class="form-name__item">
                 Фамилия:
-                <input class="form-name__input" type="text" name="second-name" placeholder="Укажите фамилию*">
+                <input class="form__fieldset-input form-name__input" type="text" name="second-name" placeholder="Укажите фамилию*">
               </label>
               <label class="form-name__item">
                 Отчество:
-                <input class="form-name__input" type="text" name="third-name" placeholder="Отчество, если желаете">
+                <input class="form__fieldset-input form-name__input" type="text" name="third-name" placeholder="Отчество, если желаете">
               </label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="blank__item form-phone">
-          <div class="form-phone__wrapper">
-            <legend class="blank__title form-phone__title decor-title">Тел</legend>
+        <fieldset class="form__fieldset form-phone">
+          <div class="form__fieldset-wrapper form-phone__wrapper">
+            <div class="form__fieldset-layout form-phone__layout">
+              <h2 class="form__fieldset-title form-phone__title">Тел</h2>
+            </div>
             <div class="form-phone__content">
               <label class="form-phone__item">
-                <input class="form-phone__input" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*">
+                <input class="form__fieldset-input form-phone__input" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*">
               </label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="blank__item form-email">
-          <div class="form-email__wrapper">
-            <legend class="blank__title form-email__title decor-title">E-mail</legend>
+        <fieldset class="form__fieldset form-email">
+          <div class="form__fieldset-wrapper form-email__wrapper">
+            <div class="form__fieldset-layout form-email__layout">
+              <h2 class="form__fieldset-title form-email__title">E-mail</h2>
+            </div>
             <div class="form-email__content">
               <label class="form-email__item">
-                <input class="form-email__input" type="email" name="email" placeholder="Ваш Email*">
+                <input class="form__fieldset-input form-email__input" type="email" name="email" placeholder="Ваш Email*">
               </label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="blank__item form-extra">
-          <div class="form-extra__wrapper">
-            <legend class="blank__title form-extra__title decor-title">Доп</legend>
+        <fieldset class="form__fieldset form-extra">
+          <div class="form__fieldset-wrapper form-extra__wrapper">
+            <div class="form__fieldset-layout form-extra__layout">
+              <h2 class="form__fieldset-title">Доп</h2>
+            </div>
             <div class="form-extra__content">
-              <textarea class="form-extra__textarea" name="extra" rows="6">Опишите все ваши пожелания к заказу</textarea>
+              <textarea class="form-extra__textarea" name="extra" rows="5">Опишите все ваши пожелания к заказу</textarea>
             </div>
           </div>
         </fieldset>
-        <div class="blank__bottom">
-          <p class="blank__footnote">*Поля обязательны для заполнения</p>
-          <button class="blank__submit-order btn" type="submit">Отправить заказ</button>
+        <div class="form__bottom">
+          <div class="form__bottom-wrapper">
+            <p class="form__footnote">*Поля обязательны для заполнения</p>
+            <button class="form__submit-order btn" type="submit">Отправить заказ</button>
+          </div>
         </div>
       </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__short-footer">
-          <a class="page-footer__logo" href="index.html">
-            <img class="page-footer__logo-image" src="http://placehold.it/102x34" width ="102" height="34" alt="Интернет-магазин «Мишка»">
-          </a>
-          <div class="page-footer__social social">
-            <h3 class="social__title visually-hidden">Социальные сети</h3>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__copyright copyright">
-            <div class="copyright__wrapper">
-              <b class="copyright__text">Разработано</b>
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <img class="copyright__image" src="http://placehold.it/27x34" alt="HTML Academy">
-              </a>
+          <div class="page-footer__short-footer-wrapper">
+            <a class="page-footer__logo" href="index.html">
+              <img class="page-footer__logo-image" src="http://placehold.it/102x34" width ="102" height="34" alt="Интернет-магазин «Мишка»">
+            </a>
+            <div class="page-footer__social social">
+              <h3 class="social__title visually-hidden">Социальные сети</h3>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__copyright copyright">
+              <div class="copyright__wrapper">
+                <b class="copyright__text">Разработано</b>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                  <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+                </a>
+              </div>
             </div>
           </div>
         </div>

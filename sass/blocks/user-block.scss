@@ -14,7 +14,64 @@
 @media (min-width: $tablet-width) {
   .user-block__search-item,
   .user-block__basket-item {
-    display: inline-block;
     line-height: 90px;
+  }
+
+  .user-block__search-item {
+    box-sizing: border-box;
+    display: flex;
+
+    border-left: 1px solid $fourth-decor-color;
+    border-right: 1px solid $fourth-decor-color;
+  }
+
+  .user-block__search-link {
+    font-size: 0;
+    width: 82px;
+    height: 89px;
+
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .user-block__basket-item {
+    display: flex;
+    justify-content: flex-end;
+    height: 89px;
+  }
+
+  .user-block__basket-link {
+    position: relative;
+  }
+
+  .user-block__basket-link::before {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: -53px;
+    width: 21px;
+    height: 18px;
+
+    background-image: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-block {
+    flex-grow: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+  }
+
+  .user-block__search-item {
+    flex-grow: 0;
+  }
+
+  .user-block__basket-item {
+    flex-grow: 1;
   }
 }
