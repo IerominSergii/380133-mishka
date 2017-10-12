@@ -82,11 +82,26 @@
   }
 
   .contacts__title {
+    position: relative;
     margin-bottom: 48px;
     margin-left: -4px;
 
     font-size: 43px;
     vertical-align: 50px;
+  }
+
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 3px;
+    width: 47px;
+    height: 81px;
+
+    background-color: pink;
+    background-image: url("img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .contacts__list {
@@ -149,6 +164,11 @@
 
     font-size: 53px;
     vertical-align: 57px;
+  }
+
+  .contacts__title::after {
+    top: -7px;
+    left: -108px;
   }
 
   .contacts__list {
