@@ -12,9 +12,34 @@
 }
 
 .form-type__item {
+  position: relative;
+
   display: block;
   margin-bottom: 22px;
   padding-left: 63px;
+}
+
+.form-type__pointer {
+  cursor: pointer;
+  position: absolute;
+  top: -8px;
+  left: 0;
+  font-size: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $second-font-color;
+  border-radius: 50%;
+}
+
+.form-type__input:checked ~ .form-type__pointer::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 15px;
+  height: 15px;
+  background-color: $first-decor-color;
+  border-radius: 50%;
 }
 
 .form-type__input {
@@ -36,6 +61,19 @@
   .form-type__item {
     margin-bottom: 54px;
     padding-left: 80px;
+  }
+
+  .form-type__pointer {
+    top: -15px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .form-type__input:checked ~ .form-type__pointer::before {
+    top: 14px;
+    left: 14px;
+    width: 20px;
+    height: 20px;
   }
 
   .form-type__item:last-child {

@@ -28,6 +28,11 @@
   .user-block__search-link {
     font-size: 0;
     width: 82px;
+    height: 89px;
+
+    background-image: url("img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .user-block__basket-item {

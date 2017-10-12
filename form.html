@@ -63,10 +63,12 @@
             <div class="form__fieldset-content form-type__content">
               <label class="form-type__item">
                 <input class="form-type__input" type="radio" name="type" value="accessory-interior" checked>
+                <span class="form-type__pointer"></span>
                 Аксессуар для интерьера
               </label>
               <label class="form-type__item">
                 <input class="form-type__input" type="radio" name="type" value="children-toy">
+                <span class="form-type__pointer"></span>
                 Детская игрушка
               </label>
             </div>
@@ -75,31 +77,37 @@
         <fieldset class="form__fieldset form-color">
           <div class="form__fieldset-wrapper">
             <div class="form__fieldset-layout form-color__layout">
-              <h2 class="form__fieldset-title">Цвет</h2>
+              <h2 class="form__fieldset-title form-color__title">Цвет</h2>
             </div>
             <div class="form__fieldset-content form-color__content">
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="white" checked>
+                <span class="form-color__pointer"></span>
                 Белый
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="grey" checked>
+                <span class="form-color__pointer"></span>
                 Серый
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="tiffani">
+                <span class="form-color__pointer"></span>
                 «Тиффани»
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="black">
+                <span class="form-color__pointer"></span>
                 Черный
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="pink">
+                <span class="form-color__pointer"></span>
                 Розовый
               </label>
               <label class="form-color__item">
                 <input class="form-color__input" type="checkbox" name="orange">
+                <span class="form-color__pointer"></span>
                 Оранжевый
               </label>
             </div>
@@ -129,7 +137,7 @@
         <fieldset class="form__fieldset form-phone">
           <div class="form__fieldset-wrapper form-phone__wrapper">
             <div class="form__fieldset-layout form-phone__layout">
-              <h2 class="form__fieldset-title">Тел</h2>
+              <h2 class="form__fieldset-title form-phone__title">Тел</h2>
             </div>
             <div class="form-phone__content">
               <label class="form-phone__item">
@@ -141,7 +149,7 @@
         <fieldset class="form__fieldset form-email">
           <div class="form__fieldset-wrapper form-email__wrapper">
             <div class="form__fieldset-layout form-email__layout">
-              <h2 class="form__fieldset-title">E-mail</h2>
+              <h2 class="form__fieldset-title form-email__title">E-mail</h2>
             </div>
             <div class="form-email__content">
               <label class="form-email__item">
@@ -161,8 +169,10 @@
           </div>
         </fieldset>
         <div class="form__bottom">
-          <p class="form__footnote">*Поля обязательны для заполнения</p>
-          <button class="form__submit-order btn" type="submit">Отправить заказ</button>
+          <div class="form__bottom-wrapper">
+            <p class="form__footnote">*Поля обязательны для заполнения</p>
+            <button class="form__submit-order btn" type="submit">Отправить заказ</button>
+          </div>
         </div>
       </form>
     </main>
