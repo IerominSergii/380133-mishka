@@ -16,7 +16,7 @@
   background-size: auto 350px;
   color: $first-font-color;
 
-  @media (min-resolution:$retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
