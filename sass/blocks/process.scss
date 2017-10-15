@@ -25,17 +25,14 @@
   color: $first-font-color;
 }
 
-.process__title-text::after {
-  content: "";
+.process__icon-video {
   position: absolute;
   top: 10px;
   left: 33px;
   width: 32px;
   height: 22px;
 
-  background-image: url("../img/icon-video.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: $first-decor-color;
 }
 
 .process__video-link {
@@ -108,7 +105,7 @@
     font-size: 20px;
   }
 
-  .process__title-text::after {
+  .process__icon-video {
     top: 39px;
     left: 41px;
   }
@@ -162,7 +159,7 @@
     padding: 0;
   }
 
-  .process__title-text::after {
+  .process__icon-video {
     top: -49px;
     left: 2px;
   }

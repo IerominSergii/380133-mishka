@@ -29,6 +29,8 @@
 }
 
 .social__link {
+  position: relative;
+
   display: block;
   margin: auto;
 
@@ -38,23 +40,23 @@
   &--instagram {
     width: 22px;
     height: 21px;
-
-    background-image: url("../img/icon-insta.svg");
   }
 
   &--facebook {
     width: 15px;
     height: 29px;
-
-    background-image: url("../img/icon-fb.svg");
   }
 
   &--twitter {
     width: 24px;
     height: 20px;
-
-    background-image: url("../img/icon-twitter.svg");
   }
+}
+
+.social__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {

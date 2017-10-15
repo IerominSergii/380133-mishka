@@ -26,13 +26,17 @@
   }
 
   .user-block__search-link {
+    position: relative;
+
     font-size: 0;
     width: 82px;
     height: 89px;
+  }
 
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  .user-block__icon-search {
+    position: absolute;
+    top: 35px;
+    left: 32px;
   }
 
   .user-block__basket-item {
@@ -43,19 +47,15 @@
 
   .user-block__basket-link {
     position: relative;
+    display: flex;
   }
 
-  .user-block__basket-link::before {
-    content: "";
+  .user-block__icon-cart {
     position: absolute;
-    top: 36px;
-    left: -53px;
+    top: 35px;
+    left: -54px;
     width: 21px;
     height: 18px;
-
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
