@@ -15,6 +15,22 @@
   color: $first-font-color;
 }
 
+.page-header__logo-image:hover,
+.site-list__link:hover,
+.user-block__search-link:hover,
+.user-block__basket-link:hover,
+.sale-list__link:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo-image:active,
+.site-list__link:active,
+.user-block__search-link:active,
+.user-block__basket-link:active,
+.sale-list__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .site-list__item {
     display: inline-block;

@@ -144,7 +144,7 @@
             <svg class="process__icon-video" width="32" height="22">
               <use xlink:href="img/sprite.svg#icon-video"></use>
             </svg>
-            Процесс производства
+            <span class="process__title-inner">Процесс производства</span>
           </h2>
         </div>
         <a class="process__video-link">
@@ -215,16 +215,16 @@
       <h2 class="basket-popup__title">Добавить в корзину</h2>
       <span class="basket-popup__text">Выберите размер:</span>
       <form class="basket-popup__form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="basket-popup__point basket-popup__point--active">
-          <input class="basket-popup__input" type="radio" name="size" value="s" checked>
+        <input class="basket-popup__input" id="size-s" type="radio" name="size" value="s" checked>
+        <label class="basket-popup__point" for="size-s">
           s
         </label>
-        <label class="basket-popup__point">
-          <input class="basket-popup__input" type="radio" name="size" value="m">
+        <input class="basket-popup__input" id="size-m" type="radio" name="size" value="m">
+        <label class="basket-popup__point" for="size-m">
           m
         </label>
-        <label class="basket-popup__point">
-          <input class="basket-popup__input" type="radio" name="size" value="l">
+        <input class="basket-popup__input" id="size-l" type="radio" name="size" value="l">
+        <label class="basket-popup__point" for="size-l">
           l
         </label>
         <button class="basket-popup__add btn" type="button">Добавить</button>

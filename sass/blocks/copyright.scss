@@ -33,6 +33,15 @@
   fill: $first-decor-color;
 }
 
+.copyright:active .copyright__image,
+.copyright:hover .copyright__image {
+  fill: $footer-hover-color;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     justify-content: flex-end;

@@ -84,12 +84,30 @@
 
 @media (min-width: $tablet-width) {
   .company-features {
+    position: relative;
+
     width: 668px;
     margin-top: 77px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .company-features::before {
+    content: "";
+    position: absolute;
+    top: -44px;
+    left: 0;
+    width: 768px;
+    height: 30px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: contain;
+    transform: rotate(180deg);
+    z-index: 10;
   }
 
   .company-features__title {
@@ -152,6 +170,12 @@
     margin-right: auto;
     padding-left: 175px;
     padding-right: 50px;
+  }
+
+  .company-features::before {
+    top: -43px;
+    width: 1050px;
+    height: 23px;
   }
 
   .company-features__title {

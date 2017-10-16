@@ -12,7 +12,6 @@
 }
 
 .form-color__title {
-  // width: 100%;
   padding-top: 0;
   padding-bottom: 34px;
 }
@@ -47,10 +46,19 @@
   z-index: 10;
 }
 
+.form-color__item:hover .form-color__pointer {
+  border-color: $first-decor-color;
+}
+
+.form-color__item:active .form-color__pointer {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
 .form-color__input {
   display: none;
 }
 
+.form-color__item:active .form-color__pointer::before,
 .form-color__input:checked ~ .form-color__pointer::before {
   content: "";
   position: absolute;
@@ -108,6 +116,7 @@
     margin-right: auto;
   }
 
+  .form-color__item:active .form-color__pointer::before,
   .form-color__input:checked ~ .form-color__pointer::before {
     top: 12px;
     left: 10px;

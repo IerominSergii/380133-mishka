@@ -55,8 +55,21 @@
   background-position: center;
 }
 
+.process__video-link:hover::after {
+  transform: scale(1.2);
+  transition-duration: 200ms;
+}
+
+.process__video-link:active::after {
+  opacity: 0.3;
+  transform: scale(0.8);
+  transition-duration: 400ms;
+}
+
 .process__video {
   width: 100%;
+
+  background-color: $third-bgd-color;
 }
 
 .process__info {
@@ -115,6 +128,22 @@
     padding-bottom: 45px;
     padding-left: 41px;
     padding-right: 41px;
+  }
+
+  .process__title:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .process__title:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .process__title:hover .process__title-inner {
+    opacity: 0.6;
+  }
+
+  .process__title:active .process__title-inner {
+    opacity: 0.3;
   }
 
   .process__text {

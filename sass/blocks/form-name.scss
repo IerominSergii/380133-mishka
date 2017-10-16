@@ -7,34 +7,6 @@
   color: $first-font-color;
 }
 
-::-webkit-input-placeholder {
-  font-size: 17px;
-  vertical-align: 18px;
-  color: $second-font-color;
-  text-overflow: ellipsis;
-}
-
-::-moz-placeholder {
-  font-size: 17px;
-  vertical-align: 18px;
-  color: $second-font-color;
-  text-overflow: ellipsis;
-}
-
-:-moz-placeholder {
-  font-size: 17px;
-  vertical-align: 18px;
-  color: $second-font-color;
-  text-overflow: ellipsis;
-}
-
-:-ms-input-placeholder {
-  font-size: 17px;
-  vertical-align: 18px;
-  color: $second-font-color;
-  text-overflow: ellipsis;
-}
-
 .form-name__layout {
   padding-bottom: 8px;
 }
@@ -53,8 +25,74 @@
   margin-top: 15px;
   padding-bottom: 15px;
 
+  outline: none;
   border: none;
   border-bottom: 2px solid $first-font-color;
+}
+
+.form-name__input:hover {
+  border-bottom-color: $first-decor-color;
+  transition: border-bottom-color 0.3s ease;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+::-moz-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+:-moz-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+.form-name__input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-name__input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-name__input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-name__input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 @media (min-width: $tablet-width) {

@@ -34,8 +34,29 @@
   width: 100%;
   padding-bottom: 15px;
 
+  outline: none;
   border: none;
   border-bottom: 2px solid #000000;
+}
+
+.form-phone__input:hover {
+  border-bottom-color: $first-decor-color;
+}
+
+.form-phone__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-phone__input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.form-phone__input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.form-phone__input:focus:-ms-input-placeholder {
+  color: transparent;
 }
 
 @media (min-width: $tablet-width) {

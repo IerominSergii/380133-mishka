@@ -43,7 +43,8 @@
   width: 41px;
   height: 62px;
 
-  fill: $third-decor-color;
+  fill: $main-decor-color;
+  opacity: 0.5;
 }
 
 .goods-categories__icon-toy {
@@ -53,7 +54,18 @@
   width: 61px;
   height: 61px;
 
-  fill: $third-decor-color;
+  fill: $main-decor-color;
+  opacity: 0.5;
+}
+
+.goods-categories__item--interior:hover .goods-categories__icon-interior,
+.goods-categories__item--toys:hover .goods-categories__icon-toy {
+  opacity: 0.7;
+}
+
+.goods-categories__item--interior:active .goods-categories__link,
+.goods-categories__item--toys:active .goods-categories__link {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,11 +77,21 @@
 
   .goods-categories__list {
     display: flex;
+    min-height: 123px;
+
   }
 
   .goods-categories__item {
+    margin-top: 5px;
     flex-grow: 1;
     width: 50%;
+    min-height: 118px;
+  }
+
+  .goods-categories__item--interior:hover,
+  .goods-categories__item--toys:hover {
+    margin-top: 0;
+    transition: margin-top 0.3s ease;
   }
 
   .goods-categories__link {
@@ -80,6 +102,12 @@
     line-height: 1.6;
   }
 
+  .goods-categories__item--interior:hover .goods-categories__link,
+  .goods-categories__item--toys:hover .goods-categories__link {
+    padding-top: 23px;
+    transition: padding-top 0.3s ease;
+  }
+
   .goods-categories__icon-interior {
     top: 30px;
     right: 0;
@@ -88,6 +116,16 @@
   .goods-categories__icon-toy {
     top: 31px;
     right: -4px;
+  }
+
+  .goods-categories__item--interior:hover .goods-categories__icon-interior {
+    top: 25px;
+    transition: top 0.3s ease;
+  }
+
+  .goods-categories__item--toys:hover .goods-categories__icon-toy {
+    top: 26px;
+    transition: top 0.3s ease;
   }
 }
 

@@ -56,9 +56,26 @@
   }
 
   .page-main__header-wrapper {
+    position: relative;
+
     width: 768px;
     min-height: 745px;
     margin: 0 auto;
+  }
+
+  .page-main__header-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 768px;
+    height: 24px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: contain;
+    z-index: 10;
   }
 
   .page-main__main-title {
@@ -78,6 +95,14 @@
   .page-main__header-wrapper {
     width: 1150px;
     margin: 0 auto;
+  }
+
+  .page-main__header-wrapper::after {
+    bottom: -17px;
+    left: 0;
+    width: 1150px;
+    height: 37px;
+    background-size: cover;
   }
 
   .page-main__main-title {

@@ -59,6 +59,15 @@
   left: 0;
 }
 
+.social__icon:active,
+.social__icon:hover {
+  fill: $footer-hover-color;
+}
+
+.social__icon:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .social__list {
     border-bottom: none;

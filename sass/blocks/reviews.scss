@@ -70,24 +70,39 @@
 }
 
 .reviews__toggle {
+  position: relative;
+
   box-sizing: border-box;
   width: 50%;
   height: 52px;
-  border: 1px solid #ececec;
-}
 
-.reviews__prev {
-  background-image: url("../img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  border: 1px solid #ececec;
 }
 
 .reviews__next {
   border-left: none;
+}
 
-  background-image: url("../img/icon-right-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.reviews__icon-left-arrow {
+  position: absolute;
+  top: 13px;
+  left: 37px;
+}
+
+.reviews__icon-right-arrow {
+  position: absolute;
+  top: 13px;
+  left: 38px;
+}
+
+.reviews__toggle:hover .reviews__icon-left-arrow,
+.reviews__toggle:hover .reviews__icon-right-arrow {
+  fill: rgba(102, 102, 102, 0.6);
+}
+
+.reviews__toggle:active .reviews__icon-left-arrow,
+.reviews__toggle:active .reviews__icon-right-arrow {
+  fill: rgba(102, 102, 102, 0.3);
 }
 
 .reviews__write {
@@ -103,6 +118,8 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     width: 668px;
@@ -121,6 +138,22 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/review@2x.jpg");
     }
+  }
+
+  .reviews::after {
+    content: "";
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 768px;
+    height: 30px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: contain;
+    transform: rotate(180deg);
+    z-index: 10;
   }
 
   .reviews__content {
@@ -151,6 +184,13 @@
     font-size: 18px;
   }
 
+  .reviews__control {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    width: 175px;
+  }
+
   .reviews__toggles {
     margin-bottom: 0;
   }
@@ -159,11 +199,14 @@
     border: none;
   }
 
-  .reviews__control {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    width: 175px;
+  .reviews__icon-left-arrow {
+    top: 15px;
+    left: 19px;
+  }
+
+  .reviews__icon-right-arrow {
+    top: 15px;
+    left: 18px;
   }
 }
 
@@ -176,6 +219,13 @@
     padding-right: 50px;
 
     background-position: 50px 0;
+  }
+
+  .reviews::after {
+    bottom: -85px;
+    left: 50px;
+    width: 1050px;
+    height: 23px;
   }
 
   .reviews__content {

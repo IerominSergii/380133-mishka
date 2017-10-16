@@ -45,6 +45,30 @@
   margin-left: 27px;
 }
 
+.contacts__email {
+  position: relative;
+}
+
+.contacts__email::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: 1px;
+
+  background-color: $first-decor-color;
+}
+
+.contacts__email:hover {
+  color: $first-decor-color;
+}
+
+.contacts__email:active {
+  opacity: 0.3;
+  color: $first-decor-color;
+}
+
 .contacts__map {
   width: 100%;
   height: 457px;
@@ -121,6 +145,11 @@
     line-height: 1.8;
   }
 
+  .contacts__email::before {
+    width: 203px;
+    bottom: 60px;
+  }
+
   .contacts__type {
     width: 60px;
   }
@@ -176,6 +205,10 @@
 
   .contacts__item {
     margin-bottom: 24px;
+  }
+
+  .contacts__email::before {
+    bottom: 0;
   }
 
   .contacts__map {

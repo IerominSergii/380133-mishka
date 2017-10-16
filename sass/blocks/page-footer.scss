@@ -56,6 +56,15 @@
     width: 30%;
   }
 
+  .page-footer__logo-footer:active,
+  .page-footer__logo-footer:hover {
+    fill: $footer-hover-color;
+  }
+
+  .page-footer__logo-footer:active {
+    opacity: 0.3;
+  }
+
   .page-footer__social {
     width: 30%;
   }

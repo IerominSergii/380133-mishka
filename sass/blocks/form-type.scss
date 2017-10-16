@@ -31,6 +31,15 @@
   border-radius: 50%;
 }
 
+.form-type__item:hover .form-type__pointer {
+  border-color: $first-decor-color;
+}
+
+.form-type__item:active .form-type__pointer {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-type__item:active .form-type__pointer::before,
 .form-type__input:checked ~ .form-type__pointer::before {
   content: "";
   position: absolute;
@@ -40,6 +49,10 @@
   height: 15px;
   background-color: $first-decor-color;
   border-radius: 50%;
+}
+
+.form-type__input:checked:active ~ .form-type__pointer::before {
+  display: none;
 }
 
 .form-type__input {
@@ -69,6 +82,7 @@
     height: 48px;
   }
 
+  .form-type__item:active .form-type__pointer::before,
   .form-type__input:checked ~ .form-type__pointer::before {
     top: 14px;
     left: 14px;
