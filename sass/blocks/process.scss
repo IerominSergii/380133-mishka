@@ -219,5 +219,7 @@
 
   .process__text {
     margin-bottom: 46px;
+    overflow: auto;
+    max-height: 130px;
   }
 }

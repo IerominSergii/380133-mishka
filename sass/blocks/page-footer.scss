@@ -75,6 +75,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__contacts {
+    margin-bottom: 107px;
+  }
+
   .page-footer__short-footer-wrapper {
     width: 1050px;
   }

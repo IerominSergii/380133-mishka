@@ -1,9 +1,7 @@
 .page-header {
   box-sizing: border-box;
-  height: 80px;
 
   border-top: 1px solid $fourth-decor-color;
-  border-bottom: 1px solid $fourth-decor-color;
 }
 
 .page-header__wrapper {
@@ -18,8 +16,6 @@
   list-style: none;
 }
 
-.page-header__first-menu,
-.page-header__second-menu,
 .page-header__third-menu,
 .page-header__text {
   display: none;
@@ -47,7 +43,9 @@
 
 .page-header__logo {
   display: block;
+
   text-align: center;
+  border-bottom: 1px solid $fourth-decor-color;
 }
 
 .page-header__logo-image {

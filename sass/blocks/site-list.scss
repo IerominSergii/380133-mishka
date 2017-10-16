@@ -4,15 +4,27 @@
   padding: 0;
 }
 
+.site-list__item {
+  box-sizing: border-box;
+  display: flex;
+  min-height: 79px;
+}
+
 .sale-list__item:last-child {
   margin-right: 0;
 }
 
 .site-list__link {
+  width: 100%;
+  padding-left: 76px;
+  padding-top: 30px;
+
   font-size: 17px;
   vertical-align: 24px;
   font-weight: bold;
   color: $first-font-color;
+  border-bottom: 1px solid $fourth-decor-color;
+  background-color: $first-bgd-color;
 }
 
 .page-header__logo-image:hover,
@@ -42,8 +54,11 @@
     display: block;
     height: 36px;
     padding-top: 21px;
+    padding-left: 0;
 
     font-size: 15px;
+    border-bottom: none;
+    background-color: transparent;
   }
 }
 
