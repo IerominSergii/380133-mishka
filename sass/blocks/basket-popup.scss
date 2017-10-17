@@ -55,8 +55,14 @@
   border: 2px solid #ececec;
 }
 
-.basket-popup__point--active {
+input[id="size-s"]:checked ~ .basket-popup__point[for="size-s"],
+input[id="size-m"]:checked ~ .basket-popup__point[for="size-m"],
+input[id="size-l"]:checked ~ .basket-popup__point[for="size-l"] {
   border-color: $first-decor-color;
+}
+
+.basket-popup__point:hover {
+  border-color: rgba(68, 68, 68, 0.3);
 }
 
 .basket-popup__input {

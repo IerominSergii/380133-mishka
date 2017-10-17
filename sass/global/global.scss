@@ -21,6 +21,20 @@ body {
   border: 0;
 }
 
+.btn:hover {
+  background-color: $second-font-color;
+  color: $decor-font-color;
+}
+
+.btn:active {
+  background-color: $second-font-color;
+  color: $sixth-decor-color;
+}
+
+.btn:focus {
+  outline: none;
+}
+
 // скрытый объект
 .visually-hidden {
   border: 0;

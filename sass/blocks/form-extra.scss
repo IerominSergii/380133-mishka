@@ -23,8 +23,75 @@
   vertical-align: 18px;
   color: $second-font-color;
   text-overflow: ellipsis;
+  outline: none;
 
   border: 2px solid $first-font-color;
+}
+
+.form-extra__textarea:hover,
+.form-extra__textarea:active {
+  border-color: $first-decor-color;
+  transition: border-color 0.3s ease;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+::-moz-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+:-moz-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+.form-extra__textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-extra__textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-extra__textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form-extra__textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 @media (min-width: $tablet-width) {

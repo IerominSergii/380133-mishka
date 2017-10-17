@@ -34,8 +34,81 @@
   width: 100%;
   padding-bottom: 15px;
 
+  outline: none;
   border: none;
   border-bottom: 2px solid #000000;
+}
+
+.form-email__input:hover {
+  border-bottom-color: $first-decor-color;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+::-moz-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+:-moz-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+
+  font-size: 17px;
+  vertical-align: 18px;
+  color: $second-font-color;
+  text-overflow: ellipsis;
+}
+
+.form-email__input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  color: transparent;
+}
+
+.form-email__input:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  color: transparent;
+}
+
+.form-email__input:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  color: transparent;
+}
+
+.form-email__input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  color: transparent;
 }
 
 @media (min-width: $tablet-width) {

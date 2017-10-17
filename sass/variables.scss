@@ -7,17 +7,22 @@ $first-font-color: #000000;
 $second-font-color: #444444;
 $decor-font-color: #ffffff;
 
+$main-decor-color: #149080;
 $first-decor-color: #63d1bb;
 $second-decor-color: #56c3b2;
 $third-decor-color: #3bb09d;
 $fourth-decor-color: #ececec;
 $fifth-decor-color: #ededed;
+$sixth-decor-color: rgba(255, 255, 255, 0.3);
+$footer-hover-color: #46c1ae;
 
 $tablet-width: 768px;
 $desktop-width: 1150px;
 
 // основные шрифты
 $main-font-family: "Open Sans", "Arial", sans-serif;
+$bold-font: "Open Sans Bold", "Arial Bold", sans-serif;
+
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

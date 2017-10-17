@@ -34,76 +34,80 @@
   padding-top: 60px;
 }
 
-.company-features__item::after {
-  content: "";
+.company-features__icon {
   position: absolute;
 
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: $first-decor-color;
 }
 
-.company-features__item--eco::after {
+.company-features__icon-feature-flower {
   top: 7px;
   left: 7px;
   width: 33px;
   height: 38px;
-
-  background-image: url("../img/icon-feature-flower.svg");
 }
 
-.company-features__item--price::after {
-  top: 8px;
+.company-features__icon-feature-money {
+  top: 7px;
   left: 0;
   width: 47px;
   height: 27px;
-
-  background-image: url("../img/icon-feature-money.svg");
 }
 
-.company-features__item--likes::after {
+.company-features__icon-feature-heart {
   top: 14px;
   left: 7px;
   width: 34px;
   height: 27px;
-
-  background-image: url("../img/icon-feature-heart.svg");
 }
 
-.company-features__item--craft::after {
+.company-features__icon-feature-ball {
   top: 10px;
   left: 3px;
   width: 35px;
   height: 34px;
-
-  background-image: url("../img/icon-feature-ball.svg");
 }
 
-.company-features__item--local-manufacturer::after {
+.company-features__icon-feature-rocket {
   top: 11px;
   left: -6px;
   width: 55px;
   height: 23px;
-
-  background-image: url("../img/icon-feature-rocket.svg");
 }
 
-.company-features__item--gift-wrapper::after {
+.company-features__icon-feature-gift {
   top: 9px;
   left: 3px;
   width: 33px;
   height: 32px;
-
-  background-image: url("../img/icon-feature-gift.svg");
 }
 
 @media (min-width: $tablet-width) {
   .company-features {
+    position: relative;
+
     width: 668px;
     margin-top: 77px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 50px;
     padding-right: 50px;
+  }
+
+  .company-features::before {
+    content: "";
+    position: absolute;
+    top: -44px;
+    left: 0;
+    width: 768px;
+    height: 30px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: top;
+    background-size: contain;
+    transform: rotate(180deg);
+    z-index: 10;
   }
 
   .company-features__title {
@@ -122,7 +126,7 @@
   .company-features__item {
     box-sizing: border-box;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 50%;
     flex-grow: 1;
     margin-bottom: 50px;
@@ -166,6 +170,12 @@
     margin-right: auto;
     padding-left: 175px;
     padding-right: 50px;
+  }
+
+  .company-features::before {
+    top: -43px;
+    width: 1050px;
+    height: 23px;
   }
 
   .company-features__title {
