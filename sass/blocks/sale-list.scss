@@ -15,6 +15,14 @@
   color: $first-font-color;
 }
 
+.sale-list__link:hover {
+  opacity: 0.6;
+}
+
+.sale-list__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $desktop-width) {
   .sale-list {
     display: flex;
@@ -23,6 +31,8 @@
   .sale-list__item {
     display: flex;
     margin-right: 60px;
+
+    z-index: 20;
   }
 
   .sale-list__link {
