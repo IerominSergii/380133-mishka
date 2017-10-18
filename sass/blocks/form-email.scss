@@ -2,18 +2,6 @@
   position: relative;
 }
 
-.form-email__content::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 4px;
-  width: 32px;
-  height: 21px;
-  background-image: url("../img/icon-mail.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .form-email__layout {
   padding-bottom: 0;
 }
@@ -33,6 +21,7 @@
   box-sizing: border-box;
   width: 100%;
   padding-bottom: 15px;
+  padding-right: 35px;
 
   outline: none;
   border: none;
@@ -111,6 +100,23 @@
   color: transparent;
 }
 
+.form-email__icon {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  width: 32px;
+  height: 21px;
+
+  opacity: 0.2;
+  fill: $first-font-color;
+}
+
+.form-email__input:hover ~ .form-email__icon,
+.form-email__input:active ~ .form-email__icon {
+  opacity: 1;
+  fill: $first-decor-color;
+}
+
 @media (min-width: $tablet-width) {
   .form-email {
     padding-left: 50px;
@@ -135,12 +141,14 @@
     flex-grow: 1;
   }
 
-  .form-email__content::after {
-    right: 22px;
+  .form-email__input {
+    padding-right: 75px;
+
+    background-color: $second-bgd-color;
   }
 
-  .form-email__input {
-    background-color: $second-bgd-color;
+  .form-email__icon {
+    right: 22px;
   }
 }
 
@@ -153,7 +161,11 @@
     padding-left: 15px;
   }
 
-  .form-email__content::after {
+  .form-email__input {
+    padding-right: 50px;
+  }
+
+  .form-email__icon {
     right: 179px;
   }
 }

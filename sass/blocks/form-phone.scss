@@ -2,18 +2,6 @@
   position: relative;
 }
 
-.form-phone__content::after {
-  content: "";
-  position: absolute;
-  top: -5px;
-  right: 8px;
-  width: 25px;
-  height: 24px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .form-phone__layout {
   padding-bottom: 2px;
 }
@@ -33,6 +21,7 @@
   box-sizing: border-box;
   width: 100%;
   padding-bottom: 15px;
+  padding-right: 35px;
 
   outline: none;
   border: none;
@@ -57,6 +46,23 @@
 
 .form-phone__input:focus:-ms-input-placeholder {
   color: transparent;
+}
+
+.form-phone__icon {
+  position: absolute;
+  top: -5px;
+  right: 8px;
+  width: 25px;
+  height: 24px;
+
+  opacity: 0.2;
+  fill: $first-font-color;
+}
+
+.form-phone__input:hover ~ .form-phone__icon,
+.form-phone__input:active ~ .form-phone__icon {
+  opacity: 1;
+  fill: $first-decor-color;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,15 +92,15 @@
     flex-grow: 1;
   }
 
-  .form-phone__content::after {
-    top: -3px;
-    right: 26px;
-  }
-
   .form-phone__input {
-    padding-bottom: 17px;
+    padding-right: 75px;
 
     background-color: $second-bgd-color;
+  }
+
+  .form-phone__icon {
+    top: -3px;
+    right: 26px;
   }
 }
 
@@ -115,7 +121,11 @@
     padding-right: 175px;
   }
 
-  .form-phone__content::after {
+  .form-email__input {
+    padding-right: 50px;
+  }
+
+  .form-phone__icon {
     top: -5px;
     right: 183px;
   }

@@ -43,8 +43,7 @@
   width: 41px;
   height: 62px;
 
-  fill: $main-decor-color;
-  opacity: 0.5;
+  fill: $third-decor-color;
 }
 
 .goods-categories__icon-toy {
@@ -54,13 +53,12 @@
   width: 61px;
   height: 61px;
 
-  fill: $main-decor-color;
-  opacity: 0.5;
+  fill: $third-decor-color;
 }
 
 .goods-categories__item--interior:hover .goods-categories__icon-interior,
 .goods-categories__item--toys:hover .goods-categories__icon-toy {
-  opacity: 0.7;
+  fill: $goods-categories-icons-hover;
 }
 
 .goods-categories__item--interior:active .goods-categories__link,
