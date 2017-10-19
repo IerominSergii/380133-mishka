@@ -1,6 +1,6 @@
 .basket-popup {
   position: fixed;
-  top: 50px;
+  top: 100px;
   left: 50%;
 
   width: 258px;
@@ -94,18 +94,6 @@ input[id="size-l"]:checked ~ .basket-popup__point[for="size-l"] {
   font-weight: bold;
   color: $decor-font-color;
   text-transform: uppercase;
-}
-
-.basket-popup__overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 100%;
-  height: 100%;
-  background: $first-bgd-color;
-  opacity: 0.9;
-  z-index: 30;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,4 +1,4 @@
-/*! svg4everybody v2.1.8 | github.com/jonathantneal/svg4everybody */
+/*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
 
 function embed(parent, svg, target) {
   // if the target exists
@@ -75,8 +75,8 @@ function svg4everybody(rawopts) {
   if (LEGACY_SUPPORT) {
     // configure the fallback method
     fallback = opts.fallback || function (src) {
-        return src.replace(/\?[^#]+/, '').replace('#', '.').replace(/^\./, '') + '.png' + (/\?[^#]+/.exec(src) || [''])[0];
-      };
+      return src.replace(/\?[^#]+/, '').replace('#', '.').replace(/^\./, '') + '.png' + (/\?[^#]+/.exec(src) || [''])[0];
+    };
 
     // set whether to shiv <svg> and <use> elements and use image fallbacks
     nosvg = 'nosvg' in opts ? opts.nosvg : /\bMSIE [1-8]\b/.test(navigator.userAgent);
@@ -128,13 +128,13 @@ function svg4everybody(rawopts) {
       // get the current <svg>
       var parent = use.parentNode;
       var svg = getSVGAncestor(parent);
+      var src = use.getAttribute('xlink:href') || use.getAttribute('href');
 
-      if (svg) {
-        var src = use.getAttribute('xlink:href') || use.getAttribute('href');
+      if (!src && opts.attributeName) {
+        src = use.getAttribute(opts.attributeName);
+      }
 
-        if (!src && opts.attributeName) {
-          src = use.getAttribute(opts.attributeName);
-        }
+      if (svg && src) {
 
         // if running with legacy support
         if (LEGACY_SUPPORT && nosvg) {
@@ -224,5 +224,6 @@ function getSVGAncestor(node) {
       break;
     }
   }
+
   return svg;
 }
