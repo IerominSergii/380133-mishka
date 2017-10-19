@@ -82,6 +82,9 @@
 
 .contacts__feedback {
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 260px;
   min-height: 52px;
   margin-top: 0;

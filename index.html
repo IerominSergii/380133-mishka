@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<!-- Временный комментарий для задания module8-task1
-#16 Автоматизация сборки личного проекта -->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <title>HTML Academy: Мишка</title>
+    <title>Мишка</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/picturefill.js" async></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
-    <div style="display: none">
-      <include src="built/img/sprite.svg"></include>
-    </div>
+    <svg style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </svg>
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="page-header__nav">
@@ -36,7 +37,7 @@
             <li class="user-block__search-item">
               <a class="user-block__search-link" href="#">
                 <svg class="user-block__icon user-block__icon-search" width="18" height="19">
-                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                  <use xlink:href="#icon-search"></use>
                 </svg>
                 <span class="user-block__text">Поиск по сайту</span>
               </a>
@@ -44,7 +45,7 @@
             <li class="user-block__basket-item">
               <a class="user-block__basket-link" href="#">
                 <svg class="user-block__icon user-block__icon-cart" width="21" height="18">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="#icon-cart"></use>
                 </svg>
                 <span class="user-block__text">Корзина: пока пуста</span>
               </a>
@@ -70,18 +71,18 @@
             <h2 class="visually-hidden goods-categories__title">Категории товаров</h2>
             <ul class="goods-categories__list">
               <li class="goods-categories__item goods-categories__item--interior">
-                <a class="goods-categories__link">
+                <a class="goods-categories__link" href="interior.html">
                   Предметы<br>интерьера
                   <svg class="goods-categories__icon-interior" width="41" height="62">
-                    <use xlink:href="img/sprite.svg#icon-interior"></use>
+                    <use xlink:href="#icon-interior"></use>
                   </svg>
                 </a>
               </li>
               <li class="goods-categories__item goods-categories__item--toys">
-                <a class="goods-categories__link">
+                <a class="goods-categories__link" href="toys.html">
                   Детские<br>игрушки
                   <svg class="goods-categories__icon-toy" width="61" height="61">
-                    <use xlink:href="img/sprite.svg#icon-toy"></use>
+                    <use xlink:href="#icon-toy"></use>
                   </svg>
                 </a>
               </li>
@@ -120,7 +121,7 @@
 
               <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
               <source srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
-              <img class="goods-of-week__image" src="img/triple-set-mobile@1x.jpg 1x" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+              <img class="goods-of-week__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
             </picture>
           </div>
           <div class="goods-of-week__cost-btn">
@@ -134,37 +135,37 @@
         <div class="company-features__list">
           <p class="company-features__item company-features__item--eco">
             <svg class="company-features__icon company-features__icon-feature-flower" width="33" height="38">
-              <use xlink:href="img/sprite.svg#icon-feature-flower"></use>
+              <use xlink:href="#icon-feature-flower"></use>
             </svg>
             Экологически чистые&nbsp;материалы
           </p>
           <p class="company-features__item company-features__item--price">
             <svg class="company-features__icon company-features__icon-feature-money" width="47" height="27">
-              <use xlink:href="img/sprite.svg#icon-feature-money"></use>
+              <use xlink:href="#icon-feature-money"></use>
             </svg>
             Скандинавский стиль по&nbsp;российской&nbsp;цене
           </p>
           <p class="company-features__item company-features__item--likes">
             <svg class="company-features__icon company-features__icon-feature-heart" width="34" height="27">
-              <use xlink:href="img/sprite.svg#icon-feature-heart"></use>
+              <use xlink:href="#icon-feature-heart"></use>
             </svg>
             Увеличивает лайки на&nbsp;фотографиях
           </p>
           <p class="company-features__item company-features__item--craft">
             <svg class="company-features__icon company-features__icon-feature-ball" width="35" height="34">
-              <use xlink:href="img/sprite.svg#icon-feature-ball"></use>
+              <use xlink:href="#icon-feature-ball"></use>
             </svg>
             Связано вручную с любовью&nbsp;и&nbsp;умилением
           </p>
           <p class="company-features__item company-features__item--local-manufacturer">
             <svg class="company-features__icon company-features__icon-feature-rocket" width="55" height="23">
-              <use xlink:href="img/sprite.svg#icon-feature-rocket"></use>
+              <use xlink:href="#icon-feature-rocket"></use>
             </svg>
             Поддержка отечественного производителя
           </p>
           <p class="company-features__item company-features__item--gift-wrapper">
             <svg class="company-features__icon company-features__icon-feature-gift" width="33" height="32">
-              <use xlink:href="img/sprite.svg#icon-feature-gift"></use>
+              <use xlink:href="#icon-feature-gift"></use>
             </svg>
             Поставляется в подарочной&nbsp;упаковке
           </p>
@@ -184,18 +185,18 @@
           <div class="reviews__toggles">
             <div class="reviews__toggle reviews__prev">
               <svg class="reviews__icon-left-arrow" width="50" height="26">
-                <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
+                <use xlink:href="#icon-left-arrow"></use>
               </svg>
               Предыдущий отзыв
             </div>
             <div class="reviews__toggle reviews__next">
               <svg class="reviews__icon-right-arrow" width="50" height="26">
-                <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
+                <use xlink:href="#icon-right-arrow"></use>
               </svg>
               Следующий отзыв
             </div>
           </div>
-          <button class="reviews__write btn" type="button">Написать</button>
+          <a class="reviews__write btn" href="add-review.html">Написать</a>
         </div>
       </section>
     </main>
@@ -218,13 +219,13 @@
           <div class="contacts__map">
             <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615863722!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506072439282" style="border:0" allowfullscreen></iframe>
           </div>
-          <button class="contacts__feedback btn">Напишите нам</button>
+          <a class="contacts__feedback btn" href="feedback.html">Напишите нам</a>
         </div>
         <div class="page-footer__short-footer">
           <div class="page-footer__short-footer-wrapper">
             <a class="page-footer__logo">
               <svg class="page-footer__logo-footer" width="102" height="34">
-                <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+                <use xlink:href="#icon-logo-footer"></use>
               </svg>
             </a>
             <div class="page-footer__social social">
@@ -233,7 +234,7 @@
                 <li class="social__item">
                   <a class="social__link social__link--instagram" href="#">
                     <svg class="social__icon social__icon-insta" width="22" height="21">
-                      <use xlink:href="img/sprite.svg#icon-insta"></use>
+                      <use xlink:href="#icon-insta"></use>
                     </svg>
                     Мы в Инстаграме
                   </a>
@@ -241,7 +242,7 @@
                 <li class="social__item">
                   <a class="social__link social__link--facebook" href="#">
                     <svg class="social__icon social__icon-fb" width="15" height="29">
-                      <use xlink:href="img/sprite.svg#icon-fb"></use>
+                      <use xlink:href="#icon-fb"></use>
                     </svg>
                     Мы в Фейсбуке
                   </a>
@@ -249,7 +250,7 @@
                 <li class="social__item">
                   <a class="social__link social__link--twitter" href="#">
                     <svg class="social__icon social__icon-twitter" width="24" height="20">
-                      <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                      <use xlink:href="#icon-twitter"></use>
                     </svg>
                     Мы в Твиттере
                   </a>
@@ -261,7 +262,7 @@
                 <b class="copyright__text">Разработано</b>
                 <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                   <svg class="copyright__image" width="27" height="34">
-                    <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+                    <use xlink:href="#icon-htmlacademy"></use>
                   </svg>
                 </a>
               </div>
@@ -270,7 +271,7 @@
         </div>
       </div>
     </footer>
-    <section class="basket-popup">
+    <section class="basket-popup basket-popup--close">
       <h2 class="basket-popup__title">Добавить в корзину</h2>
       <span class="basket-popup__text">Выберите размер:</span>
       <form class="basket-popup__form" action="https://echo.htmlacademy.ru" method="post">
@@ -289,5 +290,9 @@
         <button class="basket-popup__add btn" type="button">Добавить</button>
       </form>
     </section>
+    <div class="basket-popup__overlay"></div>
+
+    <script scr="js/popup.js"></script>
+
   </body>
 </html>

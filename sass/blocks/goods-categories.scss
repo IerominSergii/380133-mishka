@@ -33,6 +33,7 @@
   width: 260px;
   margin: auto;
 
+  color: $decor-font-color;
   line-height: 1.3;
 }
 
@@ -81,7 +82,6 @@
   .goods-categories__item {
     margin-top: 5px;
     flex-grow: 1;
-    width: 50%;
     min-height: 118px;
   }
 
@@ -92,9 +92,11 @@
   }
 
   .goods-categories__link {
+    width: 334px;
     min-height: 119px;
     padding-top: 28px;
-    padding-left: 0;
+    padding-left: 35px;
+    padding-right: 35px;
 
     line-height: 1.6;
   }
@@ -107,12 +109,12 @@
 
   .goods-categories__icon-interior {
     top: 30px;
-    right: 0;
+    right: 35px;
   }
 
   .goods-categories__icon-toy {
     top: 31px;
-    right: -4px;
+    right: 33px;
   }
 
   .goods-categories__item--interior:hover .goods-categories__icon-interior {
@@ -132,8 +134,9 @@
   }
 
   .goods-categories__link {
+    box-sizing: border-box;
     width: 525px;
-    margin-left: 36px;
+    // margin-left: 36px;
   }
 
   .goods-categories__icon-interior {
