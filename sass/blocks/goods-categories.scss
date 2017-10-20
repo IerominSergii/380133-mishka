@@ -12,11 +12,11 @@
 
 .goods-categories__item {
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 103px;
-
 
   &--interior {
     background-color: $first-decor-color;
@@ -29,6 +29,7 @@
 
 .goods-categories__link {
   position: relative;
+
   box-sizing: border-box;
   width: 260px;
   margin: auto;
@@ -41,6 +42,7 @@
   position: absolute;
   top: -5px;
   right: 6px;
+
   width: 41px;
   height: 62px;
 
@@ -51,6 +53,7 @@
   position: absolute;
   top: -8px;
   right: -4px;
+
   width: 61px;
   height: 61px;
 
@@ -136,7 +139,6 @@
   .goods-categories__link {
     box-sizing: border-box;
     width: 525px;
-    // margin-left: 36px;
   }
 
   .goods-categories__icon-interior {

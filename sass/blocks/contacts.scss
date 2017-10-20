@@ -54,6 +54,7 @@
   position: absolute;
   top: 30px;
   left: 0;
+
   width: 180px;
   height: 1px;
 
@@ -81,10 +82,11 @@
 }
 
 .contacts__feedback {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  box-sizing: border-box;
   width: 260px;
   min-height: 52px;
   margin-top: 0;
@@ -101,11 +103,11 @@
 @media (min-width: $tablet-width) {
   .contacts__info {
     width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
     margin-bottom: 56px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .contacts__title {

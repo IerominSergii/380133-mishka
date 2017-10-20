@@ -5,11 +5,13 @@
 }
 
 .social__list {
-  box-sizing: border-box;
   display: flex;
+
+  box-sizing: border-box;
   min-height: 80px;
   margin: auto;
   padding: 0;
+
   list-style: none;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
@@ -17,6 +19,7 @@
 
 .social__item {
   display: flex;
+
   width: 22px;
   height: 29px;
   margin-top: auto;

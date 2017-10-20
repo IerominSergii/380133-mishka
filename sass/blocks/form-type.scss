@@ -24,9 +24,11 @@
   position: absolute;
   top: -8px;
   left: 0;
-  font-size: 0;
+
   width: 35px;
   height: 35px;
+
+  font-size: 0;
   border: 2px solid $second-font-color;
   border-radius: 50%;
 }
@@ -45,8 +47,10 @@
   position: absolute;
   top: 10px;
   left: 11px;
+
   width: 15px;
   height: 15px;
+
   background-color: $first-decor-color;
   border-radius: 50%;
 }

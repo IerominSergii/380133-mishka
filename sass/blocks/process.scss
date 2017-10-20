@@ -29,6 +29,7 @@
   position: absolute;
   top: 10px;
   left: 33px;
+
   width: 32px;
   height: 22px;
 
@@ -37,6 +38,7 @@
 
 .process__video-link {
   position: relative;
+
   display: block;
   width: 260px;
   height: 150px;
@@ -47,6 +49,7 @@
   position: absolute;
   top: 35px;
   left: 79px;
+
   width: 102px;
   height: 78px;
 
@@ -174,9 +177,10 @@
   }
 
   .process__title {
+    flex-shrink: 0;
+
     box-sizing: border-box;
     width: 368px;
-    flex-shrink: 0;
     padding-top: 95px;
     padding-left: 77px;
     padding-right: 56px;
@@ -203,15 +207,16 @@
   }
 
   .process__info {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-self: flex-end;
-    padding: 0;
+
+    box-sizing: border-box;
     width: 368px;
     margin-top: 170px;
     margin-left: -368px;
+    padding: 0;
     padding-bottom: 59px;
     padding-left: 77px;
     padding-right: 56px;
