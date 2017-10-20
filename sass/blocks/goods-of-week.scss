@@ -75,6 +75,10 @@
 .goods-of-week__order {
   cursor: pointer;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   box-sizing: border-box;
   width: 100%;
   height: 52px;

@@ -1,5 +1,6 @@
 .page-header {
   box-sizing: border-box;
+  max-height: 80px;
 
   border-top: 1px solid $fourth-decor-color;
 }
@@ -79,6 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    max-height: none;
     height: 89px;
 
     border-top: none;
@@ -145,6 +147,7 @@
     vertical-align: 24px;
     color: $second-font-color;
     text-decoration: none;
+    z-index: 20;
   }
 }
 
