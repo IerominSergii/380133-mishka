@@ -1,44 +1,12 @@
 .page-header {
   box-sizing: border-box;
+  max-height: 80px;
 
   border-top: 1px solid $fourth-decor-color;
 }
 
 .page-header__wrapper {
   position: relative;
-}
-
-.page-header__first-menu,
-.page-header__second-menu,
-.page-header__third-menu {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.page-header__third-menu,
-.page-header__text {
-  display: none;
-}
-
-.page-header__show-menu {
-  display: block;
-}
-
-.page-header__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 21px;
-  height: 20px;
-  padding: 30px;
-  padding-bottom: 28px;
-
-  background-image: url("../img/menu-open.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  font-size: 0;
 }
 
 .page-header__logo {
@@ -53,16 +21,66 @@
   padding-bottom: 21px;
 }
 
-.page-header__logo-image:hover {
+.page-header__logo[href]:hover {
   opacity: 0.6;
 }
 
-.page-header__logo-image:active {
+.page-header__logo[href]:active {
   opacity: 0.3;
+}
+
+.page-header__toggle {
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 21px;
+  height: 20px;
+  padding: 30px;
+  padding-bottom: 28px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+
+  &--open {
+    background-image: url("../img/menu-close.svg");
+  }
+
+  &--close {
+    background-image: url("../img/menu-open.svg");
+  }
+}
+
+.page-header__first-menu,
+.page-header__second-menu,
+.page-header__third-menu {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.page-header__mobile-menu {
+  &--show {
+    display: block;
+  }
+
+  &--hide {
+    display: none;
+  }
+}
+
+.page-header__third-menu,
+.page-header__text {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    max-height: none;
     height: 89px;
 
     border-top: none;
@@ -109,6 +127,8 @@
   .page-header__first-menu {
     width: 49%;
     order: 2;
+
+    z-index: 20;
   }
 
   .page-header__second-menu {
@@ -127,6 +147,7 @@
     vertical-align: 24px;
     color: $second-font-color;
     text-decoration: none;
+    z-index: 20;
   }
 }
 
@@ -169,11 +190,13 @@
   }
 
   .page-header__third-menu {
-    list-style-type: none;
+    order: 3;
+
     margin: 0;
     padding: 0;
     margin-top: 18px;
-    order: 3;
+
+    list-style-type: none;
   }
 
   .page-header__text {

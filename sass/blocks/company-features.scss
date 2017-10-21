@@ -14,11 +14,11 @@
 
 .company-features__title {
   width: 100%;
+  padding: 0;
+  margin: 0;
 
   font-size: 25px;
   vertical-align: 30px;
-  padding: 0;
-  margin: 0;
   margin-bottom: 28px;
 }
 
@@ -99,6 +99,7 @@
     position: absolute;
     top: -44px;
     left: 0;
+
     width: 768px;
     height: 30px;
 
@@ -124,9 +125,10 @@
   }
 
   .company-features__item {
-    box-sizing: border-box;
     display: flex;
     align-items: flex-start;
+
+    box-sizing: border-box;
     width: 50%;
     flex-grow: 1;
     margin-bottom: 50px;

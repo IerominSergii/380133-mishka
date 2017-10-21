@@ -56,8 +56,9 @@
 .unit__price {
   display: flex;
   justify-content: space-between;
+
   padding-top: 25px;
-  padding-bottom: 29px;
+  padding-bottom: 28px;
 
   font-size: 15px;
   vertical-align: 24px;
@@ -127,9 +128,10 @@
   }
 
   .unit__info {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+
+    box-sizing: border-box;
     width: 316px;
     height: auto;
     min-height: 198px;
