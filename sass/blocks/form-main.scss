@@ -13,6 +13,10 @@
   color: $first-font-color;
 }
 
+.form-main__bottom-bg {
+  display: none;
+}
+
 .form-main__header-wrapper {
   display: flex;
   min-height: 176px;
@@ -51,19 +55,17 @@
     position: relative;
   }
 
-  .form-main__header::after {
-    content: "";
+  .form-main__bottom-bg {
     position: absolute;
-    bottom: -17px;
+    bottom: 0;
     left: 0;
 
+    display: block;
     width: 100%;
-    height: 35px;
+    height: auto;
+    margin-bottom: -75px;
 
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    z-index: 10;
+    fill: #ffffff;
   }
 
   .form-main__header-wrapper {
@@ -93,6 +95,12 @@
 @media (min-width: $desktop-width) {
   .form-main__header {
     min-height: 255px;
+  }
+
+  .form-main__header::after {
+    bottom: -17px;
+
+    height: 35.8px;
   }
 
   .form-main__title {
