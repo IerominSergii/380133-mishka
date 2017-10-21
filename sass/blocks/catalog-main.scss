@@ -12,6 +12,10 @@
   color: $first-font-color;
 }
 
+.catalog-main__bottom-bg {
+  display: none;
+}
+
 .catalog-main__header-wrapper {
   display: flex;
   min-height: 176px;
@@ -50,19 +54,17 @@
     position: relative;
   }
 
-  .catalog-main__header::after {
-    content: "";
+  .catalog-main__bottom-bg {
     position: absolute;
-    bottom: -17px;
+    bottom: 0;
     left: 0;
 
+    display: block;
     width: 100%;
-    height: 35px;
+    height: auto;
+    margin-bottom: -75px;
 
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    z-index: 10;
+    fill: #ffffff;
   }
 
   .catalog-main__header-wrapper {

@@ -26,6 +26,8 @@
   font-weight: bold;
   color: $first-font-color;
   border-bottom: 1px solid $fourth-decor-color;
+  background-color: $first-bgd-color;
+  z-index: 20;
 }
 
 .user-block__text {
@@ -94,16 +96,22 @@
     border-right: 1px solid $fourth-decor-color;
   }
 
-  .user-block__search-link {
+  .user-block__search-link,
+  .user-block__basket-link {
     position: relative;
 
+    box-sizing: border-box;
+
+    border-bottom: 1px solid $fourth-decor-color;
+  }
+
+  .user-block__search-link {
     width: 82px;
     height: 89px;
     padding-left: 0;
     padding-top: 0;
 
     font-size: 0;
-    border-bottom: none;
   }
 
   .user-block__icon-search {
@@ -118,13 +126,9 @@
   }
 
   .user-block__basket-link {
-    position: relative;
-
     display: flex;
     padding-left: 82px;
     padding-top: 0;
-
-    border-bottom: none;
   }
 
   .user-block__text {
