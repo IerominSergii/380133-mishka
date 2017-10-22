@@ -186,11 +186,16 @@
             <source srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img class="process__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
           </picture>
+          <button class="process__video-button" type="button">
+            <svg class="process__video-button-icon" width="102" height="78">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </button>
         </a>
         <div class="process__info">
           <p class="process__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="process__do-order btn" type="button">Сделать заказ</button>
+          <a class="process__do-order btn">Сделать заказ</a>
         </div>
       </section>
     </main>
@@ -233,14 +238,12 @@
               </ul>
             </div>
             <div class="page-footer__copyright copyright">
-              <div class="copyright__wrapper">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                 <b class="copyright__text">Разработано</b>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                  <svg class="copyright__image" width="27" height="34">
-                    <use xlink:href="#icon-htmlacademy"></use>
-                  </svg>
-                </a>
-              </div>
+                <svg class="copyright__image" width="27" height="34">
+                  <use xlink:href="#icon-htmlacademy"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>

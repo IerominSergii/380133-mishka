@@ -1,20 +1,19 @@
 .social {
+  box-sizing: border-box;
+  min-height: 80px;
   display: flex;
 
   font-size: 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__list {
   display: flex;
-
-  box-sizing: border-box;
-  min-height: 80px;
   margin: auto;
   padding: 0;
 
   list-style: none;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 .social__item {
@@ -72,7 +71,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social__list {
+  .social {
     border-bottom: none;
   }
 }
