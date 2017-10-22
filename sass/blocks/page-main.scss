@@ -59,7 +59,12 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-size: auto 760px;
+    background-size: 1150px 744px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
   }
 
   .page-main__bottom-bg {
@@ -93,6 +98,15 @@
 @media (min-width: $desktop-width) {
   .page-main {
     margin-bottom: 241px;
+  }
+
+  .page-main__header {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: 1250px 760px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   .page-main__header-wrapper {

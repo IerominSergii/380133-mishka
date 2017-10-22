@@ -35,7 +35,7 @@
   text-align: center;
   font-size: 25px;
   vertical-align: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: $first-font-color;
   text-transform: uppercase;
 }
@@ -90,7 +90,7 @@ input[id="size-l"]:checked ~ .basket-popup__point[for="size-l"] {
   background-color: $first-decor-color;
   font-size: 17px;
   vertical-align: 16px;
-  font-weight: bold;
+  font-weight: 700;
   color: $decor-font-color;
   text-transform: uppercase;
 }
