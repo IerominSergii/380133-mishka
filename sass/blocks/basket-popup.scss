@@ -1,13 +1,15 @@
 .basket-popup {
+  box-sizing: border-box;
+
   position: fixed;
   top: 100px;
   left: 50%;
 
-  width: 258px;
-  min-height: 255px;
+  width: 320px;
+  min-height: 338px;
   margin-left: -160px;
   padding: 0 30px;
-  padding-top: 35px;
+  padding-top: 31px;
   padding-bottom: 46px;
 
   color: $second-font-color;
@@ -63,7 +65,7 @@
 
   font-size: 17px;
   vertical-align: 16px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   border: 2px solid #ececec;
 }
@@ -74,16 +76,13 @@ input[id="size-l"]:checked ~ .basket-popup__point[for="size-l"] {
   border-color: $first-decor-color;
 }
 
-.basket-popup__point:hover {
-  border-color: rgba(68, 68, 68, 0.3);
-}
-
 .basket-popup__input {
   display: none;
 }
 
 .basket-popup__add {
   width: 260px;
+  min-height: 52px;
   margin: 0;
   margin-top: 31px;
   padding: 0;
@@ -99,10 +98,35 @@ input[id="size-l"]:checked ~ .basket-popup__point[for="size-l"] {
 @media (min-width: $tablet-width) {
   .basket-popup {
     box-sizing: border-box;
-    width: 566px;
+    width: 568px;
     margin-left: -283px;
+    padding-top: 46px;
     padding-left: 108px;
     padding-right: 108px;
+  }
+
+  .basket-popup__title {
+    width: 370px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 29px;
+
+    font-size: 30px;
+    vertical-align: 57px;
+  }
+
+  .basket-popup__text {
+    margin-bottom: 29px;
+
+    font-size: 17px;
+  }
+
+  .basket-popup__point {
+    width: 108px;
+  }
+
+  .basket-popup__point:hover {
+    border-color: rgba(68, 68, 68, 0.3);
   }
 
   .basket-popup__add {

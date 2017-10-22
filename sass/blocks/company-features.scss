@@ -1,4 +1,6 @@
 .company-features {
+  position: relative;
+
   width: 260px;
   margin: 0 auto;
   margin-top: 34px;
@@ -82,33 +84,25 @@
   height: 32px;
 }
 
+.company-features__bg-zigzag {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 320px;
+  height: 6.4px;
+
+  transform: rotate(180deg);
+}
+
 @media (min-width: $tablet-width) {
   .company-features {
-    position: relative;
-
     width: 668px;
     margin-top: 77px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  .company-features::before {
-    content: "";
-    position: absolute;
-    top: -44px;
-    left: 0;
-
-    width: 768px;
-    height: 30px;
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-    background-position: top;
-    background-size: contain;
-    transform: rotate(180deg);
-    z-index: 10;
   }
 
   .company-features__title {
@@ -161,6 +155,13 @@
   .company-features__item--gift-wrapper {
     order: -1;
   }
+
+  .company-features__bg-zigzag {
+    top: -30px;
+
+    width: 768px;
+    height: 15.36px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -174,12 +175,6 @@
     padding-right: 50px;
   }
 
-  .company-features::before {
-    top: -43px;
-    width: 1050px;
-    height: 23px;
-  }
-
   .company-features__title {
     width: 700px;
     margin-bottom: 40px;
@@ -190,5 +185,13 @@
 
   .company-features__list {
     width: 700px;
+  }
+
+  .company-features__bg-zigzag {
+    top: -30px;
+
+    width: 1150px;
+    height: 23px;
+    margin-left: -50px;
   }
 }
