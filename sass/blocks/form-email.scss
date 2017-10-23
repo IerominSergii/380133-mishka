@@ -28,7 +28,9 @@
   border-bottom: 2px solid #000000;
 }
 
-.form-email__input:hover {
+.form-email__input:hover,
+.form-email__input:active,
+.form-email__input:focus {
   border-bottom-color: $first-decor-color;
 }
 
@@ -113,7 +115,8 @@
 }
 
 .form-email__input:hover ~ .form-email__icon,
-.form-email__input:active ~ .form-email__icon {
+.form-email__input:active ~ .form-email__icon,
+.form-email__input:focus ~ .form-email__icon {
   opacity: 1;
   fill: $first-decor-color;
 }

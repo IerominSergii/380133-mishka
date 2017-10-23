@@ -28,7 +28,8 @@
 }
 
 .form-extra__textarea:hover,
-.form-extra__textarea:active {
+.form-extra__textarea:active,
+.form-extra__textarea:focus {
   border-color: $first-decor-color;
   transition: border-color 0.3s ease;
 }
