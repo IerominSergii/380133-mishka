@@ -73,9 +73,34 @@
 }
 
 .contacts__map {
+  position: relative;
+
+  display: flex;
+
   width: 100%;
   height: 457px;
   margin-bottom: 37px;
+}
+
+.contacts__map-picture,
+.contacts__map-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__map-picture--with-js,
+.contacts__map-pin--with-js,
+.contacts__iframe--without-js {
+  display: none;
+}
+
+.contacts__map-pin {
+  position: absolute;
+  top: 143px;
+  left: 50%;
+
+  width: 67px;
+  height: 100px;
 }
 
 .contacts__iframe {
