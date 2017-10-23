@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script src="js/picturefill.js" async></script>
     <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody();</script>
+    <!-- <script>svg4everybody();</script> -->
   </head>
   <body>
     <svg style="display: none">
@@ -168,31 +168,31 @@
         </fieldset>
         <fieldset class="form__fieldset form-phone">
           <div class="form__fieldset-wrapper form-phone__wrapper">
-            <div class="form__fieldset-layout form-phone__layout">
+            <label class="form__fieldset-layout form-phone__layout" for="form-phone">
               <h2 class="form__fieldset-title form-phone__title">Тел</h2>
-            </div>
+            </label>
             <div class="form-phone__content">
-              <label class="form-phone__item">
-                <input class="form__fieldset-input form-phone__input" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*">
+              <div class="form-phone__item">
+                <input class="form__fieldset-input form-phone__input" id="form-phone" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*">
                 <svg class="form-phone__icon" width="25" height="24">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
-              </label>
+              </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form-email">
           <div class="form__fieldset-wrapper form-email__wrapper">
-            <div class="form__fieldset-layout form-email__layout">
+            <label class="form__fieldset-layout form-email__layout" for="form-email">
               <h2 class="form__fieldset-title form-email__title">E-mail</h2>
-            </div>
+            </label>
             <div class="form-email__content">
-              <label class="form-email__item">
-                <input class="form__fieldset-input form-email__input" type="email" name="email" placeholder="Ваш Email*">
+              <div class="form-email__item">
+                <input class="form__fieldset-input form-email__input" id="form-email" type="email" name="email" placeholder="Ваш Email*">
                 <svg class="form-email__icon" width="32" height="21">
                   <use xlink:href="#icon-email"></use>
                 </svg>
-              </label>
+              </div>
             </div>
           </div>
         </fieldset>
