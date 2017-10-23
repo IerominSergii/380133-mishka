@@ -8,10 +8,10 @@
   display: flex;
 
   box-sizing: border-box;
-  min-height: 79px;
+  min-height: 80px;
 }
 
-.sale-list__item:last-child {
+.site-list__item:last-child {
   margin-right: 0;
 }
 
@@ -44,7 +44,7 @@
   .site-list__item {
     display: inline-block;
     vertical-align: bottom;
-    margin-right: 30px;
+    margin-right: 32px;
   }
 
   .site-list__link {

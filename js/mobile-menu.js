@@ -30,5 +30,9 @@
     toggle.addEventListener('click', closeMenu);
   };
 
+  header.classList.remove('page-header--without-js');
+  firstMenu.classList.remove('page-header__first-menu--without-js');
+  toggle.classList.remove('page-header__toggle--without-js');
+
   closeMenu();
 })();
