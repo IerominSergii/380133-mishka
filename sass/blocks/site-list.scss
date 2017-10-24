@@ -11,7 +11,7 @@
   min-height: 80px;
 }
 
-.site-list__item:last-child {
+.site-list__item:nth-child(2n) {
   margin-right: 0;
 }
 
@@ -28,6 +28,7 @@
   color: $first-font-color;
   border-bottom: 1px solid $fourth-decor-color;
   background-color: $first-bgd-color;
+  z-index: 20;
 }
 
 .site-list__link[href]:active .site-list__text {
@@ -67,17 +68,26 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
+    min-height: 89px;
     margin-right: 0;
     padding-right: 34px;
+  }
+
+  .site-list li:first-child {
     border-right: 1px solid $fourth-decor-color;
   }
 
-  .site-list li:last-child {
+  .site-list li:nth-child(2n) {
     padding-right: 0;
     margin-left: 35px;
+    border-right: none;
+  }
+
+  .site-list li:nth-child(2n) {
     border-right: none;
   }
 

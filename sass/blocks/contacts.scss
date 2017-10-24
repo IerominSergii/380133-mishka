@@ -32,11 +32,14 @@
 
 .contacts__item {
   display: flex;
+  flex-wrap: wrap;
+
   margin-bottom: 30px;
 }
 
 .contacts__type {
   width: 50px;
+  margin-bottom: -50px;
 }
 
 .contacts__field {
@@ -125,6 +128,10 @@
   color: $first-font-color;
   border: 2px solid $second-font-color;
   background-color: $first-bgd-color;
+}
+
+.contacts__adress {
+  padding-left: 50px;
 }
 
 @media (min-width: $tablet-width) {

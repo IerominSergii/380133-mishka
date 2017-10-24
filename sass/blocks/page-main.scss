@@ -36,9 +36,11 @@
 
 .page-main__main-title {
   align-self: center;
+
+  max-width: 260px;
   margin-top: 67px;
   margin-bottom: auto;
-  max-width: 260px;
+  padding-bottom: 40px;
 
   text-align: center;
   font-size: 27px;
@@ -50,6 +52,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
+    margin-top: -79px;
     margin-bottom: 141px;
   }
 
@@ -89,6 +92,7 @@
   .page-main__main-title {
     max-width: 520px;
     margin-top: 152px;
+    margin-bottom: auto;
 
     font-size: 43px;
     vertical-align: 50px;
@@ -97,6 +101,7 @@
 
 @media (min-width: $desktop-width) {
   .page-main {
+    margin-top: 3px;
     margin-bottom: 241px;
   }
 

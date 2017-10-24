@@ -55,7 +55,6 @@
     cursor: pointer;
 
     display: block;
-    width: 30%;
   }
 
   .page-footer__logo-footer:active,
@@ -68,11 +67,11 @@
   }
 
   .page-footer__social {
-    width: 30%;
+    max-width: 350px;
   }
 
   .page-footer__copyright {
-    width: 30%;
+    width: 185px;
   }
 }
 
@@ -83,5 +82,9 @@
 
   .page-footer__short-footer-wrapper {
     width: 1050px;
+  }
+
+  .page-footer__social {
+    max-width: 700px;
   }
 }

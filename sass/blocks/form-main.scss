@@ -23,8 +23,10 @@
 }
 
 .form-main__title {
+  width: 260px;
   margin: auto;
   margin-top: 69px;
+  padding-bottom: 69px;
 
   text-align: center;
   font-size: 27px;
@@ -69,14 +71,16 @@
   }
 
   .form-main__header-wrapper {
-    width: 768px;
     min-height: 225px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .form-main__title {
+    width: 668px;
     margin-top: 93px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     font-size: 43px;
     vertical-align: 50px;
@@ -104,6 +108,7 @@
   }
 
   .form-main__title {
+    width: 1050px;
     font-size: 53px;
     vertical-align: 57px;
   }

@@ -10,6 +10,7 @@
   display: flex;
 
   box-sizing: border-box;
+  z-index: 15;
 }
 
 .user-block__search-link,
@@ -152,6 +153,11 @@
 
   .user-block__basket-item {
     flex-grow: 1;
+  }
+
+  .user-block__search-link,
+  .user-block__basket-link {
+    border-bottom: none;
   }
 
   .user-block__icon-cart {
