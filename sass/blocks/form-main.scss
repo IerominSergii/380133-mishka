@@ -59,26 +59,25 @@
 
   .form-main__bottom-bg {
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     left: 0;
 
     display: block;
     width: 100%;
-    height: auto;
-    margin-bottom: -75px;
+    height: 50px;
 
     fill: #ffffff;
   }
 
   .form-main__header-wrapper {
-    min-height: 225px;
+    min-height: 145px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .form-main__title {
     width: 668px;
-    margin-top: 93px;
+    margin-top: 13px;
     padding-left: 50px;
     padding-right: 50px;
 
@@ -109,13 +108,15 @@
 
   .form-main__title {
     width: 1050px;
+    margin-top: 93px;
+
     font-size: 53px;
     vertical-align: 57px;
   }
 
   .form-main__text {
     box-sizing: border-box;
-    width: 100%;
+    width: 1150px;
     padding-top: 119px;
     padding-left: 225px;
     padding-right: 225px;

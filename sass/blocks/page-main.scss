@@ -28,7 +28,8 @@
 .page-main__header-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  height: 0;
   min-height: 488px;
   margin: 0;
   padding: 0;
@@ -38,8 +39,8 @@
   align-self: center;
 
   max-width: 260px;
+  margin: 0;
   margin-top: 67px;
-  margin-bottom: auto;
   padding-bottom: 40px;
 
   text-align: center;
@@ -72,13 +73,12 @@
 
   .page-main__bottom-bg {
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     left: 0;
 
     display: block;
     width: 100%;
-    height: auto;
-    margin-bottom: -75px;
+    height: 50px;
 
     fill: #ffffff;
   }
@@ -92,7 +92,6 @@
   .page-main__main-title {
     max-width: 520px;
     margin-top: 152px;
-    margin-bottom: auto;
 
     font-size: 43px;
     vertical-align: 50px;
@@ -116,15 +115,8 @@
 
   .page-main__header-wrapper {
     width: 1150px;
+    min-height: 745px;
     margin: 0 auto;
-  }
-
-  .page-main__header-wrapper::after {
-    bottom: -17px;
-    left: 0;
-    width: 1150px;
-    height: 37px;
-    background-size: cover;
   }
 
   .page-main__main-title {

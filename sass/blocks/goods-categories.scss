@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 0;
   min-height: 103px;
 
   &--interior {
@@ -32,7 +33,6 @@
 
   box-sizing: border-box;
   width: 260px;
-  margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 50px;
@@ -96,6 +96,7 @@
   .goods-categories__item--interior:hover,
   .goods-categories__item--toys:hover {
     margin-top: 0;
+    height: 100%;
     transition: margin-top 0.3s ease;
   }
 
@@ -113,7 +114,6 @@
   .goods-categories__item--interior:hover .goods-categories__link,
   .goods-categories__item--toys:hover .goods-categories__link {
     padding-top: 23px;
-    transition: padding-top 0.3s ease;
   }
 
   .goods-categories__icon-interior {
@@ -124,14 +124,9 @@
     right: 33px;
   }
 
-  .goods-categories__item--interior:hover .goods-categories__icon-interior {
-    top: 25px;
-    transition: top 0.3s ease;
-  }
-
+  .goods-categories__item--interior:hover .goods-categories__icon-interior,
   .goods-categories__item--toys:hover .goods-categories__icon-toy {
-    top: 26px;
-    transition: top 0.3s ease;
+    margin-top: -34px;
   }
 }
 

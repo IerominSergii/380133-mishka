@@ -111,6 +111,11 @@
     border-top: none;
     border-bottom: none;
     background-color: $third-bgd-color;
+
+    &--form,
+    &--catalog {
+      background-color: $second-bgd-color;
+    }
   }
 
   .page-header::after {
@@ -164,7 +169,6 @@
     padding-right: 0;
 
     text-align: left;
-    // border-bottom: none;
     border-bottom: 1px solid $fourth-decor-color;
     background-color: $first-bgd-color;
   }
@@ -205,9 +209,13 @@
 @media (min-width: $desktop-width) {
   .page-header {
     position: relative;
-    margin-bottom: -59px;
+    margin-bottom: -57px;
 
     background-color: $first-bgd-color;
+
+    &--index {
+      margin-bottom: -59px;
+    }
   }
 
   .page-header::before {
