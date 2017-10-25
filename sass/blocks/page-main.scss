@@ -6,6 +6,8 @@
 }
 
 .page-main__header {
+  display: flex;
+
   margin: 0;
   padding: 0;
 
@@ -29,7 +31,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 0;
+
+  width: 100%;
   min-height: 488px;
   margin: 0;
   padding: 0;

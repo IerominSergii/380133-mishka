@@ -9,6 +9,8 @@
 }
 
 .form-main__header {
+  display: flex;
+
   background-color: $second-bgd-color;
   color: $first-font-color;
 }
@@ -19,7 +21,8 @@
 
 .form-main__header-wrapper {
   display: flex;
-  height: 0;
+
+  width: 100%;
   min-height: 176px;
 }
 

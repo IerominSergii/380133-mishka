@@ -8,6 +8,8 @@
 }
 
 .catalog-main__header {
+  display: flex;
+
   background-color: $second-bgd-color;
   color: $first-font-color;
 }
@@ -22,7 +24,7 @@
   align-items: center;
 
   box-sizing: border-box;
-  height: 0;
+  width: 100%;
   min-height: 176px;
   padding: 50px 30px;
 }
