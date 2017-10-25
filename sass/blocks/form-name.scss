@@ -3,7 +3,7 @@
 
   font-size: 17px;
   vertical-align: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: $first-font-color;
 }
 
@@ -30,7 +30,9 @@
   border-bottom: 2px solid $first-font-color;
 }
 
-.form-name__input:hover {
+.form-name__input:hover,
+.form-name__input:active,
+.form-name__input:focus {
   border-bottom-color: $first-decor-color;
   transition: border-bottom-color 0.3s ease;
 }

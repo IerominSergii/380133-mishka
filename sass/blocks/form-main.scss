@@ -9,6 +9,8 @@
 }
 
 .form-main__header {
+  display: flex;
+
   background-color: $second-bgd-color;
   color: $first-font-color;
 }
@@ -19,17 +21,21 @@
 
 .form-main__header-wrapper {
   display: flex;
+
+  width: 100%;
   min-height: 176px;
 }
 
 .form-main__title {
+  width: 260px;
   margin: auto;
   margin-top: 69px;
+  padding-bottom: 69px;
 
   text-align: center;
   font-size: 27px;
   vertical-align: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: $first-font-color;
 }
 
@@ -41,7 +47,7 @@
 
   font-size: 13px;
   vertical-align: 24px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.9;
   color: $second-font-color;
 }
@@ -57,26 +63,27 @@
 
   .form-main__bottom-bg {
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
     left: 0;
 
     display: block;
     width: 100%;
-    height: auto;
-    margin-bottom: -75px;
+    height: 50px;
 
     fill: #ffffff;
   }
 
   .form-main__header-wrapper {
-    width: 768px;
-    min-height: 225px;
+    min-height: 145px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .form-main__title {
-    margin-top: 93px;
+    width: 668px;
+    margin-top: 13px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     font-size: 43px;
     vertical-align: 50px;
@@ -104,13 +111,16 @@
   }
 
   .form-main__title {
+    width: 1050px;
+    margin-top: 93px;
+
     font-size: 53px;
     vertical-align: 57px;
   }
 
   .form-main__text {
     box-sizing: border-box;
-    width: 100%;
+    width: 1150px;
     padding-top: 119px;
     padding-left: 225px;
     padding-right: 225px;

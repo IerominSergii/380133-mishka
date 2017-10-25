@@ -14,7 +14,8 @@
     <svg style="display: none">
       <include src="build/img/sprite.svg"></include>
     </svg>
-    <header class="page-header">
+    <!-- состояние меню, если JavaScript не работает - page-header--without-js -->
+    <header class="page-header page-header--index page-header--without-js">
       <div class="page-header__wrapper">
         <nav class="page-header__nav">
           <a class="page-header__logo">
@@ -24,8 +25,11 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
             </picture>
           </a>
-          <div class="page-header__toggle page-header__toggle--open">Меню</div>
-          <ul class="page-header__first-menu page-header__mobile-menu page-header__mobile-menu--show site-list">
+          <!-- классы: page-header__toggle--open и page-header__toggle--close переключают состояние кнопки меню -->
+          <div class="page-header__toggle page-header__toggle--open page-header__toggle--without-js">Меню</div>
+          <!-- состояние меню, если JavaScript не работает - page-header__first-menu--without-js -->
+          <!-- классы: page-header__toggle--open и page-header__toggle--close переключают состояние кнопки меню -->
+          <ul class="page-header__first-menu page-header__first-menu--without-js page-header__mobile-menu page-header__mobile-menu--show site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">
                 <span class="site-list__text">Каталог товаров</span>
@@ -37,10 +41,12 @@
               </a>
             </li>
           </ul>
+          <!-- классы: page-header__toggle--open и page-header__toggle--close переключают состояние кнопки меню -->
           <ul class="page-header__second-menu page-header__mobile-menu page-header__mobile-menu--show user-block">
             <li class="user-block__search-item">
               <a class="user-block__search-link" href="#">
                 <span class="user-block__text">
+                  <span class="visually-hidden">Search</span>
                   <svg class="user-block__icon user-block__icon-search" width="18" height="19">
                     <use xlink:href="#icon-search"></use>
                   </svg>
@@ -51,6 +57,7 @@
             <li class="user-block__basket-item">
               <a class="user-block__basket-link" href="#">
                 <span class="user-block__text">
+                  <span class="visually-hidden">Add to basket</span>
                   <svg class="user-block__icon user-block__icon-cart" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -181,6 +188,9 @@
             Поставляется в подарочной&nbsp;упаковке
           </p>
         </div>
+        <svg class="company-features__bg-zigzag">
+          <use xlink:href="#icon-bg-zigzag-line"></use>
+        </svg>
       </section>
       <section class="reviews">
         <div class="reviews__content">
@@ -194,21 +204,24 @@
         </div>
         <div class="reviews__control">
           <div class="reviews__toggles">
-            <div class="reviews__toggle reviews__prev">
+            <button class="reviews__toggle reviews__prev" type="button">
               <svg class="reviews__icon-left-arrow" width="50" height="26">
                 <use xlink:href="#icon-left-arrow"></use>
               </svg>
               Предыдущий отзыв
-            </div>
-            <div class="reviews__toggle reviews__next">
+            </button>
+            <button class="reviews__toggle reviews__next" type="button">
               <svg class="reviews__icon-right-arrow" width="50" height="26">
                 <use xlink:href="#icon-right-arrow"></use>
               </svg>
               Следующий отзыв
-            </div>
+            </button>
           </div>
           <a class="reviews__write btn" href="add-review.html">Написать</a>
         </div>
+        <svg class="reviews__bg-zigzag">
+          <use xlink:href="#icon-bg-zigzag-line"></use>
+        </svg>
       </section>
     </main>
     <footer class="page-footer">
@@ -219,7 +232,7 @@
             <div class="contacts__list">
               <div class="contacts__item">
                 <span class="contacts__type">e-mail:</span>
-                <p class="contacts__field contacts__email">info@mimimishkashop.ru</p>
+                <a class="contacts__field contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </div>
               <div class="contacts__item">
                 <span class="contacts__type">адрес:</span>
@@ -228,7 +241,22 @@
             </div>
           </div>
           <div class="contacts__map">
-            <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615863722!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506072439282" style="border:0" allowfullscreen></iframe>
+            <!-- изображение карты, если JavaScript работает, исчезает. Добавляется класс - contacts__map-picture--with-js -->
+            <picture class="contacts__map-picture">
+              <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" media="(min-width: 1150px)">
+              <source type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+
+              <source srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+              <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
+              <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+            </picture>
+            <!-- изображение pin, если JavaScript работает, исчезает. Добавляется класс - contacts__map-pin--with-js -->
+            <svg class="contacts__map-pin">
+              <use xlink:href="#icon-map-pin"></use>
+            </svg>
+            <!-- google карта, если JavaScript работает, появляется. Удаляется класс - contacts__iframe--without-js -->
+            <iframe class="contacts__iframe contacts__iframe--without-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123825!2d30.320894615863722!3d59.93879686904818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506072439282" style="border:0" allowfullscreen></iframe>
           </div>
           <a class="contacts__feedback btn" href="feedback.html">Напишите нам</a>
         </div>
@@ -244,6 +272,7 @@
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link social__link--instagram" href="#">
+                    <span class="visually-hidden">instagram link</span>
                     <svg class="social__icon social__icon-insta" width="22" height="21">
                       <use xlink:href="#icon-insta"></use>
                     </svg>
@@ -252,6 +281,7 @@
                 </li>
                 <li class="social__item">
                   <a class="social__link social__link--facebook" href="#">
+                    <span class="visually-hidden">facebook link</span>
                     <svg class="social__icon social__icon-fb" width="15" height="29">
                       <use xlink:href="#icon-fb"></use>
                     </svg>
@@ -260,6 +290,7 @@
                 </li>
                 <li class="social__item">
                   <a class="social__link social__link--twitter" href="#">
+                    <span class="visually-hidden">twitter link</span>
                     <svg class="social__icon social__icon-twitter" width="24" height="20">
                       <use xlink:href="#icon-twitter"></use>
                     </svg>
@@ -269,14 +300,13 @@
               </ul>
             </div>
             <div class="page-footer__copyright copyright">
-              <div class="copyright__wrapper">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                 <b class="copyright__text">Разработано</b>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                  <svg class="copyright__image" width="27" height="34">
-                    <use xlink:href="#icon-htmlacademy"></use>
-                  </svg>
-                </a>
-              </div>
+                <span class="visually-hidden">HTML Academy</span>
+                <svg class="copyright__image" width="27" height="34">
+                  <use xlink:href="#icon-htmlacademy"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -305,6 +335,7 @@
 
     <script src="js/new-popup.js"></script>
     <script src="js/mobile-menu.js"></script>
+    <script src="js/map-footer.js"></script>
 
   </body>
 </html>

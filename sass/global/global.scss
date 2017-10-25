@@ -1,8 +1,7 @@
 body {
   min-width: 320px;
   font-family: $main-font-family;
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
 
   background-color: $first-bgd-color;
   color: $first-font-color;
@@ -15,7 +14,7 @@ body {
 
   font-size: 17px;
   vertical-align: 20px;
-  font-weight: bold;
+  font-weight: 700;
   color: $second-font-color;
   text-transform: uppercase;
   border: 0;

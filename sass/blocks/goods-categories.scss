@@ -5,7 +5,7 @@
 
   font-size: 19px;
   vertical-align: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: $decor-font-color;
   list-style: none;
 }
@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 0;
   min-height: 103px;
 
   &--interior {
@@ -32,7 +33,9 @@
 
   box-sizing: border-box;
   width: 260px;
-  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
 
   color: $decor-font-color;
   line-height: 1.3;
@@ -40,22 +43,24 @@
 
 .goods-categories__icon-interior {
   position: absolute;
-  top: -5px;
+  top: 50%;
   right: 6px;
 
   width: 41px;
   height: 62px;
+  margin-top: -29px;
 
   fill: $third-decor-color;
 }
 
 .goods-categories__icon-toy {
   position: absolute;
-  top: -8px;
+  top: 50%;
   right: -4px;
 
   width: 61px;
   height: 61px;
+  margin-top: -32px;
 
   fill: $third-decor-color;
 }
@@ -91,6 +96,7 @@
   .goods-categories__item--interior:hover,
   .goods-categories__item--toys:hover {
     margin-top: 0;
+    height: 100%;
     transition: margin-top 0.3s ease;
   }
 
@@ -98,8 +104,9 @@
     width: 334px;
     min-height: 119px;
     padding-top: 28px;
+    padding-bottom: 28px;
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 120px;
 
     line-height: 1.6;
   }
@@ -107,27 +114,19 @@
   .goods-categories__item--interior:hover .goods-categories__link,
   .goods-categories__item--toys:hover .goods-categories__link {
     padding-top: 23px;
-    transition: padding-top 0.3s ease;
   }
 
   .goods-categories__icon-interior {
-    top: 30px;
     right: 35px;
   }
 
   .goods-categories__icon-toy {
-    top: 31px;
     right: 33px;
   }
 
-  .goods-categories__item--interior:hover .goods-categories__icon-interior {
-    top: 25px;
-    transition: top 0.3s ease;
-  }
-
+  .goods-categories__item--interior:hover .goods-categories__icon-interior,
   .goods-categories__item--toys:hover .goods-categories__icon-toy {
-    top: 26px;
-    transition: top 0.3s ease;
+    margin-top: -34px;
   }
 }
 
@@ -142,7 +141,6 @@
   }
 
   .goods-categories__icon-interior {
-    top: 30px;
     right: 36px;
   }
 

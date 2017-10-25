@@ -28,7 +28,9 @@
   border-bottom: 2px solid #000000;
 }
 
-.form-phone__input:hover {
+.form-phone__input:hover,
+.form-phone__input:active,
+.form-phone__input:focus {
   border-bottom-color: $first-decor-color;
 }
 
@@ -60,7 +62,8 @@
 }
 
 .form-phone__input:hover ~ .form-phone__icon,
-.form-phone__input:active ~ .form-phone__icon {
+.form-phone__input:active ~ .form-phone__icon,
+.form-phone__input:focus ~ .form-phone__icon {
   opacity: 1;
   fill: $first-decor-color;
 }
@@ -115,6 +118,12 @@
 
   .form-phone__layout {
     padding-right: 18px;
+
+    text-align: center;
+  }
+
+  .form-phone__title {
+    display: inline;
   }
 
   .form-phone__content {

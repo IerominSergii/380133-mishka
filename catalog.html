@@ -14,7 +14,8 @@
     <svg style="display: none">
       <include src="build/img/sprite.svg"></include>
     </svg>
-    <header class="page-header">
+    <!-- состояние меню, если JavaScript не работает - page-header--without-js -->
+    <header class="page-header page-header--catalog page-header--without-js">
       <div class="page-header__wrapper">
         <nav class="page-header__nav">
           <a class="page-header__logo" href="index.html">
@@ -24,8 +25,11 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»">
             </picture>
           </a>
-          <div class="page-header__toggle page-header__toggle--open">Меню</div>
-          <ul class="page-header__first-menu page-header__mobile-menu page-header__mobile-menu--show site-list">
+          <!-- классы: page-header__toggle--open и page-header__toggle--close переключают состояние кнопки меню -->
+          <div class="page-header__toggle page-header__toggle--open page-header__toggle--without-js">Меню</div>
+          <!-- состояние меню, если JavaScript не работает - page-header__first-menu--without-js -->
+          <!-- классы: page-header__mobile-menu--show и page-header__mobile-menu--hide переключают состояние кнопки меню -->
+          <ul class="page-header__first-menu page-header__first-menu--without-js page-header__mobile-menu page-header__mobile-menu--show site-list">
             <li class="site-list__item">
               <a class="site-list__link">
                 <span class="site-list__text">Каталог товаров</span>
@@ -37,10 +41,12 @@
               </a>
             </li>
           </ul>
+          <!-- классы: page-header__mobile-menu--show и page-header__mobile-menu--hide переключают состояние кнопки меню -->
           <ul class="page-header__second-menu page-header__mobile-menu page-header__mobile-menu--show user-block">
             <li class="user-block__search-item">
               <a class="user-block__search-link" href="#">
                 <span class="user-block__text">
+                  <span class="visually-hidden">Search</span>
                   <svg class="user-block__icon user-block__icon-search" width="18" height="19">
                     <use xlink:href="#icon-search"></use>
                   </svg>
@@ -51,6 +57,7 @@
             <li class="user-block__basket-item">
               <a class="user-block__basket-link" href="#">
                 <span class="user-block__text">
+                  <span class="visually-hidden">Add to basket</span>
                   <svg class="user-block__icon user-block__icon-cart" width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -105,7 +112,7 @@
                 <svg class="unit__icon-cart" width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-                basket-icon
+                Add to basket
               </a>
             </div>
           </div>
@@ -133,7 +140,7 @@
                 <svg class="unit__icon-cart" width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-                basket-icon
+                Add to basket
               </a>
             </div>
           </div>
@@ -161,7 +168,7 @@
                 <svg class="unit__icon-cart" width="21" height="19">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
-                basket-icon
+                Add to basket
               </a>
             </div>
           </div>
@@ -176,7 +183,7 @@
             <span class="process__title-inner">Процесс производства</span>
           </h2>
         </div>
-        <a class="process__video-link">
+        <div class="process__video-link">
           <picture class="process__picture">
             <source type="image/webp" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" media="(min-width: 1150px)">
             <source type="image/webp" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x" media="(min-width: 768px)">
@@ -186,11 +193,16 @@
             <source srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
             <img class="process__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
           </picture>
-        </a>
+          <button class="process__video-button" type="button">
+            <svg class="process__video-button-icon" width="102" height="78">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </button>
+        </div>
         <div class="process__info">
           <p class="process__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="process__do-order btn" type="button">Сделать заказ</button>
+          <a class="process__do-order btn" href="#">Сделать заказ</a>
         </div>
       </section>
     </main>
@@ -208,6 +220,7 @@
               <ul class="social__list">
                 <li class="social__item">
                   <a class="social__link social__link--instagram" href="#">
+                    <span class="visually-hidden">instagram link</span>
                     <svg class="social__icon social__icon-insta" width="22" height="21">
                       <use xlink:href="#icon-insta"></use>
                     </svg>
@@ -216,6 +229,7 @@
                 </li>
                 <li class="social__item">
                   <a class="social__link social__link--facebook" href="#">
+                    <span class="visually-hidden">facebook link</span>
                     <svg class="social__icon social__icon-fb" width="15" height="29">
                       <use xlink:href="#icon-fb"></use>
                     </svg>
@@ -224,6 +238,7 @@
                 </li>
                 <li class="social__item">
                   <a class="social__link social__link--twitter" href="#">
+                    <span class="visually-hidden">twitter link</span>
                     <svg class="social__icon social__icon-twitter" width="24" height="20">
                       <use xlink:href="#icon-twitter"></use>
                     </svg>
@@ -233,14 +248,13 @@
               </ul>
             </div>
             <div class="page-footer__copyright copyright">
-              <div class="copyright__wrapper">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                 <b class="copyright__text">Разработано</b>
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                  <svg class="copyright__image" width="27" height="34">
-                    <use xlink:href="#icon-htmlacademy"></use>
-                  </svg>
-                </a>
-              </div>
+                <span class="visually-hidden">HTML Academy</span>
+                <svg class="copyright__image" width="27" height="34">
+                  <use xlink:href="#icon-htmlacademy"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>

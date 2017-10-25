@@ -1,5 +1,5 @@
 .site-list {
-  min-width: 350px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 }
@@ -8,10 +8,11 @@
   display: flex;
 
   box-sizing: border-box;
-  min-height: 79px;
+  height: 0;
+  min-height: 80px;
 }
 
-.sale-list__item:last-child {
+.site-list__item:nth-child(2n) {
   margin-right: 0;
 }
 
@@ -24,10 +25,11 @@
 
   font-size: 17px;
   vertical-align: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: $first-font-color;
   border-bottom: 1px solid $fourth-decor-color;
   background-color: $first-bgd-color;
+  z-index: 20;
 }
 
 .site-list__link[href]:active .site-list__text {
@@ -44,7 +46,7 @@
   .site-list__item {
     display: inline-block;
     vertical-align: bottom;
-    margin-right: 30px;
+    margin-right: 32px;
   }
 
   .site-list__link {
@@ -67,15 +69,20 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .site-list__item {
+    min-height: 89px;
     margin-right: 0;
     padding-right: 34px;
+  }
+
+  .site-list li:first-child {
     border-right: 1px solid $fourth-decor-color;
   }
 
-  .site-list li:last-child {
+  .site-list li:nth-child(2n) {
     padding-right: 0;
     margin-left: 35px;
     border-right: none;
