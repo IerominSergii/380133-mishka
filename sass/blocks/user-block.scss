@@ -155,6 +155,10 @@
     flex-grow: 1;
   }
 
+  .user-block__basket-link {
+    justify-content: flex-end;
+  }
+
   .user-block__search-link,
   .user-block__basket-link {
     border-bottom: none;
